@@ -1,0 +1,9 @@
+//
+[class*='__container'] {
+  // every class that includes __container has this css property
+  max-width: $pc;
+  padding: 0 $containerPadding;
+  margin: 0 auto;
+  position: relative;
+  z-index: 3;
+}

@@ -1,0 +1,21 @@
+$minWidth: 320px;
+// Ширина полотна (макету)
+
+$maxWidthContainer: 1230px;
+
+// Загальний відступ у контейнера
+// (30 = по 15px ліворуч і праворуч, 0 = немає відступу)
+
+$containerPadding: 15px;
+
+// Ширина спрацьовування першого брейкпоінту
+
+$pc: $maxWidthContainer;
+$fullPc: $pc + $containerPadding + $containerPadding;
+
+// ПК, ноутбуки, деякі планшети у горизонтальному положенні
+
+$tablet: 1024px; // Планшети, деякі телефони в горизонтальному положенні
+$mobile: 767.98px; // Телефони L
+$mobileSmall: 479.98px; // Телефони S
+$moblieSuperSmall: 374.98px;
