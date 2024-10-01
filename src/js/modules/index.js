@@ -1,3 +1,5 @@
 import { burgerMenuFun } from './burger';
 
-export { burgerMenuFun };
+import { initSwiperMainLabel } from './swiper';
+
+export { burgerMenuFun, initSwiperMainLabel };
