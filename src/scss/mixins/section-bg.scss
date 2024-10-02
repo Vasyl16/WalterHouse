@@ -1,0 +1,16 @@
+@mixin section-bg {
+  &::after,
+  &::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  &::before {
+    background-color: $main-bg-color;
+    z-index: 1;
+  }
+}

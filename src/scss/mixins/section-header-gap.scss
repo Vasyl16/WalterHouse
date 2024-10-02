@@ -1,0 +1,11 @@
+@mixin section-header-gap {
+  padding-top: 121px;
+
+  @media (max-width: $fullPc) {
+    padding-top: 100px;
+  }
+
+  @media (max-width: $mobile-small) {
+    padding-top: 80px;
+  }
+}
