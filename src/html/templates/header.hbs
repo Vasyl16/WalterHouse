@@ -2,13 +2,19 @@
   <div class='header__container'>
     <div class='header__body'>
       <div class='header__items'>
-        <div class='header__item header__item_logo'>
-          <img
-            src='/img/header/header-logo-png.png'
-            alt='logo'
-            class='header__logo-img'
-          />
-        </div>
+        <a class='header__item header__item_logo'>
+          <picture class='header__logo-img-wrapper'>
+            <source
+              type='image/webp'
+              srcset='/img/header/header-logo-png.webp'
+            />
+            <img
+              class='header__logo-img'
+              src='/img/header/header-logo-png.png'
+              alt='logo'
+            />
+          </picture>
+        </a>
 
         <div class='header__item'>
           <div class='header__burger-icon'>
@@ -133,11 +139,19 @@
               <div class='item-burger-header__info info-item-burger-header'>
                 <div class='info-item-burger-header__row'>
                   <div class='info-item-burger-header__heading-items'>
-                    <img
-                      src='/img/header/header-logo-png-white.png'
-                      alt='logo'
-                      class='info-item-burger-header__heading-logo'
-                    />
+                    <picture
+                      class='info-item-burger-header__heading-logo-wrapper'
+                    >
+                      <source
+                        type='image/webp'
+                        srcset='/img/header/header-logo-png-white.webp'
+                      />
+                      <img
+                        class='info-item-burger-header__heading-logo'
+                        src='/img/header/header-logo-png-white.png'
+                        alt='logo'
+                      />
+                    </picture>
 
                     <div
                       href='#'

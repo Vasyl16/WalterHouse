@@ -76,11 +76,16 @@
     }
   }
 
-  &__logo-img {
+  &__logo-img-wrapper {
     width: 68px;
     height: 54px;
-    object-fit: contain;
     cursor: pointer;
+  }
+
+  &__logo-img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
   }
 
   &__burger-icon {
@@ -543,10 +548,9 @@
     }
   }
 
-  &__heading-logo {
+  &__heading-logo-wrapper {
     width: 88px;
     height: 56px;
-    object-fit: contain;
 
     @media (max-width: $tablet) {
       width: 100px;
@@ -556,6 +560,12 @@
     @media (max-width: $mobile) {
       display: none;
     }
+  }
+
+  &__heading-logo {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
   }
 
   &__heading-text-wrapper {
