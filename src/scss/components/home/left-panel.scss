@@ -1,7 +1,7 @@
 .left-panel {
   position: fixed;
   left: 83px;
-  top: 135px;
+  top: 183px;
   z-index: 30;
   display: flex;
   flex-direction: column;
@@ -15,12 +15,16 @@
     display: none;
   }
 
+  @media (max-height: 1050px) {
+    top: 135px;
+  }
+
   &__body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 80px;
-    @media (max-height: 1100px) {
+    @media (max-height: 1050px) {
       gap: 50px;
     }
 
@@ -52,7 +56,7 @@
       background: $second-line;
     }
 
-    @media (max-height: 1100px) {
+    @media (max-height: 1050px) {
       padding-top: 160px;
 
       &::after {
@@ -86,7 +90,7 @@
   justify-content: center;
   gap: 43px;
 
-  @media (max-height: 1100px) {
+  @media (max-height: 1050px) {
     gap: 30px;
   }
 
