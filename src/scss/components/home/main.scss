@@ -24,6 +24,10 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
+
+    @media (max-width: $tablet) {
+      display: none;
+    }
   }
 
   & &-main__pagination .swiper-bullet {
