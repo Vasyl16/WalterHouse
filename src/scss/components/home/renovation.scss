@@ -1,0 +1,146 @@
+.renovation {
+  @include section-header-gap;
+  @include section-bg;
+
+  height: 100%;
+
+  &::after {
+    background-image: image-set(
+      url('/public/img/renovation/renovation-bg.webp') type('image/webp'),
+      url('/public/img/renovation/renovation-bg.jpg') type('image/jpg')
+    );
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  @media (max-width: $tablet) {
+    display: none;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 108px;
+    gap: 70px;
+  }
+
+  & &__container {
+    height: 100%;
+  }
+
+  &__title {
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.172;
+    letter-spacing: 0.3em;
+    text-align: center;
+    color: $white;
+    text-transform: uppercase;
+    max-width: 536px;
+  }
+
+  &__items {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 10px;
+    flex: 0 0 521px;
+    position: relative;
+    min-height: 250px;
+    padding-top: 39px;
+    gap: 16px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 2px;
+      height: 100%;
+      background: $main-line-gradient;
+    }
+
+    &:last-child {
+      &::after {
+        content: none;
+      }
+    }
+
+    @media (max-width: $fullPc) {
+      flex: 0 0 400px;
+    }
+
+    @media (max-width: 1300px) {
+      flex: 0 0 280px;
+    }
+  }
+
+  &__stat-count {
+    font-family: 'Bruno Ace';
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 1.093;
+    text-align: center;
+    color: $white;
+  }
+
+  &__stat-name {
+    font-family: 'Open Sans';
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.361;
+    text-align: center;
+    color: $white;
+    text-transform: uppercase;
+    max-width: 314px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__link {
+    position: absolute;
+    bottom: 90px;
+    left: 14.35%;
+    z-index: 40;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.36;
+    letter-spacing: 0.45em;
+    color: $white;
+    cursor: pointer;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    transition: all ease 0.3s;
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    @media (max-width: 1400px) {
+      left: 9%;
+    }
+
+    @media (max-width: 1300px) {
+      position: static;
+      font-size: 18px;
+    }
+  }
+
+  &__link-arrow {
+    width: 115px;
+    height: 21px;
+    object-fit: contain;
+    margin-bottom: 1px;
+  }
+}

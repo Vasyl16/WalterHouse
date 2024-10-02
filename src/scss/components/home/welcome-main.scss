@@ -6,13 +6,13 @@
   @include section-bg;
 
   &::after {
-    background: url('/public/img/welcome-main/welcome-main-bg.jpg') 25% 50%
-      no-repeat;
-    background-size: cover;
     background-image: image-set(
       url('/public/img/welcome-main/welcome-main-bg.webp') type('image/webp'),
       url('/public/img/welcome-main/welcome-main-bg.jpg') type('image/jpg')
     );
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 25% 50%;
   }
 
   & &__container {

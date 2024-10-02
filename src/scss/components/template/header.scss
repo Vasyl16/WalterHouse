@@ -279,7 +279,7 @@
   height: 100%;
   z-index: -1;
   overflow-y: auto;
-  transition: all ease 0.4s;
+  transition: all ease 0.8s;
 
   &::-webkit-scrollbar {
     display: none;
@@ -302,19 +302,16 @@
       top: 0;
       left: 0;
       width: 100%;
-      height: calc(100% - 121px);
-      top: 121px;
-      background: rgba(0, 0, 0, 0.7);
+      height: calc(100%);
+      backdrop-filter: blur(40px);
       z-index: -1;
 
       @media (max-width: $fullPc) {
-        top: 100px;
-        height: calc(100% - 100px);
+        height: calc(100%);
       }
 
       @media (max-width: $mobile) {
-        top: 80px;
-        height: calc(100% - 80px);
+        height: calc(100%);
       }
     }
 
