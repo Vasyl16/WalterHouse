@@ -6,8 +6,8 @@
 
   &::after {
     background-image: image-set(
-      url('/public/img/renovation/renovation-bg.webp') type('image/webp'),
-      url('/public/img/renovation/renovation-bg.jpg') type('image/jpg')
+      url('/img/renovation/renovation-bg.webp') type('image/webp'),
+      url('/img/renovation/renovation-bg.jpg') type('image/jpg')
     );
     background-size: cover;
     background-repeat: no-repeat;
