@@ -23,6 +23,16 @@
     align-items: center;
     padding-top: 108px;
     gap: 70px;
+
+    @media (max-height: 1000px) {
+      padding-top: 50px;
+      gap: 50px;
+    }
+
+    @media (max-height: 900px) {
+      padding-top: 30px;
+      gap: 30px;
+    }
   }
 
   & &__container {
@@ -79,7 +89,8 @@
     }
 
     @media (max-width: 1300px) {
-      flex: 0 0 280px;
+      flex: 0 0 250px;
+      min-height: 200px;
     }
   }
 
@@ -90,6 +101,10 @@
     line-height: 1.093;
     text-align: center;
     color: $white;
+
+    @media (max-width: 1300px) {
+      font-size: 55px;
+    }
   }
 
   &__stat-name {
@@ -103,6 +118,10 @@
     max-width: 314px;
     display: flex;
     flex-direction: column;
+
+    @media (max-width: 1300px) {
+      font-size: 25px;
+    }
   }
 
   &__link {
