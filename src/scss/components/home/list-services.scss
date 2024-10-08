@@ -25,6 +25,15 @@
     display: flex;
     flex-direction: column;
     padding-top: 160px;
+
+    @media (max-height: 1000px) {
+      padding-top: 100px;
+    }
+
+    @media (max-height: 900px) {
+      padding-top: 40px;
+    }
+
     @media (max-width: $fullPc) {
       align-items: center;
     }
@@ -129,7 +138,7 @@
 
   &__circle-size-unit {
     font-family: 'Open Sans';
-    font-size: 20px;
+    font-size: 24px;
     color: $white;
     font-weight: 400;
     letter-spacing: 0.1em;
@@ -141,26 +150,43 @@
 
     & span {
       position: absolute;
-      top: 0;
+      top: 1px;
       right: -10px;
-      font-size: 12px;
+      font-size: 14px;
     }
 
     @media (max-width: $fullPc) {
       transform: translate(-68%);
       top: -40px;
+
+      & span {
+        position: absolute;
+        top: 1px;
+        right: -10px;
+        font-size: 14px;
+      }
+    }
+
+    @media (max-width: $tablet) {
+      top: -41px;
+      font-size: 19px;
+      transform: translate(-66%);
+
+      & span {
+        position: absolute;
+        top: -5px;
+        right: -12px;
+        font-size: 14px;
+      }
     }
 
     @media (max-width: $mobile) {
-      font-size: 19px;
       top: -33px;
       transform: translate(-46%);
-    }
 
-    & span {
-      top: -4px;
-      right: -6px;
-      font-size: 14px;
+      & span {
+        right: -8px;
+      }
     }
   }
 
@@ -200,6 +226,57 @@
     }
   }
 
+  &__item {
+    &_last {
+      position: relative;
+      margin-left: 6px;
+
+      @media (max-width: $fullPc) {
+        margin-left: 0;
+      }
+
+      &::after,
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        height: 1px;
+        background: $white;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
+
+      &::after {
+        width: 27px;
+        top: 48%;
+        transform: translate(0, -50%) rotate(33deg);
+      }
+
+      &::before {
+        top: 54%;
+        width: 27px;
+        transform: rotate(-33deg);
+      }
+
+      @media (max-width: $fullPc) {
+        &::after {
+          top: 47%;
+        }
+
+        &::before {
+          top: 55%;
+        }
+      }
+
+      @media (max-width: $tablet) {
+        &::after,
+        &::before {
+          display: none;
+        }
+      }
+    }
+  }
+
   &__cost {
     font-family: 'Bruno Ace';
     font-size: 64px;
@@ -207,11 +284,10 @@
     color: $white;
     text-transform: uppercase;
     position: relative;
-    padding-left: 52px;
+    padding-left: 46px;
     margin-left: 6px;
     display: flex;
     align-items: center;
-    position: relative;
 
     & span {
       font-size: 23px;
@@ -222,29 +298,6 @@
       right: -35px;
       top: 54%;
       transform: translate(100%, -52%);
-    }
-
-    &::after,
-    &::before {
-      content: '';
-      position: absolute;
-      left: 0;
-      height: 1px;
-      background: $white;
-      border-top-right-radius: 10px;
-      border-bottom-right-radius: 10px;
-    }
-
-    &::after {
-      width: 27px;
-      top: 42%;
-      transform: translate(0, -50%) rotate(33deg);
-    }
-
-    &::before {
-      top: 60%;
-      width: 27px;
-      transform: translate(0, -21%) rotate(-33deg);
     }
 
     @media (max-width: $fullPc) {
@@ -276,7 +329,7 @@
       font-size: 64px;
       margin-top: 23px;
       padding-left: 0;
-      span {
+      & span {
         font-size: 18px;
         right: -29px;
       }
@@ -661,4 +714,32 @@
       }
     }
   }
+}
+
+.progress-circle {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  transform: rotate(-90deg);
+}
+
+.circle-progress {
+  fill: none;
+  stroke-width: 5;
+}
+
+.progress-handle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #ffa500;
+  border-radius: 50%;
+  top: 0px; /* Adjust position */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: grab;
+  z-index: 10;
 }

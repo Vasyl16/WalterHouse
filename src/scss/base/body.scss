@@ -2,7 +2,8 @@ body {
   // background: $mainBgColor;
   // font-family: $fontFamily;
 
-  &.block-scroll {
+  // &.block-scroll {
+  & {
     overflow: hidden;
   }
 }

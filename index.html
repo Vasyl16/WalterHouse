@@ -134,6 +134,34 @@
                 </form>
               </section>
             </section>
+
+            <section class="swiper-slide-contact-form contact-form">
+              <form class="contact-form__body">
+                <div class="contact-form__item contact-form__item_input">
+                  <input class="contact-form__input" placeholder="Your name">
+                  <p type="number" class="contact-form__input-error-text">Заполните, пожалуйста, это поле.</p>
+                </div>
+
+                <div class="contact-form__item contact-form__item_input">
+                  <input class="contact-form__input contact-form__input_modified" placeholder="Your phone number">
+                  <p type="number" class="contact-form__input-error-text">Заполните, пожалуйста, это поле.</p>
+                </div>
+
+                <div class="contact-form__item">
+                  <button class="contact-form__button" type="submit">
+                    <span>
+                      Discuss a Project
+                    </span>
+
+                    <div class='contact-form__button-arrow-wrapper'>
+                      <svg class='contact-form__button-arrow'>
+                        <use xlink:href='/icons/sprite.svg#contact-form__button-arrow'></use>
+                      </svg>
+                    </div>
+                  </button>
+                </div>
+              </form>
+            </section>
           </div>
 
           <div class="swiper-main__slide swiper-slide">
@@ -260,6 +288,7 @@
                   </div>
                 </div>
               </div>
+            </section>
           </div>
 
           <div class="swiper-main__slide swiper-slide">
@@ -283,13 +312,21 @@
                           m <span>2</span>
                         </p>
 
-                        <p class="list-services__circle-size-count">64</p>
+                        <svg class="progress-circle">
+                          <circle cx="50%" cy="50%" r="50%" class="circle-progress"></circle>
+                        </svg>
+
+                        <div class="progress-handle" id="handle"></div>
+
+
+                        <p id="progressValue" class="list-services__circle-size-count">64</p>
                       </div>
                     </div>
 
                     <div class="list-services__item">
                       <div class="list-services__package-size package-size-list-services">
-                        <div class="package-size-list-services__item package-size-list-services__item_active">
+                        <div class="package-size-list-services__item package-size-list-services__item_active"
+                          data-value="2 330 000">
                           <div
                             class="package-size-list-services__info-icon package-size-list-services__info-icon_elite">
                             i
@@ -314,7 +351,7 @@
                           </div>
                         </div>
 
-                        <div class="package-size-list-services__item">
+                        <div class="package-size-list-services__item" data-value="20 000">
                           <div class="package-size-list-services__info-icon">
                             i
                           </div>
@@ -334,7 +371,7 @@
                           </div>
                         </div>
 
-                        <div class="package-size-list-services__item">
+                        <div class="package-size-list-services__item" data-value="30 000">
                           <div
                             class="package-size-list-services__info-icon package-size-list-services__info-icon_extra">
                             i
@@ -359,7 +396,7 @@
                       </div>
                     </div>
                     <div class="list-services__item list-services__item_last">
-                      <p class="list-services__cost">2 330 000
+                      <p class="list-services__cost">233 000
                         <span>uah</span>
                       </p>
                     </div>
@@ -368,37 +405,82 @@
 
               </div>
             </section>
-          </div>
 
-          <section class="swiper-slide-contact-form contact-form">
-            <form class="contact-form__body">
-              <div class="contact-form__item contact-form__item_input">
-                <input class="contact-form__input" placeholder="Your name">
-                <p type="number" class="contact-form__input-error-text">Заполните, пожалуйста, это поле.</p>
-              </div>
-
-              <div class="contact-form__item contact-form__item_input">
-                <input class="contact-form__input contact-form__input_modified" placeholder="Your phone number">
-                <p type="number" class="contact-form__input-error-text">Заполните, пожалуйста, это поле.</p>
-              </div>
-
-              <div class="contact-form__item">
-                <button class="contact-form__button" type="submit">
-                  <span>
-                    Discuss a Project
-                  </span>
-
-                  <div class='contact-form__button-arrow-wrapper'>
-                    <svg class='contact-form__button-arrow'>
-                      <use xlink:href='/icons/sprite.svg#contact-form__button-arrow'></use>
-                    </svg>
+            <section class="swiper-main__info-list-services info-list-services">
+              <div class="info-list-services__body">
+                <div class="info-list-services__header">
+                  <div class="info-list-services__title">
+                    Стиль
+                    <span>
+                      ELITE
+                    </span>
                   </div>
-                </button>
+
+                  <div class="info-list-services__text">Lorem ipsum dolor sit amet, consectetuer
+                    adipiscing elit. Aenean
+                    commodo ligula eget dolor. Aenean massa. Cum sociis
+                    natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+                    ultricies nec, pellentesque
+                    eu.</div>
+                </div>
+
+                <ul class="info-list-services__list">
+                  <li class="info-list-services__line">Демонтаж и Возведение межкомнатных перегородок
+                  </li>
+
+                  <li class="info-list-services__line">Демонтаж и Возведение межкомнатных перегородок
+                  </li>
+
+                  <li class="info-list-services__line">Демонтаж и Возведение межкомнатных перегородок
+                  </li>
+
+                  <li class="info-list-services__line">Демонтаж и Возведение межкомнатных перегородок
+                  </li>
+
+                  <li class="info-list-services__line">Демонтаж и Возведение межкомнатных перегородок
+                  </li>
+
+                  <li class="info-list-services__line">Демонтаж и Возведение межкомнатных перегородок
+                  </li>
+                </ul>
               </div>
-            </form>
+            </section>
+
+            <section class="swiper-slide-contact-form contact-form">
+              <form class="contact-form__body">
+                <div class="contact-form__item contact-form__item_input">
+                  <input class="contact-form__input" placeholder="Your name">
+                  <p type="number" class="contact-form__input-error-text">Заполните, пожалуйста, это поле.</p>
+                </div>
+
+                <div class="contact-form__item contact-form__item_input">
+                  <input class="contact-form__input contact-form__input_modified" placeholder="Your phone number">
+                  <p type="number" class="contact-form__input-error-text">Заполните, пожалуйста, это поле.</p>
+                </div>
+
+                <div class="contact-form__item">
+                  <button class="contact-form__button" type="submit">
+                    <span>
+                      Discuss a Project
+                    </span>
+
+                    <div class='contact-form__button-arrow-wrapper'>
+                      <svg class='contact-form__button-arrow'>
+                        <use xlink:href='/icons/sprite.svg#contact-form__button-arrow'></use>
+                      </svg>
+                    </div>
+                  </button>
+                </div>
+              </form>
+            </section>
+          </div>
           </section>
         </div>
+
+
+
       </div>
+  </div>
   </div>
 
   <div class="swiper-pagination swiper-main__pagination"></div>
@@ -429,6 +511,8 @@
       </div>
     </div>
   </section>
+
+
   </main>
 
   </div>
