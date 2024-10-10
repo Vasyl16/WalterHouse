@@ -11,6 +11,12 @@
     width: 100%;
   }
 
+  &-hidden {
+    @media (max-width: $tablet) {
+      display: none;
+    }
+  }
+
   &__body {
     padding: 81px 120px 88px;
     gap: 14px;
