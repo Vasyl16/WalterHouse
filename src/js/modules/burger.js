@@ -1,4 +1,4 @@
-import { blockScroll } from './blockScroll';
+import { blockScroll } from './utils/blockScroll';
 
 const burger = document.querySelector('.header__burger-icon');
 const headerItems = document.querySelector('.item-burger-header');

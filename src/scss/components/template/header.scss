@@ -1,9 +1,15 @@
 .header {
-  position: absolute;
+  position: fixed;
   width: 100%;
   left: 0;
   top: 0;
   z-index: 10;
+  opacity: 1;
+
+  &-hide {
+    display: none;
+    opacity: 0;
+  }
 
   &__body {
     height: 121px;

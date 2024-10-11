@@ -128,5 +128,9 @@
     <symbol id="steps-walter__right-arrow" viewBox="0 0 24 31" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M1 1L23 15.5L1 30" stroke="white"/>
     </symbol>
+    <symbol id="additional-services-popup__close-button-icon" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <line y1="-1" x2="28.7683" y2="-1" transform="matrix(-0.720678 -0.69327 0.720678 -0.69327 22.7344 20.9443)" stroke="black" stroke-opacity="0.15" stroke-width="2"/>
+        <line y1="-1" x2="28.7683" y2="-1" transform="matrix(0.720678 -0.69327 0.720678 0.69327 2 22.0001)" stroke="black" stroke-opacity="0.15" stroke-width="2"/>
+    </symbol>
     
 </svg>

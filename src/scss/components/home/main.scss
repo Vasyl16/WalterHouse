@@ -7,6 +7,7 @@
   & &-wrapper {
     @media (max-width: $tablet) {
       display: block;
+      transform: none;
     }
   }
 
