@@ -1,4 +1,7 @@
 @mixin section-bg {
+  position: relative;
+  flex: 1 1 auto;
+
   &::after,
   &::before {
     position: absolute;

@@ -13,9 +13,9 @@
 
   &::after {
     background-image: image-set(
-      url('/public/img/additional-services/additional-services-bg.webp')
+      url('/img/additional-services/additional-services-bg.webp')
         type('image/webp'),
-      url('/public/img/additional-services/additional-services-bg.jpg')
+      url('/img/additional-services/additional-services-bg.jpg')
         type('image/jpg')
     );
     background-size: contain;
