@@ -2,7 +2,9 @@
   @include section-header-gap;
   @include section-bg;
 
-  height: 100%;
+  & {
+    height: 100%;
+  }
 
   &::after {
     background-image: image-set(

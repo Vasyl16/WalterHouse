@@ -174,6 +174,12 @@
   }
 
   &__image-wrapper {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     &_broadcast {
       height: 520px;
       aspect-ratio: 580/520;
@@ -223,12 +229,6 @@
     @media (max-height: 900px) and (width > $tablet) {
       max-width: clamp(200px, 280px, 32vh);
     }
-
-    position: relative;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
     &::after,
     &::before {
