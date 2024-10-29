@@ -4,7 +4,8 @@ import {
   burgerMenuFun,
   initSwiperMainLabel,
   changePackage,
-  toggleAllHomePopupFun
+  toggleAllHomePopupFun,
+  loadLazyImgs
 } from '/src/js/modules';
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -12,4 +13,5 @@ document.addEventListener('DOMContentLoaded', () => {
   initSwiperMainLabel();
   changePackage();
   toggleAllHomePopupFun();
+  loadLazyImgs();
 });

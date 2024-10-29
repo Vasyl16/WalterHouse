@@ -6,13 +6,12 @@
     height: 100%;
   }
 
-  &::after {
-    background-image: image-set(
-      url('/img/steps-walter/steps-walter-bg.webp') type('image/webp'),
-      url('/img/steps-walter/steps-walter-bg.jpg') type('image/jpg')
-    );
-    background-size: cover;
-    background-repeat: no-repeat;
+  &__image-bg-wrapper {
+    @include section-img-wrapper-bg;
+  }
+
+  &__image-bg {
+    @include section-img-bg;
   }
 
   @media (max-width: $tablet) {

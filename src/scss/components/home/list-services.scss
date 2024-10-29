@@ -10,17 +10,12 @@
     height: 100%;
   }
 
-  &::after {
-    background-image: image-set(
-      url('/img/list-services/list-services-bg.webp') type('image/webp'),
-      url('/img/list-services/list-services-bg.jpg') type('image/jpg')
-    );
-    background-size: cover;
-    background-repeat: no-repeat;
+  &__image-bg-wrapper {
+    @include section-img-wrapper-bg;
+  }
 
-    @media (max-width: $tablet) {
-      background-position: 30% 60%;
-    }
+  &__image-bg {
+    @include section-img-bg;
   }
 
   &__body {
