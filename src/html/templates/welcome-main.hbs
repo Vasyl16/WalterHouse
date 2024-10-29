@@ -1,0 +1,72 @@
+<div class='swiper-main__slide swiper-slide'>
+  <section class='swiper-main__welcome welcome-main'>
+    <picture
+      style="background-image:url('img/welcome-main/welcome-main-bg-small.jpg')"
+      class='welcome-main__image-bg-wrapper lazy-loading-img-wrapper'
+    >
+      <source
+        type='image/webp'
+        srcset='img/welcome-main/welcome-main-bg.webp'
+      />
+      <img
+        loading='lazy'
+        class='welcome-main__image-bg lazy-loading-img'
+        src='img/welcome-main/welcome-main-bg.jpg'
+        alt='img'
+      />
+    </picture>
+
+    <div class='welcome-main__container'>
+      <div class='welcome-main__body'>
+        <p class='welcome-main__text'>
+          ремонт квартир под ключ
+        </p>
+
+        <h1 class='welcome-main__title'>
+
+          <span class='welcome-main__title-left'>walter</span>
+
+          <span class='welcome-main__title-small'>your personal</span>
+
+          <span class='welcome-main__title-left-margin'>house</span>
+
+        </h1>
+      </div>
+    </div>
+  </section>
+
+  <section class='swiper-slide-contact-form contact-form'>
+    <form class='contact-form__body'>
+      <div class='contact-form__item contact-form__item_input'>
+        <input class='contact-form__input' placeholder='Your name' />
+        <p type='number' class='contact-form__input-error-text'>Заполните,
+          пожалуйста, это поле.</p>
+      </div>
+
+      <div class='contact-form__item contact-form__item_input'>
+        <input
+          class='contact-form__input contact-form__input_modified'
+          placeholder='Your phone number'
+        />
+        <p type='number' class='contact-form__input-error-text'>Заполните,
+          пожалуйста, это поле.</p>
+      </div>
+
+      <div class='contact-form__item'>
+        <button class='contact-form__button' type='submit'>
+          <span>
+            Discuss a Project
+          </span>
+
+          <div class='contact-form__button-arrow-wrapper'>
+            <svg class='contact-form__button-arrow'>
+              <use
+                xlink:href='/icons/sprite.svg#contact-form__button-arrow'
+              ></use>
+            </svg>
+          </div>
+        </button>
+      </div>
+    </form>
+  </section>
+</div>

@@ -1,0 +1,93 @@
+<div class='swiper-main__slide swiper-slide'>
+  <section class='swiper-main__steps-walter steps-walter'>
+    <picture
+      style="background-image:url('img/steps-walter/steps-walter-small.jpg')"
+      class='steps-walter__image-bg-wrapper lazy-loading-img-wrapper'
+    >
+      <source
+        type='image/webp'
+        srcset='/img/steps-walter/steps-walter-bg.webp'
+      />
+      <img
+        loading='lazy'
+        class='steps-walter__image-bg lazy-loading-img'
+        src='/img/steps-walter/steps-walter-bg.jpg'
+        alt='img'
+      />
+    </picture>
+
+    <div class='steps-walter__container'>
+      <div class='steps-walter__body'>
+        <div class='steps-walter__header'>
+          <h1 class='steps-walter__title'>6 steps to your WALTER house:</h1>
+        </div>
+
+        <div class='steps-walter__items'>
+          <div class='steps-walter__item'>
+            <div class='steps-walter__circle-wrapper'>
+              <p class='steps-walter__circle-step-text'>3</p>
+
+              <div class='steps-walter__circle-wrapper-bullet'></div>
+            </div>
+          </div>
+
+          <div class='steps-walter__item steps-walter__item_icon'>
+            <div class='steps-walter__icon-name-wrapper'>
+              <svg class='steps-walter__icon'>
+                <use xlink:href='/icons/sprite.svg#steps-walter__icon_1'></use>
+              </svg>
+
+              <p class='steps-walter__icon-name'>DRAFTING AN ESTIMATE</p>
+
+              <svg class='steps-walter__right-arrow'>
+                <use
+                  xlink:href='/icons/sprite.svg#steps-walter__right-arrow'
+                ></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class='steps-walter__item'>
+            <p class='steps-walter__icon-text'>DEVELOPMENT OF TERMS OF
+              REFERENCE, 3D VISUALIZATION AND CALCULATION OF THE ESTIMATE</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class='swiper-slide-contact-form contact-form contact-form-hidden'>
+    <form class='contact-form__body'>
+      <div class='contact-form__item contact-form__item_input'>
+        <input class='contact-form__input' placeholder='Your name' />
+        <p type='number' class='contact-form__input-error-text'>Заполните,
+          пожалуйста, это поле.</p>
+      </div>
+
+      <div class='contact-form__item contact-form__item_input'>
+        <input
+          class='contact-form__input contact-form__input_modified'
+          placeholder='Your phone number'
+        />
+        <p type='number' class='contact-form__input-error-text'>Заполните,
+          пожалуйста, это поле.</p>
+      </div>
+
+      <div class='contact-form__item'>
+        <button class='contact-form__button' type='submit'>
+          <span>
+            Discuss a Project
+          </span>
+
+          <div class='contact-form__button-arrow-wrapper'>
+            <svg class='contact-form__button-arrow'>
+              <use
+                xlink:href='/icons/sprite.svg#contact-form__button-arrow'
+              ></use>
+            </svg>
+          </div>
+        </button>
+      </div>
+    </form>
+  </section>
+</div>
