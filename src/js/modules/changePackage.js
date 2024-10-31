@@ -1,7 +1,8 @@
 const infoListElements = document.querySelectorAll(
-  '.package-size-list-services__item'
+  '.package-size-list-services__package-wrapper'
 );
-const infoListClassActive = 'package-size-list-services__item_active';
+const infoListClassActive =
+  'package-size-list-services__package-wrapper_active';
 const progressHandle = document.querySelector(
   '.list-services__progress-point-handle'
 );
@@ -71,9 +72,8 @@ const updateHandlePosition = () => {
   updateHandlePositionPoint();
 
   // Get data-value from the active item and calculate cost
-  const activeItem = document.querySelector(
-    '.package-size-list-services__item_active'
-  );
+  const activeItem = document.querySelector('.' + infoListClassActive);
+
   const dataValue = activeItem
     ? parseInt(activeItem.getAttribute('data-value'))
     : 1;

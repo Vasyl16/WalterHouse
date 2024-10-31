@@ -18,7 +18,6 @@ export const renovationStylesPopupFun = () => {
       return;
     }
 
-    console.log(contentElement);
     contentElement.style.maxHeight = 0;
   };
 

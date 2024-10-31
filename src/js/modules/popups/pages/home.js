@@ -61,4 +61,46 @@ const additionalServicesAllPopupItems = [
   }
 ];
 
-export const allHomePopupItems = [...additionalServicesAllPopupItems];
+const infoListServicesPopupsItems = [
+  {
+    popupButtonClass: '.package-size-list-services__info-icon_elite',
+    closeButtonClass: '.info-list-services__close-button-icon_elite',
+    maxHeight: false,
+    maxWidth: 1024,
+    classArray: [
+      {
+        class: '.info-list-services_elite',
+        classNameActive: 'info-list-services_active'
+      }
+    ]
+  },
+  {
+    popupButtonClass: '.package-size-list-services__info-icon_vip',
+    closeButtonClass: '.info-list-services__close-button-icon_vip',
+    maxHeight: false,
+    maxWidth: 1024,
+    classArray: [
+      {
+        class: '.info-list-services_vip',
+        classNameActive: 'info-list-services_active'
+      }
+    ]
+  },
+  {
+    popupButtonClass: '.package-size-list-services__info-icon_extra',
+    closeButtonClass: '.info-list-services__close-button-icon_extra',
+    maxHeight: false,
+    maxWidth: 1024,
+    classArray: [
+      {
+        class: '.info-list-services_extra',
+        classNameActive: 'info-list-services_active'
+      }
+    ]
+  }
+];
+
+export const allHomePopupItems = [
+  // ...additionalServicesAllPopupItems,
+  ...infoListServicesPopupsItems
+];

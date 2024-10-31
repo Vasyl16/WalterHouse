@@ -5,24 +5,19 @@ const wrapper = document.querySelector('.wrapper');
 
 export const togglePopupFun = popupItems => {
   popupItems.forEach(popupItemObj => {
-    const isValidPopupItemObj =
-      !document.querySelector(popupItemObj.closeButtonClass) ||
-      !document.querySelector(popupItemObj.popupButtonClass) ||
-      !popupItemObj.classArray ||
-      !popupItemObj.maxHeight ||
-      !popupItemObj.maxWidth;
+    const closeButton = document.querySelector(popupItemObj.closeButtonClass);
+    const popupButton = document.querySelector(popupItemObj.popupButtonClass);
+    const classArray = popupItemObj.classArray;
+    const maxHeight = popupItemObj.maxHeight || Infinity;
+    const maxWidth = popupItemObj.maxWidth || Infinity;
 
-    if (isValidPopupItemObj) {
+    const isValidPopupItemObj = closeButton && popupButton;
+
+    if (!isValidPopupItemObj) {
       console.error('some element are missing in js or html');
 
       return;
     }
-
-    const closeButton = document.querySelector(popupItemObj.closeButtonClass);
-    const popupButton = document.querySelector(popupItemObj.popupButtonClass);
-    const classArray = popupItemObj.classArray;
-    const maxHeight = popupItemObj.maxHeight;
-    const maxWidth = popupItemObj.maxWidth;
 
     const shouldActivatePopup = () => {
       const viewportWidth = window.innerWidth;
@@ -99,7 +94,7 @@ export const togglePopupFun = popupItems => {
       }
     };
 
-    if (shouldActivatePopup) {
+    if (shouldActivatePopup()) {
       addEvents();
     }
 

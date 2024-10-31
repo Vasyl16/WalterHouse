@@ -6,7 +6,8 @@ import {
   changePackage,
   toggleAllHomePopupFun,
   loadLazyImgs,
-  renovationStylesPopupFun
+  renovationStylesPopupFun,
+  changePackageHoverFun
 } from '/src/js/modules';
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -16,4 +17,5 @@ document.addEventListener('DOMContentLoaded', () => {
   toggleAllHomePopupFun();
   loadLazyImgs();
   renovationStylesPopupFun();
+  changePackageHoverFun();
 });

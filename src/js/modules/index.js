@@ -4,6 +4,7 @@ import { toggleAllHomePopupFun } from './popups';
 import { changePackage } from './changePackage';
 import { loadLazyImgs } from './loadLazyImgs';
 import { renovationStylesPopupFun } from './renovationStylesPopup';
+import { changePackageHoverFun } from './changePackageHover';
 
 export {
   burgerMenuFun,
@@ -11,5 +12,6 @@ export {
   changePackage,
   toggleAllHomePopupFun,
   loadLazyImgs,
-  renovationStylesPopupFun
+  renovationStylesPopupFun,
+  changePackageHoverFun
 };
