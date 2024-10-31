@@ -164,6 +164,7 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
+    display: inline-block;
 
     @media (pointer: fine) {
       &:hover {
