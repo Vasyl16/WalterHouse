@@ -18,20 +18,6 @@
   }
 }
 
-@keyframes pulse {
-  0% {
-    background-color: $white-first-opacity;
-  }
-
-  50% {
-    background-color: $white-second-opacity;
-  }
-
-  100% {
-    background-color: $white-first-opacity;
-  }
-}
-
 .lazy-loading-img-wrapper.lazy-loading-img-wrapper-loaded > .lazy-loading-img {
   opacity: 1;
 }

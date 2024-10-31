@@ -340,7 +340,7 @@
   display: none;
   opacity: 0;
   @media (max-height: 900px) or ($markup-width > width) {
-    animation: slideInOpacity 0.5s ease-out forwards; /* Customize the duration and easing */
+    animation: slide-in-opacity 0.5s ease-out forwards; /* Customize the duration and easing */
   }
 
   &-active {
@@ -464,15 +464,5 @@
     width: 100%;
     height: 100%;
     object-fit: contain;
-  }
-}
-
-@keyframes slideInOpacity {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
   }
 }

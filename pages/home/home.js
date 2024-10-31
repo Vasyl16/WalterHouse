@@ -5,7 +5,8 @@ import {
   initSwiperMainLabel,
   changePackage,
   toggleAllHomePopupFun,
-  loadLazyImgs
+  loadLazyImgs,
+  renovationStylesPopupFun
 } from '/src/js/modules';
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -14,4 +15,5 @@ document.addEventListener('DOMContentLoaded', () => {
   changePackage();
   toggleAllHomePopupFun();
   loadLazyImgs();
+  renovationStylesPopupFun();
 });
