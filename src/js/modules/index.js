@@ -5,6 +5,7 @@ import { changePackage } from './changePackage';
 import { loadLazyImgs } from './loadLazyImgs';
 import { renovationStylesPopupFun } from './renovationStylesPopup';
 import { changePackageHoverFun } from './changePackageHover';
+import { initStepsWalterFun } from './stepsWalter';
 
 export {
   burgerMenuFun,
@@ -13,5 +14,6 @@ export {
   toggleAllHomePopupFun,
   loadLazyImgs,
   renovationStylesPopupFun,
-  changePackageHoverFun
+  changePackageHoverFun,
+  initStepsWalterFun
 };
