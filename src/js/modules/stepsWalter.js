@@ -39,7 +39,7 @@ const stepActiveCircleLineClass = 'steps-walter__circle-active-line';
 
 const stepActveCircleLineWrapperClass = 'steps-walter__circle-line-wrapper';
 
-let currentIndex = 1;
+let currentIndex = 0;
 
 const putStepsWalterCircleBulletsFun = (
   bulletItem,
