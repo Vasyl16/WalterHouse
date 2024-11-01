@@ -39,12 +39,6 @@ const formatNumber = num => {
 };
 
 const changePackageType = () => {
-  if (!infoListElements && !costDisplay) {
-    console.error('some elements are missing in changePackageType fun');
-
-    return;
-  }
-
   infoListElements.forEach(element => {
     element.addEventListener('click', () => {
       infoListElements.forEach(el => el.classList.remove(infoListClassActive));
@@ -132,18 +126,6 @@ const stopDragging = () => {
 };
 
 const changePackageSize = () => {
-  const isValidHTMLElements =
-    progressCircleWrapper &&
-    circleProgress &&
-    angleDisplay &&
-    costDisplay &&
-    progressHandle;
-
-  if (!isValidHTMLElements) {
-    console.error('some element are missing in changePackageSize fun');
-    return;
-  }
-
   progressHandle.addEventListener('pointerdown', event => {
     event.stopPropagation();
   });
@@ -192,6 +174,20 @@ const changePackageSize = () => {
 };
 
 export const changePackage = () => {
+  const isValidHTMLElements =
+    progressCircleWrapper &&
+    circleProgress &&
+    angleDisplay &&
+    costDisplay &&
+    progressHandle &&
+    infoListElements &&
+    costDisplay;
+
+  if (!isValidHTMLElements) {
+    console.error('some element are missing in changePackage fun');
+    return;
+  }
+
   changePackageSize();
   changePackageType();
   updateHandlePositionPoint();
