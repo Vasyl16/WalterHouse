@@ -72,11 +72,9 @@ export const togglePopupFun = popupItems => {
 
       wrapper.classList.remove('wrapper-active');
 
-      if (window.innerWidth <= 1024) {
-        blockScroll(false);
+      blockScroll(false);
 
-        hideHeader(false);
-      }
+      hideHeader(false);
     };
 
     const clearEvents = () => {
@@ -99,7 +97,7 @@ export const togglePopupFun = popupItems => {
     }
 
     window.addEventListener('resize', () => {
-      if (shouldActivatePopup) {
+      if (shouldActivatePopup()) {
         clearEvents();
         blockScroll(
           window.innerWidth <= 1024 &&
@@ -110,7 +108,13 @@ export const togglePopupFun = popupItems => {
           window.innerWidth <= 1024 &&
             wrapper.classList.contains('wrapper-active')
         );
+
+        return;
       }
+
+      blockScroll(false);
+      hideHeader(false);
+      handleRemoveClases();
     });
   });
 };
