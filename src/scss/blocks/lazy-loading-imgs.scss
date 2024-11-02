@@ -1,0 +1,31 @@
+.lazy-loading-img-wrapper {
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: $white-second-opacity;
+    animation: pulse 2.5s infinite;
+  }
+}
+
+.lazy-loading-img-wrapper.lazy-loading-img-wrapper-loaded {
+  &::after {
+    content: none;
+  }
+}
+
+.lazy-loading-img-wrapper.lazy-loading-img-wrapper-loaded > .lazy-loading-img {
+  opacity: 1;
+}
+
+.lazy-loading-img-wrapper > .lazy-loading-img {
+  opacity: 0;
+}
+
+.lazy-loading-img {
+  transition: all ease 0.3s;
+}

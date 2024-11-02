@@ -1,0 +1,144 @@
+.welcome-main {
+  height: 100%;
+  position: relative;
+
+  @include section-header-gap;
+  @include section-bg;
+
+  &__image-bg-wrapper {
+    @include section-img-wrapper-bg;
+  }
+
+  &__image-bg {
+    @include section-img-bg;
+  }
+
+  & &__container {
+    height: 100%;
+
+    @media (max-width: $tablet) {
+      padding: 0 5.5px;
+    }
+  }
+
+  &__body {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-bottom: 20.89%;
+    padding-top: 3%;
+
+    @media (max-width: $tablet) {
+      padding-bottom: 0;
+      padding-top: 38px;
+      padding-bottom: 142px;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    @media (max-width: $mobile) {
+      padding-top: 24px;
+      padding-bottom: 191px;
+    }
+  }
+
+  &__title {
+    font-family: 'Bruno Ace SC';
+    font-size: 96px;
+    line-height: 0.9396;
+    font-weight: 400;
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    margin-left: 8.9%;
+    text-transform: uppercase;
+
+    @media (max-width: $fullPc) {
+      margin-left: 100px;
+    }
+
+    @media (max-width: $tablet) {
+      margin-left: 0;
+      margin-top: 84px;
+      width: 100%;
+    }
+
+    @media (max-width: $mobile) {
+      font-size: 45px;
+      margin-top: 61px;
+    }
+
+    &-left {
+      text-align: left;
+
+      @media (max-width: $tablet) {
+        margin-left: 38px;
+      }
+
+      @media (max-width: $mobile-small) {
+        margin-left: 0;
+      }
+    }
+
+    &-small {
+      text-align: left;
+      font-size: 15px;
+      letter-spacing: 8px;
+      font-family: 'Open Sans';
+      margin-left: 8px;
+      display: inline-block;
+      margin-top: 1px;
+
+      @media (max-width: $tablet) {
+        margin-left: 45px;
+        text-align: left;
+      }
+
+      @media (max-width: $mobile) {
+        margin-left: 10%;
+      }
+
+      @media (max-width: $mobile-small) {
+        font-size: 10px;
+        margin-left: 2px;
+      }
+    }
+
+    &-left-margin {
+      margin-top: 3px;
+      margin-left: 187px;
+
+      @media (max-width: $tablet) {
+        margin-left: 17%;
+        text-align: center;
+      }
+
+      @media (max-width: $mobile-super-small) {
+        margin-right: 5%;
+        margin-left: 0;
+        text-align: right;
+        margin-top: 1px;
+      }
+    }
+  }
+
+  &__text {
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.16;
+    letter-spacing: 0.695em;
+    text-align: center;
+    text-transform: uppercase;
+    color: $second-line;
+
+    @media (min-width: $tablet) {
+      display: none;
+    }
+
+    @media (max-width: $mobile) {
+      font-size: 12px;
+      padding: 0 20px;
+    }
+  }
+}

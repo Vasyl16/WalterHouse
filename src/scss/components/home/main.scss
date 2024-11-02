@@ -1,0 +1,94 @@
+.swiper {
+  height: 100svh !important;
+  @media (max-width: $tablet) {
+    height: auto !important;
+  }
+
+  & &-wrapper {
+    @media (max-width: $tablet) {
+      display: block;
+      transform: none;
+    }
+  }
+
+  & &-slide {
+    height: 100svh;
+    position: relative;
+    transform: none;
+
+    @media (max-width: $tablet) {
+      height: auto;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  & &-slide-hide-laptop {
+    @media (max-width: $tablet) {
+      display: none;
+    }
+  }
+
+  & &-main__pagination {
+    top: 43.1%;
+    right: 124px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    @media (max-width: $fullPc) {
+      right: 80px;
+    }
+
+    @media (max-width: $tablet) {
+      display: none;
+    }
+  }
+
+  & &-main__pagination .swiper-bullet {
+    display: block;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: $fiveth-line;
+    position: relative;
+    cursor: pointer;
+    transition: all ease 0.4s;
+
+    &::before {
+      content: '';
+      position: absolute;
+      aspect-ratio: 1/1;
+      width: 26px;
+      height: 26px;
+      box-sizing: border-box;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border: solid 1px $fiveth-line;
+      border-radius: 50%;
+      opacity: 0;
+      transition: all ease 0.4s;
+    }
+
+    &:hover {
+      background: $secondary-color;
+
+      &::before {
+        opacity: 1;
+      }
+    }
+
+    &-active {
+      background: $secondary-color;
+
+      &::before {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.test-slide {
+  background: green;
+}

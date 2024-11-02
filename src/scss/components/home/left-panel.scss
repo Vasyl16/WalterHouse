@@ -1,0 +1,139 @@
+.left-panel {
+  position: fixed;
+  left: 83px;
+  top: 183px;
+  z-index: 9;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  @media (max-width: $fullPc) {
+    left: 40px;
+  }
+
+  @media (max-width: $tablet) {
+    display: none;
+  }
+
+  @media (max-height: 1050px) {
+    top: 135px;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 80px;
+    @media (max-height: 1050px) {
+      gap: 50px;
+    }
+
+    @media (max-height: 900px) {
+      gap: 30px;
+    }
+  }
+
+  &__title {
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.17;
+    letter-spacing: 0.695em;
+    color: $second-line;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    text-transform: uppercase;
+    position: relative;
+    padding-top: 223px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 1px;
+      height: 154px;
+      background: $second-line;
+    }
+
+    @media (max-height: 1050px) {
+      padding-top: 160px;
+
+      &::after {
+        height: 120px;
+      }
+    }
+
+    @media (max-height: 900px) {
+      font-size: 10px;
+      padding-top: 120px;
+
+      &::after {
+        height: 100px;
+      }
+    }
+
+    @media (max-height: 740px) {
+      letter-spacing: 0.4em;
+      padding-top: 9 0px;
+
+      &::after {
+        height: 70px;
+      }
+    }
+  }
+}
+
+.label-items-left-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 43px;
+
+  @media (max-height: 1050px) {
+    gap: 30px;
+  }
+
+  &__label {
+    width: 23px;
+    height: 18px;
+    display: inline-flex;
+    justify-content: center;
+    object-fit: contain;
+    fill: $label-default-color;
+    transition: all ease 0.3s;
+    cursor: pointer;
+
+    &_instagram {
+      @media (pointer: fine) {
+        &:hover {
+          fill: $instagram-color;
+        }
+      }
+    }
+
+    &_telegram {
+      @media (pointer: fine) {
+        &:hover {
+          fill: $telegram-color;
+        }
+      }
+    }
+
+    &_youtube {
+      @media (pointer: fine) {
+        &:hover {
+          fill: $youtube-color;
+        }
+      }
+    }
+
+    &_facebook {
+      @media (pointer: fine) {
+        &:hover {
+          fill: $facebook-color;
+        }
+      }
+    }
+  }
+}

@@ -1,14 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 
-{{> head }}
+{{> head isSwiper=true }}
 
 <body>
 
   <div class="wrapper">
-    <main class="main">
+    {{> header }}
 
-    </main>
+
+    <div class="main__swiper swiper swiper-main">
+      <div class="swiper-main__wrapper swiper-wrapper">
+
+        {{> welcome-main }}
+
+        {{> renovation }}
+
+        {{> renovation-styles }}
+
+        {{> list-services }}
+
+        {{> steps-walter }}
+
+        {{> additional-services }}
+      </div>
+      <div class="swiper-pagination swiper-main__pagination"></div>
+    </div>
+
+  </div>
+
+  <section class="left-panel">
+    <div class="left-panel__body">
+      <h1 class="left-panel__title">apartment renovation</h1>
+
+
+
+      <div class="left-panel__label-items label-items-left-panel">
+        <svg class='label-items-left-panel__label label-items-left-panel__label_facebook'>
+          <use xlink:href='/icons/sprite.svg#label-items-left-panel__label-facebook'></use>
+        </svg>
+
+        <svg class='label-items-left-panel__label label-items-left-panel__label_instagram'>
+          <use xlink:href='/icons/sprite.svg#label-items-left-panel__label-instagram'></use>
+        </svg>
+
+        <svg class='label-items-left-panel__label label-items-left-panel__label_telegram'>
+          <use xlink:href='/icons/sprite.svg#label-items-left-panel__label-telegram'></use>
+        </svg>
+
+        <svg class='label-items-left-panel__label label-items-left-panel__label_youtube'>
+          <use xlink:href='/icons/sprite.svg#label-items-left-panel__label-youtube'></use>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+
+  </main>
+
   </div>
 
   <script type="module" src="./pages/home/home.js"></script>

@@ -2,8 +2,13 @@
 [class*='__container'] {
   // every class that includes __container has this css property
   max-width: $pc;
-  padding: 0 $containerPadding;
+  padding: 0 $container-padding;
   margin: 0 auto;
   position: relative;
   z-index: 3;
+  box-sizing: content-box;
+
+  @media (max-width: $tablet) {
+    padding: 0 $sm-container-padding;
+  }
 }
