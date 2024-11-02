@@ -1,0 +1,6 @@
+<svg width="0" height="0" fill="none" style="visibility: hidden; position: absolute;" aria-hidden="true">
+    <symbol id="list-services__progress-circle-wrapper" >
+        <circle cx='50%' cy='50%' r='49%' class='list-services__progress-circle-line'></circle>
+        <circle cx='50%' cy='50%' r='49%' class='list-services__progress-circle'></circle>
+    </symbol>
+</svg>
