@@ -8,7 +8,8 @@ import {
   loadLazyImgs,
   renovationStylesPopupFun,
   changePackageHoverFun,
-  initStepsWalterFun
+  initStepsWalterFun,
+  handleHeaderScroll
 } from '/src/js/modules';
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -20,4 +21,5 @@ document.addEventListener('DOMContentLoaded', () => {
   renovationStylesPopupFun();
   changePackageHoverFun();
   initStepsWalterFun();
+  handleHeaderScroll();
 });

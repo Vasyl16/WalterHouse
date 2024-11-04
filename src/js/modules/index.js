@@ -6,6 +6,7 @@ import { loadLazyImgs } from './loadLazyImgs';
 import { renovationStylesPopupFun } from './renovationStylesPopup';
 import { changePackageHoverFun } from './changePackageHover';
 import { initStepsWalterFun } from './stepsWalter';
+import { handleHeaderScroll } from './scrollHeader';
 
 export {
   burgerMenuFun,
@@ -15,5 +16,6 @@ export {
   loadLazyImgs,
   renovationStylesPopupFun,
   changePackageHoverFun,
-  initStepsWalterFun
+  initStepsWalterFun,
+  handleHeaderScroll
 };
