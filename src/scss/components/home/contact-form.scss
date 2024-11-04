@@ -21,6 +21,10 @@
     @media (max-width: $markup-width) or (max-height: 900px) {
       display: none;
     }
+
+    @media (max-width: $tablet) {
+      display: block;
+    }
   }
 
   &__body {

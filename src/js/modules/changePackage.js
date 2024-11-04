@@ -89,6 +89,8 @@ const updateHandlePosition = () => {
 };
 
 const onMouseMove = event => {
+  event.preventDefault();
+
   if (isDragging) {
     const container = progressHandle.parentElement.getBoundingClientRect();
     const centerX = container.left + container.width / 2;
@@ -134,20 +136,16 @@ const changePackageSize = () => {
     progressHandle.addEventListener('touchstart', () => {
       if (angle >= minDegrees && angle <= maxDegrees) {
         isDragging = true;
-        progressHandle.style.cursor = 'grabbing';
       }
 
-      progressCircleWrapper.addEventListener('touchmove', onMouseMove);
-      progressCircleWrapper.addEventListener('touchend', stopDragging);
+      progressCircleWrapper.addEventListener('touchmove', onMouseMove, {
+        passive: false
+      });
     });
 
     progressHandle.addEventListener('touchend', () => {
-      if (angle >= minDegrees && angle <= maxDegrees) {
-        isDragging = true;
-      }
-
+      isDragging = false;
       progressCircleWrapper.removeEventListener('touchmove', onMouseMove);
-      progressCircleWrapper.removeEventListener('touchend', stopDragging);
     });
 
     return;

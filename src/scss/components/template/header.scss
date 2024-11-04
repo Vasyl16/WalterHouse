@@ -277,6 +277,19 @@
   overflow-y: auto;
   transition: all ease 0.8s;
 
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    inset: 0;
+    background: $first-header-bg-color;
+    z-index: -1;
+    @media (max-width: $tablet) {
+      background: $second-header-bg-color;
+    }
+  }
+
   &::-webkit-scrollbar {
     display: none;
   }
@@ -299,7 +312,7 @@
       left: 0;
       width: 100%;
       height: calc(100%);
-      backdrop-filter: blur(40px);
+      backdrop-filter: blur(25px);
       z-index: -1;
 
       @media (max-width: $fullPc) {

@@ -198,6 +198,7 @@
       background: $main-bg-color;
       z-index: 1;
       pointer-events: none;
+      transition: all ease 1s;
     }
 
     @media (max-width: $tablet) {

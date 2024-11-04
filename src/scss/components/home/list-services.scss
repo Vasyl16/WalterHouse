@@ -458,6 +458,10 @@
     display: flex;
     flex-direction: column;
     gap: 23px;
+
+    @media (max-width: $tablet) {
+      gap: 6px;
+    }
   }
 
   &__package-wrapper {
