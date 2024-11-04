@@ -10,6 +10,8 @@
   <link
     href='https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Bruno+Ace+SC&family=Open+Sans:wght@300..800&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,100&display=swap'
     rel='stylesheet'
+    media='print'
+    onload="this.media='all'"
   />
 
   <!-- swiper css if needed -->
@@ -23,7 +25,7 @@
 
   <title>Walter House</title>
   <script type="module" crossorigin src="/WalterHouse/assets/home.js"></script>
-  <link rel="stylesheet" crossorigin href="/WalterHouse/assets/home-CmZ_xVqh.css">
+  <link rel="stylesheet" crossorigin href="/WalterHouse/assets/home-jDlpCWfi.css">
 </head>
 <body>
 
@@ -277,36 +279,54 @@
 
         <div class='swiper-main__slide swiper-slide'>
           <section class='swiper-main__welcome welcome-main'>
-            <picture
-              style="background-image:url('img/welcome-main/welcome-main-bg-small.jpg')"
-              class='welcome-main__image-bg-wrapper lazy-loading-img-wrapper'
-            >
+            <picture class='welcome-main__image-bg-wrapper'>
               <source
                 type='image/webp'
-                srcset='img/welcome-main/welcome-main-bg.webp'
+                srcset='/WalterHouse/img/welcome-main/welcome-main-bg.webp 1x, /img/welcome-main/welcome-main-bg.webp@2x 2x'
+                media='(min-width: 1025px)'
               />
+        
+              <source
+                type='image/webp'
+                srcset='/WalterHouse/img/welcome-main/welcome-main-bg-medium.webp 1x, /WalterHouse/img/welcome-main/welcome-main-bg-medium@2x.webp 2x'
+                media='(min-width: 451px) and (max-width: 1024px)'
+              />
+        
+              <source
+                type='image/webp'
+                srcset='/WalterHouse/img/welcome-main/welcome-main-bg-small.webp 1x, /WalterHouse/img/welcome-main/welcome-main-bg-small@2x.webp 2x'
+                media='(max-width: 450px)'
+              />
+        
+              <source
+                type='image/jpeg'
+                srcset='/WalterHouse/img/welcome-main/welcome-main-bg-medium.jpg 1x, /WalterHouse/img/welcome-main/welcome-main-bg-medium@2x.jpg 2x'
+                media='(min-width: 451px) and (max-width: 1024px)'
+              />
+        
+              <source
+                type='image/jpeg'
+                srcset='/WalterHouse/img/welcome-main/welcome-main-bg-small.jpg 1x, /WalterHouse/img/welcome-main/welcome-main-bg-small@2x.jpg 2x'
+                media='(max-width: 450px)'
+              />
+        
               <img
-                loading='lazy'
-                class='welcome-main__image-bg lazy-loading-img'
-                src='img/welcome-main/welcome-main-bg.jpg'
+                class='welcome-main__image-bg'
+                srcset='/WalterHouse/img/welcome-main/welcome-main-bg.jpg 1x, /WalterHouse/img/welcome-main/welcome-main-bg@2x.jpg 2x'
                 alt='img'
               />
             </picture>
         
             <div class='welcome-main__container'>
               <div class='welcome-main__body'>
-                <p class='welcome-main__text'>
-                  ремонт квартир под ключ
-                </p>
+                <p class='welcome-main__text'>ремонт квартир под ключ</p>
         
                 <h1 class='welcome-main__title'>
-        
                   <span class='welcome-main__title-left'>walter</span>
         
                   <span class='welcome-main__title-small'>your personal</span>
         
                   <span class='welcome-main__title-left-margin'>house</span>
-        
                 </h1>
               </div>
             </div>
@@ -316,8 +336,9 @@
             <form class='contact-form__body'>
               <div class='contact-form__item contact-form__item_input'>
                 <input class='contact-form__input' placeholder='Your name' />
-                <p type='number' class='contact-form__input-error-text'>Заполните,
-                  пожалуйста, это поле.</p>
+                <p type='number' class='contact-form__input-error-text'>
+                  Заполните, пожалуйста, это поле.
+                </p>
               </div>
         
               <div class='contact-form__item contact-form__item_input'>
@@ -325,15 +346,14 @@
                   class='contact-form__input contact-form__input_modified'
                   placeholder='Your phone number'
                 />
-                <p type='number' class='contact-form__input-error-text'>Заполните,
-                  пожалуйста, это поле.</p>
+                <p type='number' class='contact-form__input-error-text'>
+                  Заполните, пожалуйста, это поле.
+                </p>
               </div>
         
               <div class='contact-form__item'>
                 <button class='contact-form__button' type='submit'>
-                  <span>
-                    Discuss a Project
-                  </span>
+                  <span> Discuss a Project </span>
         
                   <div class='contact-form__button-arrow-wrapper'>
                     <svg class='contact-form__button-arrow'>
@@ -350,14 +370,17 @@
         <div class='swiper-main__slide swiper-slide swiper-slide-hide-laptop'>
           <section class='swiper-slide__renovation renovation'>
             <picture
-              style="background-image:url('img/renovation/renovation-bg-small.jpg')"
+              style="background-image: url('/WalterHouse/img/renovation/renovation-bg-mini.jpg')"
               class='renovation__image-bg-wrapper lazy-loading-img-wrapper'
             >
-              <source type='image/webp' srcset='/WalterHouse/img/renovation/renovation-bg.webp' />
+              <source
+                type='image/webp'
+                srcset='/WalterHouse/img/renovation/renovation-bg.webp 1x, /WalterHouse/img/renovation/renovation-bg@2x.webp 2x'
+              />
               <img
                 loading='lazy'
                 class='renovation__image-bg lazy-loading-img'
-                src='/WalterHouse/img/renovation/renovation-bg.jpg'
+                srcset='/WalterHouse/img/renovation/renovation-bg.jpg 1x, /WalterHouse/img/renovation/renovation-bg@2x.jpg 2x'
                 alt='img'
               />
             </picture>
@@ -371,13 +394,9 @@
                     <p class='renovation__stat-count'>18</p>
         
                     <p class='renovation__stat-name'>
-                      <span>
-                        years
-                      </span>
+                      <span> years </span>
         
-                      <span>
-                        on the market
-                      </span>
+                      <span> on the market </span>
                     </p>
                   </div>
         
@@ -408,8 +427,9 @@
               <form class='contact-form__body'>
                 <div class='contact-form__item contact-form__item_input'>
                   <input class='contact-form__input' placeholder='Your name' />
-                  <p type='number' class='contact-form__input-error-text'>Заполните,
-                    пожалуйста, это поле.</p>
+                  <p type='number' class='contact-form__input-error-text'>
+                    Заполните, пожалуйста, это поле.
+                  </p>
                 </div>
         
                 <div class='contact-form__item contact-form__item_input'>
@@ -417,15 +437,14 @@
                     class='contact-form__input contact-form__input_modified'
                     placeholder='Your phone number'
                   />
-                  <p type='number' class='contact-form__input-error-text'>Заполните,
-                    пожалуйста, это поле.</p>
+                  <p type='number' class='contact-form__input-error-text'>
+                    Заполните, пожалуйста, это поле.
+                  </p>
                 </div>
         
                 <div class='contact-form__item'>
                   <button class='contact-form__button' type='submit'>
-                    <span>
-                      Discuss a Project
-                    </span>
+                    <span> Discuss a Project </span>
         
                     <div class='contact-form__button-arrow-wrapper'>
                       <svg class='contact-form__button-arrow'>
@@ -444,8 +463,9 @@
             <form class='contact-form__body'>
               <div class='contact-form__item contact-form__item_input'>
                 <input class='contact-form__input' placeholder='Your name' />
-                <p type='number' class='contact-form__input-error-text'>Заполните,
-                  пожалуйста, это поле.</p>
+                <p type='number' class='contact-form__input-error-text'>
+                  Заполните, пожалуйста, это поле.
+                </p>
               </div>
         
               <div class='contact-form__item contact-form__item_input'>
@@ -453,15 +473,14 @@
                   class='contact-form__input contact-form__input_modified'
                   placeholder='Your phone number'
                 />
-                <p type='number' class='contact-form__input-error-text'>Заполните,
-                  пожалуйста, это поле.</p>
+                <p type='number' class='contact-form__input-error-text'>
+                  Заполните, пожалуйста, это поле.
+                </p>
               </div>
         
               <div class='contact-form__item'>
                 <button class='contact-form__button' type='submit'>
-                  <span>
-                    Discuss a Project
-                  </span>
+                  <span> Discuss a Project </span>
         
                   <div class='contact-form__button-arrow-wrapper'>
                     <svg class='contact-form__button-arrow'>
@@ -479,22 +498,48 @@
           <section class="swiper-slide__renovation-styles renovation-styles">
             <div class="renovation-styles__body">
               <div class="renovation-styles__items">
-                <div class="renovation-styles__item">
+                <section class="renovation-styles__item">
                   <div class="renovation-styles__content">
                     <picture
                       style="
-                        background-image: url('img/renovation-styles/renovation-styles-bg-elite-small.jpg');
+                        background-image: url('/WalterHouse/img/renovation-styles/renovation-styles-bg-elite-mini.jpg');
                       "
                       class="renovation-styles__image-bg-wrapper lazy-loading-img-wrapper renovation-styles__image-bg-wrapper_first"
                     >
                       <source
                         type="image/webp"
-                        srcset="/WalterHouse/img/renovation-styles/renovation-styles-bg-elite.webp"
+                        srcset="/WalterHouse/img/renovation-styles/renovation-styles-bg-elite.webp 1x, /WalterHouse/img/renovation-styles/renovation-styles-bg-elite@2x.webp 2x"
+                        media="(min-width: 1025px)"
                       />
+        
+                      <source
+                        type="image/webp"
+                        srcset="/WalterHouse/img/renovation-styles/renovation-styles-bg-elite-medium.webp 1x, /WalterHouse/img/renovation-styles/renovation-styles-bg-elite-medium@2x.webp 2x"
+                        media="(min-width: 451px) and (max-width: 1024px)"
+                      />
+        
+                      <source
+                        type="image/webp"
+                        srcset="/WalterHouse/img/renovation-styles/renovation-styles-bg-elite-small.webp 1x, /WalterHouse/img/renovation-styles/renovation-styles-bg-elite-small@2x.webp 2x"
+                        media="(max-width: 450px)"
+                      />
+        
+                      <source
+                        type="image/jpeg"
+                        srcset="/WalterHouse/img/renovation-styles/renovation-styles-bg-elite-medium.jpg 1x, /WalterHouse/img/renovation-styles/renovation-styles-bg-elite-medium@2x.jpg 2x"
+                        media="(min-width: 451px) and (max-width: 1024px)"
+                      />
+        
+                      <source
+                        type="image/jpeg"
+                        srcset="/WalterHouse/img/renovation-styles/renovation-styles-bg-elite-small.jpg 1x, /WalterHouse/img/renovation-styles/renovation-styles-bg-elite-small@2x.jpg 2x"
+                        media="(max-width: 450px)"
+                      />
+        
                       <img
                         loading="lazy"
                         class="renovation-styles__image-bg lazy-loading-img"
-                        src="/WalterHouse/img/renovation-styles/renovation-styles-bg-elite.jpg"
+                        srcset="/WalterHouse/img/renovation-styles/renovation-styles-bg-elite.jpg 1x, /WalterHouse/img/renovation-styles/renovation-styles-bg-elite@2x.jpg 2x"
                         alt="img"
                       />
                     </picture>
@@ -503,11 +548,11 @@
                       <div
                         class="renovation-styles__wrapper renovation-styles__wrapper_first"
                       >
-                        <div
+                        <h1
                           class="renovation-styles__style-type renovation-styles__style-type_elite"
                         >
                           Elite
-                        </div>
+                        </h1>
                       </div>
                     </div>
         
@@ -546,35 +591,61 @@
                       </div>
                     </div>
                   </div>
-                </div>
+                </section>
         
-                <div class="renovation-styles__item">
+                <section class="renovation-styles__item">
                   <div class="renovation-styles__content">
                     <picture
                       style="
-                        background-image: url('img/renovation-styles/renovation-styles-bg-vip-small.jpg');
+                        background-image: url('/WalterHouse/img/renovation-styles/renovation-styles-bg-vip-mini.jpg');
                       "
                       class="renovation-styles__image-bg-wrapper lazy-loading-img-wrapper"
                     >
                       <source
                         type="image/webp"
-                        srcset="/WalterHouse/img/renovation-styles/renovation-styles-bg-vip.webp"
+                        srcset="/WalterHouse/img/renovation-styles/renovation-styles-bg-vip.webp 1x, /WalterHouse/img/renovation-styles/renovation-styles-bg-vip@2x.webp 2x"
+                        media="(min-width: 1025px)"
                       />
+        
+                      <source
+                        type="image/webp"
+                        srcset="/WalterHouse/img/renovation-styles/renovation-styles-bg-vip-medium.webp 1x, /WalterHouse/img/renovation-styles/renovation-styles-bg-vip-medium@2x.webp 2x"
+                        media="(min-width: 451px) and (max-width: 1024px)"
+                      />
+        
+                      <source
+                        type="image/webp"
+                        srcset="/WalterHouse/img/renovation-styles/renovation-styles-bg-vip-small.webp 1x, /WalterHouse/img/renovation-styles/renovation-styles-bg-vip-small@2x.webp 2x"
+                        media="(max-width: 450px)"
+                      />
+        
+                      <source
+                        type="image/jpeg"
+                        srcset="/WalterHouse/img/renovation-styles/renovation-styles-bg-vip-medium.jpg 1x, /WalterHouse/img/renovation-styles/renovation-styles-bg-vip-medium@2x.jpg 2x"
+                        media="(min-width: 451px) and (max-width: 1024px)"
+                      />
+        
+                      <source
+                        type="image/jpeg"
+                        srcset="/WalterHouse/img/renovation-styles/renovation-styles-bg-vip-small.jpg 1x, /WalterHouse/img/renovation-styles/renovation-styles-bg-vip-small@2x.jpg 2x"
+                        media="(max-width: 450px)"
+                      />
+        
                       <img
                         loading="lazy"
                         class="renovation-styles__image-bg lazy-loading-img"
-                        src="/WalterHouse/img/renovation-styles/renovation-styles-bg-vip.jpg"
+                        srcset="/WalterHouse/img/renovation-styles/renovation-styles-bg-vip.jpg 1x, /WalterHouse/img/renovation-styles/renovation-styles-bg-vip@2x.jpg 2x"
                         alt="img"
                       />
                     </picture>
         
                     <div class="renovation-styles__column">
                       <div class="renovation-styles__wrapper">
-                        <p
+                        <h1
                           class="renovation-styles__style-type renovation-styles__style-type_orange"
                         >
                           VIP
-                        </p>
+                        </h1>
                       </div>
                     </div>
         
@@ -615,31 +686,57 @@
                       </div>
                     </div>
                   </div>
-                </div>
+                </section>
         
-                <div class="renovation-styles__item">
+                <section class="renovation-styles__item">
                   <div class="renovation-styles__content">
                     <picture
                       style="
-                        background-image: url('img/renovation-styles/renovation-styles-bg-extra-small.jpg');
+                        background-image: url('/WalterHouse/img/renovation-styles/renovation-styles-bg-extra-mini.jpg');
                       "
                       class="renovation-styles__image-bg-wrapper renovation-styles__image-bg-wrapper_last lazy-loading-img-wrapper"
                     >
                       <source
                         type="image/webp"
-                        srcset="/WalterHouse/img/renovation-styles/renovation-styles-bg-extra.webp"
+                        srcset="/WalterHouse/img/renovation-styles/renovation-styles-bg-extra.webp 1x, /WalterHouse/img/renovation-styles/renovation-styles-bg-extra@2x.webp 2x"
+                        media="(min-width: 1025px)"
                       />
+        
+                      <source
+                        type="image/webp"
+                        srcset="/WalterHouse/img/renovation-styles/renovation-styles-bg-extra-medium.webp 1x, /WalterHouse/img/renovation-styles/renovation-styles-bg-extra-medium@2x.webp 2x"
+                        media="(min-width: 451px) and (max-width: 1024px)"
+                      />
+        
+                      <source
+                        type="image/webp"
+                        srcset="/WalterHouse/img/renovation-styles/renovation-styles-bg-extra-small.webp 1x, /WalterHouse/img/renovation-styles/renovation-styles-bg-extra-small@2x.webp 2x"
+                        media="(max-width: 450px)"
+                      />
+        
+                      <source
+                        type="image/jpeg"
+                        srcset="/WalterHouse/img/renovation-styles/renovation-styles-bg-extra-medium.jpg 1x, /WalterHouse/img/renovation-styles/renovation-styles-bg-extra-medium@2x.jpg 2x"
+                        media="(min-width: 451px) and (max-width: 1024px)"
+                      />
+        
+                      <source
+                        type="image/jpeg"
+                        srcset="/WalterHouse/img/renovation-styles/renovation-styles-bg-extra-small.jpg 1x, /WalterHouse/img/renovation-styles/renovation-styles-bg-extra-small@2x.jpg 2x"
+                        media="(max-width: 450px)"
+                      />
+        
                       <img
                         loading="lazy"
                         class="renovation-styles__image-bg lazy-loading-img"
-                        src="/WalterHouse/img/renovation-styles/renovation-styles-bg-extra.jpg"
+                        srcset="/WalterHouse/img/renovation-styles/renovation-styles-bg-extra.jpg 1x, /WalterHouse/img/renovation-styles/renovation-styles-bg-extra@2x.jpg 2x"
                         alt="img"
                       />
                     </picture>
         
                     <div class="renovation-styles__column">
                       <div class="renovation-styles__wrapper">
-                        <div class="renovation-styles__style-type">extra</div>
+                        <h1 class="renovation-styles__style-type">extra</h1>
                       </div>
                     </div>
         
@@ -678,173 +775,199 @@
                       </div>
                     </div>
                   </div>
-                </div>
+                </section>
               </div>
             </div>
           </section>
         </div>
 
-        <div class="swiper-main__slide swiper-slide">
-          <section class="swiper-main__list-services list-services">
+        <div class='swiper-main__slide swiper-slide'>
+          <section class='swiper-main__list-services list-services'>
             <picture
               style="
-                background-image: url('img/list-services/list-services-bg-small.jpg');
+                background-image: url('/WalterHouse/img/list-services/list-services-bg-mini.jpg');
               "
-              class="list-services__image-bg-wrapper lazy-loading-img-wrapper"
+              class='list-services__image-bg-wrapper lazy-loading-img-wrapper'
             >
               <source
-                type="image/webp"
-                srcset="/WalterHouse/img/list-services/list-services-bg.webp"
+                type='image/webp'
+                srcset='/WalterHouse/img/list-services/list-services-bg.webp 1x, /WalterHouse/img/list-services/list-services-bg@2x.webp 2x'
+                media='(min-width: 1025px)'
               />
+        
+              <source
+                type='image/webp'
+                srcset='/WalterHouse/img/list-services/list-services-bg-medium.webp 1x, /WalterHouse/img/list-services/list-services-bg-medium@2x.webp 2x'
+                media='(min-width: 451px) and (max-width: 1024px)'
+              />
+        
+              <source
+                type='image/webp'
+                srcset='/WalterHouse/img/list-services/list-services-bg-small.webp 1x, /WalterHouse/img/list-services/list-services-bg-small@2x.webp 2x'
+                media='(max-width: 450px)'
+              />
+        
+              <source
+                type='image/jpeg'
+                srcset='/WalterHouse/img/list-services/list-services-bg-medium.jpg 1x, /WalterHouse/img/list-services/list-services-bg-medium@2x.jpg 2x'
+                media='(min-width: 451px) and (max-width: 1024px)'
+              />
+        
+              <source
+                type='image/jpeg'
+                srcset='/WalterHouse/img/list-services/list-services-bg-small.jpg 1x, /WalterHouse/img/list-services/list-services-bg-small@2x.jpg 2x'
+                media='(max-width: 450px)'
+              />
+        
               <img
-                loading="lazy"
-                class="renovation__image-bg lazy-loading-img"
-                src="/WalterHouse/img/list-services/list-services-bg.jpg"
-                alt="img"
+                loading='lazy'
+                class='renovation__image-bg lazy-loading-img'
+                srcset='/WalterHouse/img/list-services/list-services-bg.jpg 1x, /WalterHouse/img/list-services/list-services-bg@2x.jpg 2x'
+                alt='img'
               />
             </picture>
         
-            <div class="list-services__container">
-              <div class="list-services__body">
-                <h1 class="list-services__title">
+            <div class='list-services__container'>
+              <div class='list-services__body'>
+                <h1 class='list-services__title'>
                   <span> </span>
                   Select an area size &
         
                   <span> one of the service packages: </span>
                 </h1>
         
-                <div class="list-services__items">
-                  <div class="list-services__item">
-                    <div class="list-services__circle-size-wrapper">
-                      <p class="list-services__circle-size-unit">
+                <div class='list-services__items'>
+                  <div class='list-services__item'>
+                    <div class='list-services__circle-size-wrapper'>
+                      <p class='list-services__circle-size-unit'>
                         m
                         <span>2</span>
                       </p>
         
-                      <svg class="list-services__progress-circle-wrapper">
+                      <svg class='list-services__progress-circle-wrapper'>
                         <circle
-                          cx="50%"
-                          cy="50%"
-                          r="49%"
-                          class="list-services__progress-circle-line"
+                          cx='50%'
+                          cy='50%'
+                          r='49%'
+                          class='list-services__progress-circle-line'
                         ></circle>
         
                         <circle
-                          cx="50%"
-                          cy="50%"
-                          r="49%"
-                          class="list-services__progress-circle"
+                          cx='50%'
+                          cy='50%'
+                          r='49%'
+                          class='list-services__progress-circle'
                         ></circle>
                       </svg>
         
-                      <div class="list-services__progress-point-handle"></div>
+                      <div class='list-services__progress-point-handle'></div>
         
-                      <button class="list-services__progress-point"></button>
+                      <button class='list-services__progress-point'></button>
         
-                      <p class="list-services__circle-size-count">64</p>
+                      <p class='list-services__circle-size-count'>64</p>
                     </div>
                   </div>
         
-                  <div class="list-services__item">
-                    <div class="list-services__package-size package-size-list-services">
+                  <div class='list-services__item'>
+                    <div class='list-services__package-size package-size-list-services'>
                       <div
-                        class="package-size-list-services__item package-size-list-services__item_elite"
+                        class='package-size-list-services__item package-size-list-services__item_elite'
                       >
                         <div
-                          class="package-size-list-services__info-icon package-size-list-services__info-icon_elite"
+                          class='package-size-list-services__info-icon package-size-list-services__info-icon_elite'
                         >
                           i
                         </div>
         
                         <div
-                          class="package-size-list-services__package-wrapper package-size-list-services__package-wrapper_active"
-                          data-value="1000"
+                          class='package-size-list-services__package-wrapper package-size-list-services__package-wrapper_active'
+                          data-value='1000'
                         >
                           <p
-                            class="package-size-list-services__type package-size-list-services__type_first"
+                            class='package-size-list-services__type package-size-list-services__type_first'
                           >
                             Elite
                           </p>
         
-                          <div class="package-size-list-services__lines">
-                            <div class="package-size-list-services__first-line"></div>
+                          <div class='package-size-list-services__lines'>
+                            <div class='package-size-list-services__first-line'></div>
         
-                            <div class="package-size-list-services__circle"></div>
+                            <div class='package-size-list-services__circle'></div>
         
                             <div
-                              class="package-size-list-services__second-line package-size-list-services__second-line_elite"
+                              class='package-size-list-services__second-line package-size-list-services__second-line_elite'
                             ></div>
                           </div>
                         </div>
                       </div>
         
                       <div
-                        class="package-size-list-services__item package-size-list-services__item_vip"
+                        class='package-size-list-services__item package-size-list-services__item_vip'
                       >
                         <div
-                          class="package-size-list-services__info-icon package-size-list-services__info-icon_vip"
+                          class='package-size-list-services__info-icon package-size-list-services__info-icon_vip'
                         >
                           i
                         </div>
         
                         <div
-                          class="package-size-list-services__package-wrapper"
-                          data-value="1500"
+                          class='package-size-list-services__package-wrapper'
+                          data-value='1500'
                         >
                           <p
-                            class="package-size-list-services__type package-size-list-services__type_center"
+                            class='package-size-list-services__type package-size-list-services__type_center'
                           >
                             vip
                           </p>
         
-                          <div class="package-size-list-services__lines">
-                            <div class="package-size-list-services__second-line"></div>
+                          <div class='package-size-list-services__lines'>
+                            <div class='package-size-list-services__second-line'></div>
         
-                            <div class="package-size-list-services__circle"></div>
+                            <div class='package-size-list-services__circle'></div>
         
-                            <div class="package-size-list-services__second-line"></div>
+                            <div class='package-size-list-services__second-line'></div>
                           </div>
                         </div>
                       </div>
         
                       <div
-                        class="package-size-list-services__item package-size-list-services__item_extra"
+                        class='package-size-list-services__item package-size-list-services__item_extra'
                       >
                         <div
-                          class="package-size-list-services__info-icon package-size-list-services__info-icon_extra"
+                          class='package-size-list-services__info-icon package-size-list-services__info-icon_extra'
                         >
                           i
                         </div>
         
                         <div
-                          class="package-size-list-services__package-wrapper"
-                          data-value="2000"
+                          class='package-size-list-services__package-wrapper'
+                          data-value='2000'
                         >
                           <p
-                            class="package-size-list-services__type package-size-list-services__type_last"
+                            class='package-size-list-services__type package-size-list-services__type_last'
                           >
                             Extra
                           </p>
         
-                          <div class="package-size-list-services__lines">
+                          <div class='package-size-list-services__lines'>
                             <div
-                              class="package-size-list-services__second-line package-size-list-services__second-line_extra"
+                              class='package-size-list-services__second-line package-size-list-services__second-line_extra'
                             ></div>
         
-                            <div class="package-size-list-services__circle"></div>
+                            <div class='package-size-list-services__circle'></div>
         
                             <div
-                              class="package-size-list-services__second-line_last"
+                              class='package-size-list-services__second-line_last'
                             ></div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="list-services__item list-services__item_last">
-                    <p class="list-services__cost">
-                      <span class="list-services__cost-count">233 000</span>
-                      <span class="list-services__cost-unit">uah</span>
+                  <div class='list-services__item list-services__item_last'>
+                    <p class='list-services__cost'>
+                      <span class='list-services__cost-count'>233 000</span>
+                      <span class='list-services__cost-unit'>uah</span>
                     </p>
                   </div>
                 </div>
@@ -853,16 +976,16 @@
           </section>
         
           <section
-            class="swiper-main__info-list-services info-list-services info-list-services_elite"
+            class='swiper-main__info-list-services info-list-services info-list-services_elite'
           >
-            <div class="info-list-services__body">
-              <div class="info-list-services__header">
-                <div class="info-list-services__title">
+            <div class='info-list-services__body'>
+              <div class='info-list-services__header'>
+                <h1 class='info-list-services__title'>
                   Стиль
                   <span> ELITE </span>
-                </div>
+                </h1>
         
-                <div class="info-list-services__text">
+                <div class='info-list-services__text'>
                   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
                   commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
                   et magnis dis parturient montes, nascetur ridiculus mus. Donec quam
@@ -871,89 +994,89 @@
               </div>
         
               <svg
-                class="info-list-services__close-button-icon info-list-services__close-button-icon_elite"
+                class='info-list-services__close-button-icon info-list-services__close-button-icon_elite'
               >
                 <use
-                  xlink:href="/WalterHouse/icons/sprite.svg#additional-services-popup__close-button-icon"
+                  xlink:href='/WalterHouse/icons/sprite.svg#additional-services-popup__close-button-icon'
                 ></use>
               </svg>
         
-              <ul class="info-list-services__list">
-                <li class="info-list-services__line">
+              <ul class='info-list-services__list'>
+                <li class='info-list-services__line'>
                   Демонтаж и Возведение межкомнатных перегородок
                 </li>
         
-                <li class="info-list-services__line">
+                <li class='info-list-services__line'>
                   Выравнивание стен под маяк, финишное отделка стен под обои
                 </li>
         
-                <li class="info-list-services__line">Выведение углов 90 градусов</li>
+                <li class='info-list-services__line'>Выведение углов 90 градусов</li>
         
-                <li class="info-list-services__line">
+                <li class='info-list-services__line'>
                   Электромонтажные работы (согласно проекта)
                 </li>
         
-                <li class="info-list-services__line">
+                <li class='info-list-services__line'>
                   Монтаж слаботочной проводки (интернет, антенна)
                 </li>
         
-                <li class="info-list-services__line">
+                <li class='info-list-services__line'>
                   Монтаж водопровода и канализации
                 </li>
         
-                <li class="info-list-services__line">Гидроизоляция мокрых зон</li>
+                <li class='info-list-services__line'>Гидроизоляция мокрых зон</li>
         
-                <li class="info-list-services__line">
+                <li class='info-list-services__line'>
                   Заливка стяжки пола (до 10 см, пескобетон/керамзит)
                 </li>
         
-                <li class="info-list-services__line">
+                <li class='info-list-services__line'>
                   Монтаж водопровода и канализации
                 </li>
         
-                <li class="info-list-services__line">
+                <li class='info-list-services__line'>
                   Подготовка стен под поклейку обоев
                 </li>
         
-                <li class="info-list-services__line">Укладка ламината на подложку</li>
+                <li class='info-list-services__line'>Укладка ламината на подложку</li>
         
-                <li class="info-list-services__line">
+                <li class='info-list-services__line'>
                   Укладка плитки на пол и стены в санузле и ванной (до 5м2 по полу)
                 </li>
         
-                <li class="info-list-services__line">Монтаж напольного плинтуса ПВХ</li>
+                <li class='info-list-services__line'>Монтаж напольного плинтуса ПВХ</li>
         
-                <li class="info-list-services__line">Потолок натяжной</li>
+                <li class='info-list-services__line'>Потолок натяжной</li>
         
-                <li class="info-list-services__line">Установка межкомнатных дверей</li>
+                <li class='info-list-services__line'>Установка межкомнатных дверей</li>
         
-                <li class="info-list-services__line">
+                <li class='info-list-services__line'>
                   Установка ванны \ душевой кабины
                 </li>
         
-                <li class="info-list-services__line">Монтаж раковины</li>
+                <li class='info-list-services__line'>Монтаж раковины</li>
         
-                <li class="info-list-services__line">Монтаж лючка ревизии в стояк</li>
+                <li class='info-list-services__line'>Монтаж лючка ревизии в стояк</li>
         
-                <li class="info-list-services__line">Монтаж лючка ревизии в стояк</li>
+                <li class='info-list-services__line'>Монтаж лючка ревизии в стояк</li>
         
-                <li class="info-list-services__line">Монтаж потолка из ГКЛ</li>
+                <li class='info-list-services__line'>Монтаж потолка из ГКЛ</li>
         
-                <li class="info-list-services__line">Уборка после ремонта</li>
+                <li class='info-list-services__line'>Уборка после ремонта</li>
               </ul>
             </div>
           </section>
         
           <section
-            class="swiper-main__info-list-services info-list-services info-list-services_vip"
+            class='swiper-main__info-list-services info-list-services info-list-services_vip'
           >
-            <div class="info-list-services__body">
-              <div class="info-list-services__header">
-                <div class="info-list-services__title info-list-services__title_orange">
+            <div class='info-list-services__body'>
+              <div class='info-list-services__header'>
+                <h1 class='info-list-services__title info-list-services__title_orange'>
                   Vip Стиль
-                </div>
+                </h1>
         
-                <div class="info-list-services__text">
+                <div class='info-list-services__text'>
                   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
                   commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
                   et magnis dis parturient montes, nascetur ridiculus mus. Donec quam
@@ -962,90 +1085,90 @@
               </div>
         
               <svg
-                class="info-list-services__close-button-icon info-list-services__close-button-icon_vip"
+                class='info-list-services__close-button-icon info-list-services__close-button-icon_vip'
               >
                 <use
-                  xlink:href="/WalterHouse/icons/sprite.svg#additional-services-popup__close-button-icon"
+                  xlink:href='/WalterHouse/icons/sprite.svg#additional-services-popup__close-button-icon'
                 ></use>
               </svg>
         
-              <ul class="info-list-services__list">
-                <li class="info-list-services__line">
+              <ul class='info-list-services__list'>
+                <li class='info-list-services__line'>
                   Демонтаж и Возведение межкомнатных перегородок
                 </li>
         
-                <li class="info-list-services__line">
+                <li class='info-list-services__line'>
                   Выравнивание стен под маяк, финишное отделка стен под обои
                 </li>
         
-                <li class="info-list-services__line">Выведение углов 90 градусов</li>
+                <li class='info-list-services__line'>Выведение углов 90 градусов</li>
         
-                <li class="info-list-services__line">
+                <li class='info-list-services__line'>
                   Электромонтажные работы (согласно проекта)
                 </li>
         
-                <li class="info-list-services__line">
+                <li class='info-list-services__line'>
                   Монтаж слаботочной проводки (интернет, антенна)
                 </li>
         
-                <li class="info-list-services__line">
+                <li class='info-list-services__line'>
                   Монтаж водопровода и канализации
                 </li>
         
-                <li class="info-list-services__line">Гидроизоляция мокрых зон</li>
+                <li class='info-list-services__line'>Гидроизоляция мокрых зон</li>
         
-                <li class="info-list-services__line">
+                <li class='info-list-services__line'>
                   Заливка стяжки пола (до 10 см, пескобетон/керамзит)
                 </li>
         
-                <li class="info-list-services__line">
+                <li class='info-list-services__line'>
                   Монтаж водопровода и канализации
                 </li>
         
-                <li class="info-list-services__line">
+                <li class='info-list-services__line'>
                   Подготовка стен под поклейку обоев
                 </li>
         
-                <li class="info-list-services__line">Укладка ламината на подложку</li>
+                <li class='info-list-services__line'>Укладка ламината на подложку</li>
         
-                <li class="info-list-services__line">
+                <li class='info-list-services__line'>
                   Укладка плитки на пол и стены в санузле и ванной (до 5м2 по полу)
                 </li>
         
-                <li class="info-list-services__line">Монтаж напольного плинтуса ПВХ</li>
+                <li class='info-list-services__line'>Монтаж напольного плинтуса ПВХ</li>
         
-                <li class="info-list-services__line">Потолок натяжной</li>
+                <li class='info-list-services__line'>Потолок натяжной</li>
         
-                <li class="info-list-services__line">Установка межкомнатных дверей</li>
+                <li class='info-list-services__line'>Установка межкомнатных дверей</li>
         
-                <li class="info-list-services__line">
+                <li class='info-list-services__line'>
                   Установка ванны \ душевой кабины
                 </li>
         
-                <li class="info-list-services__line">Монтаж раковины</li>
+                <li class='info-list-services__line'>Монтаж раковины</li>
         
-                <li class="info-list-services__line">Монтаж лючка ревизии в стояк</li>
+                <li class='info-list-services__line'>Монтаж лючка ревизии в стояк</li>
         
-                <li class="info-list-services__line">Монтаж лючка ревизии в стояк</li>
+                <li class='info-list-services__line'>Монтаж лючка ревизии в стояк</li>
         
-                <li class="info-list-services__line">Монтаж потолка из ГКЛ</li>
+                <li class='info-list-services__line'>Монтаж потолка из ГКЛ</li>
         
-                <li class="info-list-services__line">Уборка после ремонта</li>
+                <li class='info-list-services__line'>Уборка после ремонта</li>
               </ul>
             </div>
           </section>
         
           <section
-            class="swiper-main__info-list-services info-list-services info-list-services_extra"
+            class='swiper-main__info-list-services info-list-services info-list-services_extra'
           >
-            <div class="info-list-services__body">
-              <div class="info-list-services__header">
-                <div class="info-list-services__title">
+            <div class='info-list-services__body'>
+              <div class='info-list-services__header'>
+                <h1 class='info-list-services__title'>
                   Стиль
                   <span> Extra </span>
-                </div>
+                </h1>
         
-                <div class="info-list-services__text">
+                <div class='info-list-services__text'>
                   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
                   commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
                   et magnis dis parturient montes, nascetur ridiculus mus. Donec quam
@@ -1054,621 +1177,86 @@
               </div>
         
               <svg
-                class="info-list-services__close-button-icon info-list-services__close-button-icon_extra"
+                class='info-list-services__close-button-icon info-list-services__close-button-icon_extra'
               >
                 <use
-                  xlink:href="/WalterHouse/icons/sprite.svg#additional-services-popup__close-button-icon"
+                  xlink:href='/WalterHouse/icons/sprite.svg#additional-services-popup__close-button-icon'
                 ></use>
               </svg>
         
-              <ul class="info-list-services__list">
-                <li class="info-list-services__line">
+              <ul class='info-list-services__list'>
+                <li class='info-list-services__line'>
                   Демонтаж и Возведение межкомнатных перегородок
                 </li>
         
-                <li class="info-list-services__line">
+                <li class='info-list-services__line'>
                   Выравнивание стен под маяк, финишное отделка стен под обои
                 </li>
         
-                <li class="info-list-services__line">Выведение углов 90 градусов</li>
+                <li class='info-list-services__line'>Выведение углов 90 градусов</li>
         
-                <li class="info-list-services__line">
+                <li class='info-list-services__line'>
                   Электромонтажные работы (согласно проекта)
                 </li>
         
-                <li class="info-list-services__line">
+                <li class='info-list-services__line'>
                   Монтаж слаботочной проводки (интернет, антенна)
                 </li>
         
-                <li class="info-list-services__line">
+                <li class='info-list-services__line'>
                   Монтаж водопровода и канализации
                 </li>
         
-                <li class="info-list-services__line">Гидроизоляция мокрых зон</li>
+                <li class='info-list-services__line'>Гидроизоляция мокрых зон</li>
         
-                <li class="info-list-services__line">
+                <li class='info-list-services__line'>
                   Заливка стяжки пола (до 10 см, пескобетон/керамзит)
                 </li>
         
-                <li class="info-list-services__line">
+                <li class='info-list-services__line'>
                   Монтаж водопровода и канализации
                 </li>
         
-                <li class="info-list-services__line">
+                <li class='info-list-services__line'>
                   Подготовка стен под поклейку обоев
                 </li>
         
-                <li class="info-list-services__line">Укладка ламината на подложку</li>
+                <li class='info-list-services__line'>Укладка ламината на подложку</li>
         
-                <li class="info-list-services__line">
+                <li class='info-list-services__line'>
                   Укладка плитки на пол и стены в санузле и ванной (до 5м2 по полу)
                 </li>
         
-                <li class="info-list-services__line">Монтаж напольного плинтуса ПВХ</li>
+                <li class='info-list-services__line'>Монтаж напольного плинтуса ПВХ</li>
         
-                <li class="info-list-services__line">Потолок натяжной</li>
+                <li class='info-list-services__line'>Потолок натяжной</li>
         
-                <li class="info-list-services__line">Установка межкомнатных дверей</li>
+                <li class='info-list-services__line'>Установка межкомнатных дверей</li>
         
-                <li class="info-list-services__line">
+                <li class='info-list-services__line'>
                   Установка ванны \ душевой кабины
                 </li>
         
-                <li class="info-list-services__line">Монтаж раковины</li>
+                <li class='info-list-services__line'>Монтаж раковины</li>
         
-                <li class="info-list-services__line">Монтаж лючка ревизии в стояк</li>
+                <li class='info-list-services__line'>Монтаж лючка ревизии в стояк</li>
         
-                <li class="info-list-services__line">Монтаж лючка ревизии в стояк</li>
+                <li class='info-list-services__line'>Монтаж лючка ревизии в стояк</li>
         
-                <li class="info-list-services__line">Монтаж потолка из ГКЛ</li>
+                <li class='info-list-services__line'>Монтаж потолка из ГКЛ</li>
         
-                <li class="info-list-services__line">Уборка после ремонта</li>
+                <li class='info-list-services__line'>Уборка после ремонта</li>
               </ul>
             </div>
           </section>
         
-          <section class="swiper-slide-contact-form contact-form">
-            <form class="contact-form__body">
-              <div class="contact-form__item contact-form__item_input">
-                <input class="contact-form__input" placeholder="Your name" />
-                <p type="number" class="contact-form__input-error-text">
-                  Заполните, пожалуйста, это поле.
-                </p>
-              </div>
-        
-              <div class="contact-form__item contact-form__item_input">
-                <input
-                  class="contact-form__input contact-form__input_modified"
-                  placeholder="Your phone number"
-                />
-                <p type="number" class="contact-form__input-error-text">
-                  Заполните, пожалуйста, это поле.
-                </p>
-              </div>
-        
-              <div class="contact-form__item">
-                <button class="contact-form__button" type="submit">
-                  <span> Discuss a Project </span>
-        
-                  <div class="contact-form__button-arrow-wrapper">
-                    <svg class="contact-form__button-arrow">
-                      <use
-                        xlink:href="/WalterHouse/icons/sprite.svg#contact-form__button-arrow"
-                      ></use>
-                    </svg>
-                  </div>
-                </button>
-              </div>
-            </form>
-          </section>
-        </div>
-
-        <div class="swiper-main__slide swiper-slide">
-          <section class="swiper-main__steps-walter steps-walter">
-            <picture
-              style="background-image: url('img/steps-walter/steps-walter-small.jpg')"
-              class="steps-walter__image-bg-wrapper lazy-loading-img-wrapper"
-            >
-              <source
-                type="image/webp"
-                srcset="/WalterHouse/img/steps-walter/steps-walter-bg.webp"
-              />
-              <img
-                loading="lazy"
-                class="steps-walter__image-bg lazy-loading-img"
-                src="/WalterHouse/img/steps-walter/steps-walter-bg.jpg"
-                alt="img"
-              />
-            </picture>
-        
-            <div class="steps-walter__container">
-              <div class="steps-walter__body">
-                <div class="steps-walter__header">
-                  <h1 class="steps-walter__title">6 steps to your WALTER house:</h1>
-                </div>
-        
-                <div class="steps-walter__items steps-walter__items_leave-app-active">
-                  <div class="steps-walter__item">
-                    <div class="steps-walter__circle-wrapper">
-                      <p class="steps-walter__circle-step-text">1</p>
-        
-                      <div
-                        class="steps-walter__circle-wrapper-bullet steps-walter__circle-wrapper-bullet_leave-app"
-                      ></div>
-        
-                      <div
-                        class="steps-walter__circle-wrapper-bullet steps-walter__circle-wrapper-bullet_check"
-                      ></div>
-                      <div
-                        class="steps-walter__circle-wrapper-bullet steps-walter__circle-wrapper-bullet_draft"
-                      ></div>
-        
-                      <div
-                        class="steps-walter__circle-wrapper-bullet steps-walter__circle-wrapper-bullet_contract"
-                      ></div>
-        
-                      <div
-                        class="steps-walter__circle-wrapper-bullet steps-walter__circle-wrapper-bullet_work"
-                      ></div>
-        
-                      <div
-                        class="steps-walter__circle-wrapper-bullet steps-walter__circle-wrapper-bullet_completion"
-                      ></div>
-        
-                      <svg class="steps-walter__circle-line-wrapper">
-                        <circle
-                          cx="50%"
-                          cy="50%"
-                          r="49%"
-                          class="steps-walter__circle-line"
-                        ></circle>
-        
-                        <circle
-                          cx="50%"
-                          cy="50%"
-                          r="49%"
-                          class="steps-walter__circle-active-line"
-                        ></circle>
-                      </svg>
-                    </div>
-                  </div>
-        
-                  <div class="steps-walter__item steps-walter__item_icon">
-                    <div class="steps-walter__icon-name-wrapper">
-                      <svg class="steps-walter__icon">
-                        <use
-                          class="steps-walter__icon-img steps-walter__icon-img_leave-app"
-                          xlink:href="/WalterHouse/icons/sprite.svg#steps-walter__icon_leave-app"
-                        ></use>
-        
-                        <use
-                          class="steps-walter__icon-img steps-walter__icon-img_check"
-                          xlink:href="/WalterHouse/icons/sprite.svg#steps-walter__icon_check"
-                        ></use>
-        
-                        <use
-                          class="steps-walter__icon-img steps-walter__icon-img_draft"
-                          xlink:href="/WalterHouse/icons/sprite.svg#steps-walter__icon_draft"
-                        ></use>
-        
-                        <use
-                          class="steps-walter__icon-img steps-walter__icon-img_contract"
-                          xlink:href="/WalterHouse/icons/sprite.svg#steps-walter__icon_contract"
-                        ></use>
-        
-                        <use
-                          class="steps-walter__icon-img steps-walter__icon-img_work"
-                          xlink:href="/WalterHouse/icons/sprite.svg#steps-walter__icon_work"
-                        ></use>
-        
-                        <use
-                          class="steps-walter__icon-img steps-walter__icon-img_completion"
-                          xlink:href="/WalterHouse/icons/sprite.svg#steps-walter__icon_completion"
-                        ></use>
-                      </svg>
-        
-                      <div class="steps-walter__icon-name-container">
-                        <p
-                          class="steps-walter__icon-name steps-walter__icon-name_leave-app"
-                        >
-                          DRAFTING AN ESTIMATE
-                        </p>
-        
-                        <p
-                          class="steps-walter__icon-name steps-walter__icon-name_check"
-                        >
-                          CHECK OUT OF THE MEASURER
-                        </p>
-        
-                        <p
-                          class="steps-walter__icon-name steps-walter__icon-name_draft"
-                        >
-                          DRAFTING AN ESTIMATE
-                        </p>
-        
-                        <p
-                          class="steps-walter__icon-name steps-walter__icon-name_contract"
-                        >
-                          SIGNING THE CONTRACT
-                        </p>
-        
-                        <p class="steps-walter__icon-name steps-walter__icon-name_work">
-                          BEGINNING OF WORK
-                        </p>
-        
-                        <p
-                          class="steps-walter__icon-name steps-walter__icon-name_completion"
-                        >
-                          COMPLETION
-                        </p>
-                      </div>
-        
-                      <svg class="steps-walter__right-arrow">
-                        <use
-                          xlink:href="/WalterHouse/icons/sprite.svg#steps-walter__right-arrow"
-                        ></use>
-                      </svg>
-                    </div>
-                  </div>
-        
-                  <div class="steps-walter__item steps-walter__item_text">
-                    <p
-                      class="steps-walter__icon-text steps-walter__icon-text_leave-app"
-                    >
-                      DEVELOPMENT OF TERMS OF REFERENCE, 3D VISUALIZATION AND
-                      CALCULATION OF THE ESTIMATE
-                    </p>
-        
-                    <p class="steps-walter__icon-text steps-walter__icon-text_check">
-                      OUR SPECIALIST COMES TO YOU AT THE OBJECT FOR MEASURING AND PHOTO
-                      FIXING
-                    </p>
-        
-                    <p class="steps-walter__icon-text steps-walter__icon-text_draft">
-                      DEVELOPMENT OF TERMS OF REFERENCE, 3D VISUALIZATION AND
-                      CALCULATION OF THE ESTIMATE
-                    </p>
-        
-                    <p class="steps-walter__icon-text steps-walter__icon-text_contract">
-                      AGREEMENT OF THE COST AND DATE OF COMPLETION OF WORKS, SIGNING OF
-                      THE CONTRACT
-                    </p>
-        
-                    <p class="steps-walter__icon-text steps-walter__icon-text_work">
-                      START OF REPAIR WORKS UNDER THE SUPERVISION OF A PERSONAL
-                      SUPERVISOR
-                    </p>
-        
-                    <p
-                      class="steps-walter__icon-text steps-walter__icon-text_completion"
-                    >
-                      COMPLETION OF REPAIRS, REMOVAL OF CONSTRUCTION rubbish
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-        
-          <section class="swiper-slide-contact-form contact-form contact-form-hidden">
-            <form class="contact-form__body">
-              <div class="contact-form__item contact-form__item_input">
-                <input class="contact-form__input" placeholder="Your name" />
-                <p type="number" class="contact-form__input-error-text">
-                  Заполните, пожалуйста, это поле.
-                </p>
-              </div>
-        
-              <div class="contact-form__item contact-form__item_input">
-                <input
-                  class="contact-form__input contact-form__input_modified"
-                  placeholder="Your phone number"
-                />
-                <p type="number" class="contact-form__input-error-text">
-                  Заполните, пожалуйста, это поле.
-                </p>
-              </div>
-        
-              <div class="contact-form__item">
-                <button class="contact-form__button" type="submit">
-                  <span> Discuss a Project </span>
-        
-                  <div class="contact-form__button-arrow-wrapper">
-                    <svg class="contact-form__button-arrow">
-                      <use
-                        xlink:href="/WalterHouse/icons/sprite.svg#contact-form__button-arrow"
-                      ></use>
-                    </svg>
-                  </div>
-                </button>
-              </div>
-            </form>
-          </section>
-        </div>
-
-        <div class='swiper-main__slide swiper-slide'>
-          <section class='swiper-main__additional-services additional-services'>
-        
-            <picture
-              style="background-image:url('img/additional-services/additional-services-small-bg.jpg')"
-              class='additional-services__image-bg-wrapper lazy-loading-img-wrapper'
-            >
-              <source
-                type='image/webp'
-                srcset='/WalterHouse/img/additional-services/additional-services-bg.webp'
-              />
-              <img
-                loading='lazy'
-                class='additional-services__image-bg lazy-loading-img'
-                src='/WalterHouse/img/additional-services/additional-services-bg.jpg'
-                alt='img'
-              />
-            </picture>
-        
-            <div class='additional-services__container'>
-              <div class='additional-services__body'>
-                <div class='additional-services__row additional-services__row_first'>
-                  <button
-                    class='additional-services__image-container additional-services__image-container_odd additional-services__image-container_broadcast'
-                  >
-                    <section
-                      class='additional-services__image-wrapper additional-services__image-wrapper_broadcast'
-                    >
-                      <h1 class='additional-services__image-text'>Online broadcast of
-                        repair</h1>
-        
-                      <picture
-                        class='additional-services__image-picture additional-services__image-picture_broadcast'
-                      >
-                        <source
-                          type='image/webp'
-                          srcset='img/additional-services/additional-services__image_broadcast.webp'
-                        />
-                        <img
-                          class='additional-services__image'
-                          src='img/additional-services/additional-services__image_broadcast.jpg'
-                          alt='img'
-                        />
-                      </picture>
-                    </section>
-                  </button>
-        
-                  <button
-                    class='additional-services__image-container additional-services__image-container_video'
-                  >
-                    <section
-                      class='additional-services__image-wrapper additional-services__image-wrapper_video'
-                    >
-                      <h1 class='additional-services__image-text'>Video- surveillance
-                        and alarm</h1>
-        
-                      <picture
-                        class='additional-services__image-picture additional-services__image-picture_video'
-                      >
-                        <source
-                          type='image/webp'
-                          srcset='img/additional-services/additional-services__image_video.webp'
-                        />
-                        <img
-                          class='additional-services__image'
-                          src='img/additional-services/additional-services__image_video.jpg'
-                          alt='img'
-                        />
-                      </picture>
-                    </section>
-                  </button>
-        
-                  <button
-                    class='additional-services__image-container additional-services__image-container_odd additional-services__image-container_furniture'
-                  >
-                    <section
-                      class='additional-services__image-wrapper additional-services__image-wrapper_furniture'
-                    >
-                      <h1 class='additional-services__image-text'>Selection of furniture</h1>
-        
-                      <picture
-                        class='additional-services__image-picture additional-services__image-picture_furniture'
-                      >
-                        <source
-                          type='image/webp'
-                          srcset='img/additional-services/additional-services__image_furniture.webp'
-                        />
-                        <img
-                          class='additional-services__image'
-                          src='img/additional-services/additional-services__image_furniture.jpg'
-                          alt='img'
-                        />
-                      </picture>
-                    </section>
-                  </button>
-                </div>
-        
-                <div class='additional-services__row additional-services__row_second'>
-                  <button
-                    class='additional-services__image-container additional-services__image-container_household'
-                  >
-                    <section
-                      class='additional-services__image-wrapper additional-services__image-wrapper_household'
-                    >
-                      <h1 class='additional-services__image-text'>Household appliances</h1>
-        
-                      <picture
-                        class='additional-services__image-picture additional-services__image-picture_household'
-                      >
-                        <source
-                          type='image/webp'
-                          srcset='img/additional-services/additional-services__image_household.webp'
-                        />
-                        <img
-                          class='additional-services__image'
-                          src='img/additional-services/additional-services__image_household.jpg'
-                          alt='img'
-                        />
-                      </picture>
-                    </section>
-                  </button>
-        
-                  <button
-                    class='additional-services__image-container additional-services__image-container_last-odd additional-services__image-container_odd additional-services__image-container_ultra'
-                  >
-                    <section
-                      class='additional-services__image-wrapper additional-services__image-wrapper_ultra'
-                    >
-                      <h1 class='additional-services__image-text'>Ultra service</h1>
-        
-                      <picture
-                        class='additional-services__image-picture additional-services__image-picture_ultra'
-                      >
-                        <source
-                          type='image/webp'
-                          srcset='img/additional-services/additional-services__image_ultra.webp'
-                        />
-                        <img
-                          class='additional-services__image'
-                          src='img/additional-services/additional-services__image_ultra.jpg'
-                          alt='img'
-                        />
-                      </picture>
-                    </section>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </section>
-        
-          <section
-            class='swiper-main__additional-services-popup additional-services-popup additional-services-popup-video'
-          >
-            <div class='additional-services-popup__body'>
-              <h1
-                class='additional-services-popup__title'
-              >additional-services-popup</h1>
-        
-              <p class='additional-services-popup__text'>
-                Purchase, installation and setup of video surveillance, both open and
-                hidden, for indoor and outdoor use. Help with registering the system on
-                the security panel. use. Help with registering the system on the
-                security panel.
-              </p>
-        
-              <button
-                class='additional-services-popup__close-button additional-services-popup__close-button-video'
-              >
-                <svg class='additional-services-popup__close-button-icon'>
-                  <use
-                    xlink:href='/WalterHouse/icons/sprite.svg#additional-services-popup__close-button-icon'
-                  ></use>
-                </svg>
-              </button>
-            </div>
-          </section>
-        
-          <section
-            class='swiper-main__additional-services-popup additional-services-popup additional-services-popup-broadcast'
-          >
-            <div class='additional-services-popup__body'>
-              <h1 class='additional-services-popup__title'>broadcast</h1>
-        
-              <p class='additional-services-popup__text'>
-                Purchase, installation and setup of video surveillance, both open and
-                hidden, for indoor and outdoor use. Help with registering the system on
-                the security panel. use. Help with registering the system on the
-                security panel.
-              </p>
-        
-              <button
-                class='additional-services-popup__close-button additional-services-popup__close-button-broadcast'
-              >
-                <svg class='additional-services-popup__close-button-icon'>
-                  <use
-                    xlink:href='/WalterHouse/icons/sprite.svg#additional-services-popup__close-button-icon'
-                  ></use>
-                </svg>
-              </button>
-            </div>
-          </section>
-        
-          <section
-            class='swiper-main__additional-services-popup additional-services-popup additional-services-popup-furniture'
-          >
-            <div class='additional-services-popup__body'>
-              <h1 class='additional-services-popup__title'>furniture</h1>
-        
-              <p class='additional-services-popup__text'>
-                Purchase, installation and setup of video surveillance, both open and
-                hidden, for indoor and outdoor use. Help with registering the system on
-                the security panel. use. Help with registering the system on the
-                security panel.
-              </p>
-        
-              <button
-                class='additional-services-popup__close-button additional-services-popup__close-button-furniture'
-              >
-                <svg class='additional-services-popup__close-button-icon'>
-                  <use
-                    xlink:href='/WalterHouse/icons/sprite.svg#additional-services-popup__close-button-icon'
-                  ></use>
-                </svg>
-              </button>
-            </div>
-          </section>
-          <section
-            class='swiper-main__additional-services-popup additional-services-popup additional-services-popup-household'
-          >
-            <div class='additional-services-popup__body'>
-              <h1 class='additional-services-popup__title'>household</h1>
-        
-              <p class='additional-services-popup__text'>
-                Purchase, installation and setup of video surveillance, both open and
-                hidden, for indoor and outdoor use. Help with registering the system on
-                the security panel. use. Help with registering the system on the
-                security panel.
-              </p>
-        
-              <button
-                class='additional-services-popup__close-button additional-services-popup__close-button-household'
-              >
-                <svg class='additional-services-popup__close-button-icon'>
-                  <use
-                    xlink:href='/WalterHouse/icons/sprite.svg#additional-services-popup__close-button-icon'
-                  ></use>
-                </svg>
-              </button>
-            </div>
-          </section>
-          <section
-            class='swiper-main__additional-services-popup additional-services-popup additional-services-popup-ultra'
-          >
-            <div class='additional-services-popup__body'>
-              <h1 class='additional-services-popup__title'>ultra</h1>
-        
-              <p class='additional-services-popup__text'>
-                Purchase, installation and setup of video surveillance, both open and
-                hidden, for indoor and outdoor use. Help with registering the system on
-                the security panel. use. Help with registering the system on the
-                security panel.
-              </p>
-        
-              <button
-                class='additional-services-popup__close-button additional-services-popup__close-button-ultra'
-              >
-                <svg class='additional-services-popup__close-button-icon'>
-                  <use
-                    xlink:href='/WalterHouse/icons/sprite.svg#additional-services-popup__close-button-icon'
-                  ></use>
-                </svg>
-              </button>
-            </div>
-          </section>
-        
-          <section
-            class='swiper-slide-contact-form contact-form contact-form-additonal-services'
-          >
+          <section class='swiper-slide-contact-form contact-form'>
             <form class='contact-form__body'>
               <div class='contact-form__item contact-form__item_input'>
                 <input class='contact-form__input' placeholder='Your name' />
-                <p type='number' class='contact-form__input-error-text'>Заполните,
-                  пожалуйста, это поле.</p>
+                <p type='number' class='contact-form__input-error-text'>
+                  Заполните, пожалуйста, это поле.
+                </p>
               </div>
         
               <div class='contact-form__item contact-form__item_input'>
@@ -1676,15 +1264,14 @@
                   class='contact-form__input contact-form__input_modified'
                   placeholder='Your phone number'
                 />
-                <p type='number' class='contact-form__input-error-text'>Заполните,
-                  пожалуйста, это поле.</p>
+                <p type='number' class='contact-form__input-error-text'>
+                  Заполните, пожалуйста, это поле.
+                </p>
               </div>
         
               <div class='contact-form__item'>
                 <button class='contact-form__button' type='submit'>
-                  <span>
-                    Discuss a Project
-                  </span>
+                  <span> Discuss a Project </span>
         
                   <div class='contact-form__button-arrow-wrapper'>
                     <svg class='contact-form__button-arrow'>
@@ -1697,7 +1284,727 @@
               </div>
             </form>
           </section>
-        </div>      </div>
+        </div>
+        <div class='swiper-main__slide swiper-slide'>
+          <section class='swiper-main__steps-walter steps-walter'>
+            <picture
+              style="background-image: url('/WalterHouse/img/steps-walter/steps-walter-bg-mini.jpg')"
+              class='steps-walter__image-bg-wrapper lazy-loading-img-wrapper'
+            >
+              <source
+                type='image/webp'
+                srcset='/WalterHouse/img/steps-walter/steps-walter-bg.webp'
+                media='(min-width: 1025px) '
+              />
+        
+              <source
+                type='image/webp'
+                srcset='/WalterHouse/img/steps-walter/steps-walter-bg-medium.webp 1x, /WalterHouse/img/steps-walter/steps-walter-bg-medium@2x.webp 2x'
+                media='(min-width: 451px) and (max-width: 1024px)'
+              />
+        
+              <source
+                type='image/webp'
+                srcset='/WalterHouse/img/steps-walter/steps-walter-bg-small.webp 1x, /WalterHouse/img/steps-walter/steps-walter-bg-small@2x.webp 2x'
+                media='(max-width: 450px)'
+              />
+        
+              <source
+                type='image/jpeg'
+                srcset='/WalterHouse/img/steps-walter/steps-walter-bg-medium.jpg 1x, /WalterHouse/img/steps-walter/steps-walter-bg-medium@2x.jpg 2x'
+                media='(min-width: 451px) and (max-width: 1024px)'
+              />
+        
+              <source
+                type='image/jpeg'
+                srcset='/WalterHouse/img/steps-walter/steps-walter-bg-small.jpg 1x, /WalterHouse/img/steps-walter/steps-walter-bg-small@2x.jpg 2x'
+                media='(max-width: 450px)'
+              />
+        
+              <img
+                loading='lazy'
+                class='steps-walter__image-bg lazy-loading-img'
+                srcset='/WalterHouse/img/steps-walter/steps-walter-bg.jpg 1x, /WalterHouse/img/steps-walter/steps-walter-bg.jpg 2x'
+                alt='img'
+              />
+            </picture>
+        
+            <div class='steps-walter__container'>
+              <div class='steps-walter__body'>
+                <div class='steps-walter__header'>
+                  <h1 class='steps-walter__title'>6 steps to your WALTER house:</h1>
+                </div>
+        
+                <div class='steps-walter__items steps-walter__items_leave-app-active'>
+                  <div class='steps-walter__item'>
+                    <div class='steps-walter__circle-wrapper'>
+                      <p class='steps-walter__circle-step-text'>1</p>
+        
+                      <div
+                        class='steps-walter__circle-wrapper-bullet steps-walter__circle-wrapper-bullet_leave-app'
+                      ></div>
+        
+                      <div
+                        class='steps-walter__circle-wrapper-bullet steps-walter__circle-wrapper-bullet_check'
+                      ></div>
+                      <div
+                        class='steps-walter__circle-wrapper-bullet steps-walter__circle-wrapper-bullet_draft'
+                      ></div>
+        
+                      <div
+                        class='steps-walter__circle-wrapper-bullet steps-walter__circle-wrapper-bullet_contract'
+                      ></div>
+        
+                      <div
+                        class='steps-walter__circle-wrapper-bullet steps-walter__circle-wrapper-bullet_work'
+                      ></div>
+        
+                      <div
+                        class='steps-walter__circle-wrapper-bullet steps-walter__circle-wrapper-bullet_completion'
+                      ></div>
+        
+                      <svg class='steps-walter__circle-line-wrapper'>
+                        <circle
+                          cx='50%'
+                          cy='50%'
+                          r='49%'
+                          class='steps-walter__circle-line'
+                        ></circle>
+        
+                        <circle
+                          cx='50%'
+                          cy='50%'
+                          r='49%'
+                          class='steps-walter__circle-active-line'
+                        ></circle>
+                      </svg>
+                    </div>
+                  </div>
+        
+                  <div class='steps-walter__item steps-walter__item_icon'>
+                    <div class='steps-walter__icon-name-wrapper'>
+                      <svg class='steps-walter__icon'>
+                        <use
+                          class='steps-walter__icon-img steps-walter__icon-img_leave-app'
+                          xlink:href='/WalterHouse/icons/sprite.svg#steps-walter__icon_leave-app'
+                        ></use>
+        
+                        <use
+                          class='steps-walter__icon-img steps-walter__icon-img_check'
+                          xlink:href='/WalterHouse/icons/sprite.svg#steps-walter__icon_check'
+                        ></use>
+        
+                        <use
+                          class='steps-walter__icon-img steps-walter__icon-img_draft'
+                          xlink:href='/WalterHouse/icons/sprite.svg#steps-walter__icon_draft'
+                        ></use>
+        
+                        <use
+                          class='steps-walter__icon-img steps-walter__icon-img_contract'
+                          xlink:href='/WalterHouse/icons/sprite.svg#steps-walter__icon_contract'
+                        ></use>
+        
+                        <use
+                          class='steps-walter__icon-img steps-walter__icon-img_work'
+                          xlink:href='/WalterHouse/icons/sprite.svg#steps-walter__icon_work'
+                        ></use>
+        
+                        <use
+                          class='steps-walter__icon-img steps-walter__icon-img_completion'
+                          xlink:href='/WalterHouse/icons/sprite.svg#steps-walter__icon_completion'
+                        ></use>
+                      </svg>
+        
+                      <div class='steps-walter__icon-name-container'>
+                        <p
+                          class='steps-walter__icon-name steps-walter__icon-name_leave-app'
+                        >
+                          DRAFTING AN ESTIMATE
+                        </p>
+        
+                        <p
+                          class='steps-walter__icon-name steps-walter__icon-name_check'
+                        >
+                          CHECK OUT OF THE MEASURER
+                        </p>
+        
+                        <p
+                          class='steps-walter__icon-name steps-walter__icon-name_draft'
+                        >
+                          DRAFTING AN ESTIMATE
+                        </p>
+        
+                        <p
+                          class='steps-walter__icon-name steps-walter__icon-name_contract'
+                        >
+                          SIGNING THE CONTRACT
+                        </p>
+        
+                        <p class='steps-walter__icon-name steps-walter__icon-name_work'>
+                          BEGINNING OF WORK
+                        </p>
+        
+                        <p
+                          class='steps-walter__icon-name steps-walter__icon-name_completion'
+                        >
+                          COMPLETION
+                        </p>
+                      </div>
+        
+                      <svg class='steps-walter__right-arrow'>
+                        <use
+                          xlink:href='/WalterHouse/icons/sprite.svg#steps-walter__right-arrow'
+                        ></use>
+                      </svg>
+                    </div>
+                  </div>
+        
+                  <div class='steps-walter__item steps-walter__item_text'>
+                    <p
+                      class='steps-walter__icon-text steps-walter__icon-text_leave-app'
+                    >
+                      DEVELOPMENT OF TERMS OF REFERENCE, 3D VISUALIZATION AND
+                      CALCULATION OF THE ESTIMATE
+                    </p>
+        
+                    <p class='steps-walter__icon-text steps-walter__icon-text_check'>
+                      OUR SPECIALIST COMES TO YOU AT THE OBJECT FOR MEASURING AND PHOTO
+                      FIXING
+                    </p>
+        
+                    <p class='steps-walter__icon-text steps-walter__icon-text_draft'>
+                      DEVELOPMENT OF TERMS OF REFERENCE, 3D VISUALIZATION AND
+                      CALCULATION OF THE ESTIMATE
+                    </p>
+        
+                    <p class='steps-walter__icon-text steps-walter__icon-text_contract'>
+                      AGREEMENT OF THE COST AND DATE OF COMPLETION OF WORKS, SIGNING OF
+                      THE CONTRACT
+                    </p>
+        
+                    <p class='steps-walter__icon-text steps-walter__icon-text_work'>
+                      START OF REPAIR WORKS UNDER THE SUPERVISION OF A PERSONAL
+                      SUPERVISOR
+                    </p>
+        
+                    <p
+                      class='steps-walter__icon-text steps-walter__icon-text_completion'
+                    >
+                      COMPLETION OF REPAIRS, REMOVAL OF CONSTRUCTION rubbish
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        
+          <section class='swiper-slide-contact-form contact-form contact-form-hidden'>
+            <form class='contact-form__body'>
+              <div class='contact-form__item contact-form__item_input'>
+                <input class='contact-form__input' placeholder='Your name' />
+                <p type='number' class='contact-form__input-error-text'>
+                  Заполните, пожалуйста, это поле.
+                </p>
+              </div>
+        
+              <div class='contact-form__item contact-form__item_input'>
+                <input
+                  class='contact-form__input contact-form__input_modified'
+                  placeholder='Your phone number'
+                />
+                <p type='number' class='contact-form__input-error-text'>
+                  Заполните, пожалуйста, это поле.
+                </p>
+              </div>
+        
+              <div class='contact-form__item'>
+                <button class='contact-form__button' type='submit'>
+                  <span> Discuss a Project </span>
+        
+                  <div class='contact-form__button-arrow-wrapper'>
+                    <svg class='contact-form__button-arrow'>
+                      <use
+                        xlink:href='/WalterHouse/icons/sprite.svg#contact-form__button-arrow'
+                      ></use>
+                    </svg>
+                  </div>
+                </button>
+              </div>
+            </form>
+          </section>
+        </div>
+        <div class="swiper-main__slide swiper-slide">
+          <section class="swiper-main__additional-services additional-services">
+            <picture
+              style="
+                background-image: url('/WalterHouse/img/additional-services/additional-services-bg-mini.jpg');
+              "
+              class="additional-services__image-bg-wrapper lazy-loading-img-wrapper"
+            >
+              <source
+                type="image/webp"
+                srcset="/WalterHouse/img/additional-services/additional-services-bg.webp 1x, /WalterHouse/img/additional-services/additional-services-bg@2x.webp 2x"
+              />
+              <img
+                loading="lazy"
+                class="additional-services__image-bg lazy-loading-img"
+                srcset="/WalterHouse/img/additional-services/additional-services-bg.jpg 1x, /WalterHouse/img/additional-services/additional-services-bg@2x.jpg 2x"
+                alt="img"
+              />
+            </picture>
+        
+            <div class="additional-services__container">
+              <div class="additional-services__body">
+                <div class="additional-services__row additional-services__row_first">
+                  <button
+                    class="additional-services__image-container additional-services__image-container_odd additional-services__image-container_broadcast"
+                  >
+                    <section
+                      class="additional-services__image-wrapper additional-services__image-wrapper_broadcast"
+                    >
+                      <h1 class="additional-services__image-text">
+                        Online broadcast of repair
+                      </h1>
+        
+                      <picture
+                        style="
+                          background-image: url('/WalterHouse/img/additional-services/additional-services__image_broadcast-mini.jpg');
+                        "
+                        class="additional-services__image-picture additional-services__image-picture_broadcast lazy-loading-img-wrapper"
+                      >
+                        <source
+                          type="image/webp"
+                          srcset="/WalterHouse/img/additional-services/additional-services__image_broadcast.webp 1x, /WalterHouse/img/additional-services/additional-services__image_broadcast@2x.webp 2x"
+                          media="(min-width: 1025px)"
+                        />
+        
+                        <source
+                          type="image/webp"
+                          srcset="/WalterHouse/img/additional-services/additional-services__image_furniture-medium.webp 1x, /WalterHouse/img/additional-services/additional-services__image_furniture-medium@2x.webp 2x"
+                          media="(min-width: 451px) and (max-width: 1024px)"
+                        />
+        
+                        <source
+                          type="image/webp"
+                          srcset="/WalterHouse/img/additional-services/additional-services__image_broadcast-small.webp 1x, /WalterHouse/img/additional-services/additional-services__image_broadcast-small@2x.webp 2x"
+                          media="(max-width: 450px)"
+                        />
+        
+                        <source
+                          type="image/jpeg"
+                          srcset="/WalterHouse/img/additional-services/additional-services__image_furniture.jpg 1x, /WalterHouse/img/additional-services/additional-services__image_furniture-medium@2x.jpg 2x"
+                          media="(min-width: 451px) and (max-width: 1024px)"
+                        />
+        
+                        <source
+                          type="image/jpeg"
+                          srcset="/WalterHouse/img/additional-services/additional-services__image_broadcast-small.jpg 1x, /WalterHouse/img/additional-services/additional-services__image_broadcast-small@2x.jpg 2x"
+                          media="(max-width: 450px)"
+                        />
+        
+                        <img
+                          loading="lazy"
+                          class="additional-services__image lazy-loading-img"
+                          srcset="img/additional-services/additional-services__image_broadcast.jpg 1x, img/additional-services/additional-services__image_broadcast@2x.jpg 2x"
+                          alt="img"
+                        />
+                      </picture>
+                    </section>
+                  </button>
+        
+                  <button
+                    class="additional-services__image-container additional-services__image-container_video"
+                  >
+                    <section
+                      class="additional-services__image-wrapper additional-services__image-wrapper_video"
+                    >
+                      <h1 class="additional-services__image-text">
+                        Video- surveillance and alarm
+                      </h1>
+        
+                      <picture
+                        style="
+                          background-image: url('/WalterHouse/img/additional-services/additional-services__image_video-mini.jpg');
+                        "
+                        class="additional-services__image-picture additional-services__image-picture_video lazy-loading-img-wrapper"
+                      >
+                        <source
+                          type="image/webp"
+                          srcset="/WalterHouse/img/additional-services/additional-services__image_video.webp 1x, /WalterHouse/img/additional-services/additional-services__image_video@2x.webp 2x"
+                          media="(min-width: 1025px)"
+                        />
+        
+                        <source
+                          type="image/webp"
+                          srcset="/WalterHouse/img/additional-services/additional-services__image_video-medium.webp 1x, /WalterHouse/img/additional-services/additional-services__image_video-medium@2x.webp 2x"
+                          media="(min-width: 451px) and (max-width: 1024px)"
+                        />
+        
+                        <source
+                          type="image/webp"
+                          srcset="/WalterHouse/img/additional-services/additional-services__image_furniture-small.webp 1x, /WalterHouse/img/additional-services/additional-services__image_furniture-small@2x.webp 2x"
+                          media="(max-width: 450px)"
+                        />
+        
+                        <source
+                          type="image/jpeg"
+                          srcset="/WalterHouse/img/additional-services/additional-services__image_video.jpg 1x, /WalterHouse/img/additional-services/additional-services__image_video-medium@2x.jpg 2x"
+                          media="(min-width: 451px) and (max-width: 1024px)"
+                        />
+        
+                        <source
+                          type="image/jpeg"
+                          srcset="/WalterHouse/img/additional-services/additional-services__image_furniture-small.jpg 1x, /WalterHouse/img/additional-services/additional-services__image_furniture-small@2x.jpg 2x"
+                          media="(max-width: 450px)"
+                        />
+        
+                        <img
+                          loading="lazy"
+                          class="additional-services__image lazy-loading-img"
+                          srcset="img/additional-services/additional-services__image_video.jpg 1x, img/additional-services/additional-services__image_video@2x.jpg 2x"
+                          alt="img"
+                        />
+                      </picture>
+                    </section>
+                  </button>
+        
+                  <button
+                    class="additional-services__image-container additional-services__image-container_odd additional-services__image-container_furniture"
+                  >
+                    <section
+                      class="additional-services__image-wrapper additional-services__image-wrapper_furniture"
+                    >
+                      <h1 class="additional-services__image-text">
+                        Selection of furniture
+                      </h1>
+        
+                      <picture
+                        style="
+                          background-image: url('/WalterHouse/img/additional-services/additional-services__image_furniture-mini.jpg');
+                        "
+                        class="additional-services__image-picture additional-services__image-picture_furniture lazy-loading-img-wrapper"
+                      >
+                        <source
+                          type="image/webp"
+                          srcset="/WalterHouse/img/additional-services/additional-services__image_furniture.webp 1x, /WalterHouse/img/additional-services/additional-services__image_furniture@2x.webp 2x"
+                          media="(min-width: 1025px)"
+                        />
+        
+                        <source
+                          type="image/webp"
+                          srcset="/WalterHouse/img/additional-services/additional-services__image_furniture-medium.webp 1x, /WalterHouse/img/additional-services/additional-services__image_furniture-medium@2x.webp 2x"
+                          media="(min-width: 451px) and (max-width: 1024px)"
+                        />
+        
+                        <source
+                          type="image/webp"
+                          srcset="/WalterHouse/img/additional-services/additional-services__image_furniture-small.webp 1x, /WalterHouse/img/additional-services/additional-services__image_furniture-small@2x.webp 2x"
+                          media="(max-width: 450px)"
+                        />
+        
+                        <source
+                          type="image/jpeg"
+                          srcset="/WalterHouse/img/additional-services/additional-services__image_furniture.jpg 1x, /WalterHouse/img/additional-services/additional-services__image_furniture-medium@2x.jpg 2x"
+                          media="(min-width: 451px) and (max-width: 1024px)"
+                        />
+        
+                        <source
+                          type="image/jpeg"
+                          srcset="/WalterHouse/img/additional-services/additional-services__image_furniture-small.jpg 1x, /WalterHouse/img/additional-services/additional-services__image_furniture-small@2x.jpg 2x"
+                          media="(max-width: 450px)"
+                        />
+        
+                        <img
+                          loading="lazy"
+                          class="additional-services__image lazy-loading-img"
+                          srcset="img/additional-services/additional-services__image_furniture.jpg 1x, img/additional-services/additional-services__image_furniture@2x.jpg 2x"
+                          alt="img"
+                        />
+                      </picture>
+                    </section>
+                  </button>
+                </div>
+        
+                <div class="additional-services__row additional-services__row_second">
+                  <button
+                    class="additional-services__image-container additional-services__image-container_household"
+                  >
+                    <section
+                      class="additional-services__image-wrapper additional-services__image-wrapper_household"
+                    >
+                      <h1 class="additional-services__image-text">
+                        Household appliances
+                      </h1>
+        
+                      <picture
+                        style="
+                          background-image: url('/WalterHouse/img/additional-services/additional-services__image_household-mini.jpg');
+                        "
+                        class="additional-services__image-picture additional-services__image-picture_household lazy-loading-img-wrapper"
+                      >
+                        <source
+                          type="image/webp"
+                          srcset="/WalterHouse/img/additional-services/additional-services__image_household.webp 1x, /WalterHouse/img/additional-services/additional-services__image_household@2x.webp 2x"
+                          media="(min-width: 1025px)"
+                        />
+        
+                        <source
+                          type="image/webp"
+                          srcset="/WalterHouse/img/additional-services/additional-services__image_household-medium.webp 1x, /WalterHouse/img/additional-services/additional-services__image_household-medium@2x.webp 2x"
+                          media="(min-width: 451px) and (max-width: 1024px)"
+                        />
+        
+                        <source
+                          type="image/webp"
+                          srcset="/WalterHouse/img/additional-services/additional-services__image_broadcast-small.webp 1x, /WalterHouse/img/additional-services/additional-services__image_broadcast-small@2x.webp 2x"
+                          media="(max-width: 450px)"
+                        />
+        
+                        <source
+                          type="image/jpeg"
+                          srcset="/WalterHouse/img/additional-services/additional-services__image_household.jpg 1x, /WalterHouse/img/additional-services/additional-services__image_household-medium@2x.jpg 2x"
+                          media="(min-width: 451px) and (max-width: 1024px)"
+                        />
+        
+                        <source
+                          type="image/jpeg"
+                          srcset="/WalterHouse/img/additional-services/additional-services__image_broadcast-small.jpg 1x, /WalterHouse/img/additional-services/additional-services__image_broadcast-small@2x.jpg 2x"
+                          media="(max-width: 450px)"
+                        />
+        
+                        <img
+                          loading="lazy"
+                          class="additional-services__image lazy-loading-img"
+                          srcset="img/additional-services/additional-services__image_household.jpg 1x, img/additional-services/additional-services__image_household@2x.jpg 2x"
+                          alt="img"
+                        />
+                      </picture>
+                    </section>
+                  </button>
+        
+                  <button
+                    class="additional-services__image-container additional-services__image-container_last-odd additional-services__image-container_odd additional-services__image-container_ultra"
+                  >
+                    <section
+                      class="additional-services__image-wrapper additional-services__image-wrapper_ultra"
+                    >
+                      <h1 class="additional-services__image-text">Ultra service</h1>
+        
+                      <picture
+                        style="
+                          background-image: url('/WalterHouse/img/additional-services/additional-services__image_ultra-mini.jpg');
+                        "
+                        class="additional-services__image-picture additional-services__image-picture_ultra lazy-loading-img-wrapper"
+                      >
+                        <source
+                          type="image/webp"
+                          srcset="/WalterHouse/img/additional-services/additional-services__image_ultra.webp 1x, /WalterHouse/img/additional-services/additional-services__image_ultra@2x.webp 2x"
+                          media="(min-width: 1025px)"
+                        />
+        
+                        <source
+                          type="image/webp"
+                          srcset="/WalterHouse/img/additional-services/additional-services__image_ultra-medium.webp 1x, /WalterHouse/img/additional-services/additional-services__image_ultra-medium@2x.webp 2x"
+                          media="(min-width: 451px) and (max-width: 1024px)"
+                        />
+        
+                        <source
+                          type="image/webp"
+                          srcset="/WalterHouse/img/additional-services/additional-services__image_furniture-small.webp 1x, /WalterHouse/img/additional-services/additional-services__image_furniture-small@2x.webp 2x"
+                          media="(max-width: 450px)"
+                        />
+        
+                        <source
+                          type="image/jpeg"
+                          srcset="/WalterHouse/img/additional-services/additional-services__image_ultra.jpg 1x, /WalterHouse/img/additional-services/additional-services__image_ultra-medium@2x.jpg 2x"
+                          media="(min-width: 451px) and (max-width: 1024px)"
+                        />
+        
+                        <source
+                          type="image/jpeg"
+                          srcset="/WalterHouse/img/additional-services/additional-services__image_furniture-small.jpg 1x, /WalterHouse/img/additional-services/additional-services__image_furniture-small@2x.jpg 2x"
+                          media="(max-width: 450px)"
+                        />
+        
+                        <img
+                          loading="lazy"
+                          class="additional-services__image lazy-loading-img"
+                          srcset="img/additional-services/additional-services__image_ultra.jpg 1x, img/additional-services/additional-services__image_ultra@2x.jpg 2x"
+                          alt="img"
+                        />
+                      </picture>
+                    </section>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </section>
+        
+          <section
+            class="swiper-main__additional-services-popup additional-services-popup additional-services-popup-video"
+          >
+            <div class="additional-services-popup__body">
+              <h1 class="additional-services-popup__title">
+                additional-services-popup
+              </h1>
+        
+              <p class="additional-services-popup__text">
+                Purchase, installation and setup of video surveillance, both open and
+                hidden, for indoor and outdoor use. Help with registering the system on
+                the security panel. use. Help with registering the system on the
+                security panel.
+              </p>
+        
+              <button
+                class="additional-services-popup__close-button additional-services-popup__close-button-video"
+              >
+                <svg class="additional-services-popup__close-button-icon">
+                  <use
+                    xlink:href="/WalterHouse/icons/sprite.svg#additional-services-popup__close-button-icon"
+                  ></use>
+                </svg>
+              </button>
+            </div>
+          </section>
+        
+          <section
+            class="swiper-main__additional-services-popup additional-services-popup additional-services-popup-broadcast"
+          >
+            <div class="additional-services-popup__body">
+              <h1 class="additional-services-popup__title">broadcast</h1>
+        
+              <p class="additional-services-popup__text">
+                Purchase, installation and setup of video surveillance, both open and
+                hidden, for indoor and outdoor use. Help with registering the system on
+                the security panel. use. Help with registering the system on the
+                security panel.
+              </p>
+        
+              <button
+                class="additional-services-popup__close-button additional-services-popup__close-button-broadcast"
+              >
+                <svg class="additional-services-popup__close-button-icon">
+                  <use
+                    xlink:href="/WalterHouse/icons/sprite.svg#additional-services-popup__close-button-icon"
+                  ></use>
+                </svg>
+              </button>
+            </div>
+          </section>
+        
+          <section
+            class="swiper-main__additional-services-popup additional-services-popup additional-services-popup-furniture"
+          >
+            <div class="additional-services-popup__body">
+              <h1 class="additional-services-popup__title">furniture</h1>
+        
+              <p class="additional-services-popup__text">
+                Purchase, installation and setup of video surveillance, both open and
+                hidden, for indoor and outdoor use. Help with registering the system on
+                the security panel. use. Help with registering the system on the
+                security panel.
+              </p>
+        
+              <button
+                class="additional-services-popup__close-button additional-services-popup__close-button-furniture"
+              >
+                <svg class="additional-services-popup__close-button-icon">
+                  <use
+                    xlink:href="/WalterHouse/icons/sprite.svg#additional-services-popup__close-button-icon"
+                  ></use>
+                </svg>
+              </button>
+            </div>
+          </section>
+        
+          <section
+            class="swiper-main__additional-services-popup additional-services-popup additional-services-popup-household"
+          >
+            <div class="additional-services-popup__body">
+              <h1 class="additional-services-popup__title">household</h1>
+        
+              <p class="additional-services-popup__text">
+                Purchase, installation and setup of video surveillance, both open and
+                hidden, for indoor and outdoor use. Help with registering the system on
+                the security panel. use. Help with registering the system on the
+                security panel.
+              </p>
+        
+              <button
+                class="additional-services-popup__close-button additional-services-popup__close-button-household"
+              >
+                <svg class="additional-services-popup__close-button-icon">
+                  <use
+                    xlink:href="/WalterHouse/icons/sprite.svg#additional-services-popup__close-button-icon"
+                  ></use>
+                </svg>
+              </button>
+            </div>
+          </section>
+        
+          <section
+            class="swiper-main__additional-services-popup additional-services-popup additional-services-popup-ultra"
+          >
+            <div class="additional-services-popup__body">
+              <h1 class="additional-services-popup__title">ultra</h1>
+        
+              <p class="additional-services-popup__text">
+                Purchase, installation and setup of video surveillance, both open and
+                hidden, for indoor and outdoor use. Help with registering the system on
+                the security panel. use. Help with registering the system on the
+                security panel.
+              </p>
+        
+              <button
+                class="additional-services-popup__close-button additional-services-popup__close-button-ultra"
+              >
+                <svg class="additional-services-popup__close-button-icon">
+                  <use
+                    xlink:href="/WalterHouse/icons/sprite.svg#additional-services-popup__close-button-icon"
+                  ></use>
+                </svg>
+              </button>
+            </div>
+          </section>
+        
+          <section
+            class="swiper-slide-contact-form contact-form contact-form-additonal-services"
+          >
+            <form class="contact-form__body">
+              <div class="contact-form__item contact-form__item_input">
+                <input class="contact-form__input" placeholder="Your name" />
+                <p type="number" class="contact-form__input-error-text">
+                  Заполните, пожалуйста, это поле.
+                </p>
+              </div>
+        
+              <div class="contact-form__item contact-form__item_input">
+                <input
+                  class="contact-form__input contact-form__input_modified"
+                  placeholder="Your phone number"
+                />
+                <p type="number" class="contact-form__input-error-text">
+                  Заполните, пожалуйста, это поле.
+                </p>
+              </div>
+        
+              <div class="contact-form__item">
+                <button class="contact-form__button" type="submit">
+                  <span> Discuss a Project </span>
+        
+                  <div class="contact-form__button-arrow-wrapper">
+                    <svg class="contact-form__button-arrow">
+                      <use
+                        xlink:href="/WalterHouse/icons/sprite.svg#contact-form__button-arrow"
+                      ></use>
+                    </svg>
+                  </div>
+                </button>
+              </div>
+            </form>
+          </section>
+        </div>
+      </div>
       <div class="swiper-pagination swiper-main__pagination"></div>
     </div>
 
