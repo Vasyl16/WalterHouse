@@ -1,14 +1,23 @@
 <div class='swiper-main__slide swiper-slide swiper-slide-hide-laptop'>
   <section class='swiper-slide__renovation renovation'>
     <picture
-      style="background-image:url('img/renovation/renovation-bg-small.jpg')"
+      style="background-image: url('/img/renovation/renovation-bg-mini.jpg')"
       class='renovation__image-bg-wrapper lazy-loading-img-wrapper'
     >
-      <source type='image/webp' srcset='/img/renovation/renovation-bg.webp' />
+      <source
+        type='image/webp'
+        srcset='
+          /img/renovation/renovation-bg.webp 1x,
+          /img/renovation/renovation-bg@2x.webp 2x
+        '
+      />
       <img
         loading='lazy'
         class='renovation__image-bg lazy-loading-img'
-        src='/img/renovation/renovation-bg.jpg'
+        srcset='
+          /img/renovation/renovation-bg.jpg 1x,
+          /img/renovation/renovation-bg@2x.jpg 2x
+        '
         alt='img'
       />
     </picture>
@@ -22,13 +31,9 @@
             <p class='renovation__stat-count'>18</p>
 
             <p class='renovation__stat-name'>
-              <span>
-                years
-              </span>
+              <span> years </span>
 
-              <span>
-                on the market
-              </span>
+              <span> on the market </span>
             </p>
           </div>
 
@@ -59,8 +64,9 @@
       <form class='contact-form__body'>
         <div class='contact-form__item contact-form__item_input'>
           <input class='contact-form__input' placeholder='Your name' />
-          <p type='number' class='contact-form__input-error-text'>Заполните,
-            пожалуйста, это поле.</p>
+          <p type='number' class='contact-form__input-error-text'>
+            Заполните, пожалуйста, это поле.
+          </p>
         </div>
 
         <div class='contact-form__item contact-form__item_input'>
@@ -68,15 +74,14 @@
             class='contact-form__input contact-form__input_modified'
             placeholder='Your phone number'
           />
-          <p type='number' class='contact-form__input-error-text'>Заполните,
-            пожалуйста, это поле.</p>
+          <p type='number' class='contact-form__input-error-text'>
+            Заполните, пожалуйста, это поле.
+          </p>
         </div>
 
         <div class='contact-form__item'>
           <button class='contact-form__button' type='submit'>
-            <span>
-              Discuss a Project
-            </span>
+            <span> Discuss a Project </span>
 
             <div class='contact-form__button-arrow-wrapper'>
               <svg class='contact-form__button-arrow'>
@@ -95,8 +100,9 @@
     <form class='contact-form__body'>
       <div class='contact-form__item contact-form__item_input'>
         <input class='contact-form__input' placeholder='Your name' />
-        <p type='number' class='contact-form__input-error-text'>Заполните,
-          пожалуйста, это поле.</p>
+        <p type='number' class='contact-form__input-error-text'>
+          Заполните, пожалуйста, это поле.
+        </p>
       </div>
 
       <div class='contact-form__item contact-form__item_input'>
@@ -104,15 +110,14 @@
           class='contact-form__input contact-form__input_modified'
           placeholder='Your phone number'
         />
-        <p type='number' class='contact-form__input-error-text'>Заполните,
-          пожалуйста, это поле.</p>
+        <p type='number' class='contact-form__input-error-text'>
+          Заполните, пожалуйста, это поле.
+        </p>
       </div>
 
       <div class='contact-form__item'>
         <button class='contact-form__button' type='submit'>
-          <span>
-            Discuss a Project
-          </span>
+          <span> Discuss a Project </span>
 
           <div class='contact-form__button-arrow-wrapper'>
             <svg class='contact-form__button-arrow'>

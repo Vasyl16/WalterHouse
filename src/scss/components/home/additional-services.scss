@@ -23,6 +23,12 @@
     }
   }
 
+  &__image-bg-wrapper {
+    @media (max-width: $tablet) {
+      display: none;
+    }
+  }
+
   &__body {
     display: flex;
     flex-direction: column;
@@ -33,6 +39,12 @@
     }
 
     @media (max-width: $tablet) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      height: auto;
+    }
+
+    @media (max-width: $mobile) {
       flex-direction: row;
       flex-wrap: wrap;
       height: auto;
@@ -145,7 +157,7 @@
     }
 
     @media (max-width: $mobile-small) {
-      flex: 1 1 auto;
+      flex: 1 1 100%;
       height: clamp(322px, 340px, 100vw);
 
       &::after {

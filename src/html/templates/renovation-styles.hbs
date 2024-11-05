@@ -2,22 +2,66 @@
   <section class="swiper-slide__renovation-styles renovation-styles">
     <div class="renovation-styles__body">
       <div class="renovation-styles__items">
-        <div class="renovation-styles__item">
+        <section class="renovation-styles__item">
           <div class="renovation-styles__content">
             <picture
               style="
-                background-image: url('img/renovation-styles/renovation-styles-bg-elite-small.jpg');
+                background-image: url('/img/renovation-styles/renovation-styles-bg-elite-mini.jpg');
               "
               class="renovation-styles__image-bg-wrapper lazy-loading-img-wrapper renovation-styles__image-bg-wrapper_first"
             >
               <source
                 type="image/webp"
-                srcset="/img/renovation-styles/renovation-styles-bg-elite.webp"
+                srcset="
+                  /img/renovation-styles/renovation-styles-bg-elite.webp    1x,
+                  /img/renovation-styles/renovation-styles-bg-elite@2x.webp 2x
+                "
+                media="(min-width: 1025px)"
               />
+
+              <source
+                type="image/webp"
+                srcset="
+                  /img/renovation-styles/renovation-styles-bg-elite-medium.webp    1x,
+                  /img/renovation-styles/renovation-styles-bg-elite-medium@2x.webp 2x
+                "
+                media="(min-width: 451px) and (max-width: 1024px)"
+              />
+
+              <source
+                type="image/webp"
+                srcset="
+                  /img/renovation-styles/renovation-styles-bg-elite-small.webp    1x,
+                  /img/renovation-styles/renovation-styles-bg-elite-small@2x.webp 2x
+                "
+                media="(max-width: 450px)"
+              />
+
+              <source
+                type="image/jpeg"
+                srcset="
+                  /img/renovation-styles/renovation-styles-bg-elite-medium.jpg    1x,
+                  /img/renovation-styles/renovation-styles-bg-elite-medium@2x.jpg 2x
+                "
+                media="(min-width: 451px) and (max-width: 1024px)"
+              />
+
+              <source
+                type="image/jpeg"
+                srcset="
+                  /img/renovation-styles/renovation-styles-bg-elite-small.jpg    1x,
+                  /img/renovation-styles/renovation-styles-bg-elite-small@2x.jpg 2x
+                "
+                media="(max-width: 450px)"
+              />
+
               <img
                 loading="lazy"
                 class="renovation-styles__image-bg lazy-loading-img"
-                src="/img/renovation-styles/renovation-styles-bg-elite.jpg"
+                srcset="
+                  /img/renovation-styles/renovation-styles-bg-elite.jpg    1x,
+                  /img/renovation-styles/renovation-styles-bg-elite@2x.jpg 2x
+                "
                 alt="img"
               />
             </picture>
@@ -26,11 +70,11 @@
               <div
                 class="renovation-styles__wrapper renovation-styles__wrapper_first"
               >
-                <div
+                <h1
                   class="renovation-styles__style-type renovation-styles__style-type_elite"
                 >
                   Elite
-                </div>
+                </h1>
               </div>
             </div>
 
@@ -69,35 +113,79 @@
               </div>
             </div>
           </div>
-        </div>
+        </section>
 
-        <div class="renovation-styles__item">
+        <section class="renovation-styles__item">
           <div class="renovation-styles__content">
             <picture
               style="
-                background-image: url('img/renovation-styles/renovation-styles-bg-vip-small.jpg');
+                background-image: url('/img/renovation-styles/renovation-styles-bg-vip-mini.jpg');
               "
               class="renovation-styles__image-bg-wrapper lazy-loading-img-wrapper"
             >
               <source
                 type="image/webp"
-                srcset="/img/renovation-styles/renovation-styles-bg-vip.webp"
+                srcset="
+                  /img/renovation-styles/renovation-styles-bg-vip.webp    1x,
+                  /img/renovation-styles/renovation-styles-bg-vip@2x.webp 2x
+                "
+                media="(min-width: 1025px)"
               />
+
+              <source
+                type="image/webp"
+                srcset="
+                  /img/renovation-styles/renovation-styles-bg-vip-medium.webp    1x,
+                  /img/renovation-styles/renovation-styles-bg-vip-medium@2x.webp 2x
+                "
+                media="(min-width: 451px) and (max-width: 1024px)"
+              />
+
+              <source
+                type="image/webp"
+                srcset="
+                  /img/renovation-styles/renovation-styles-bg-vip-small.webp    1x,
+                  /img/renovation-styles/renovation-styles-bg-vip-small@2x.webp 2x
+                "
+                media="(max-width: 450px)"
+              />
+
+              <source
+                type="image/jpeg"
+                srcset="
+                  /img/renovation-styles/renovation-styles-bg-vip-medium.jpg    1x,
+                  /img/renovation-styles/renovation-styles-bg-vip-medium@2x.jpg 2x
+                "
+                media="(min-width: 451px) and (max-width: 1024px)"
+              />
+
+              <source
+                type="image/jpeg"
+                srcset="
+                  /img/renovation-styles/renovation-styles-bg-vip-small.jpg    1x,
+                  /img/renovation-styles/renovation-styles-bg-vip-small@2x.jpg 2x
+                "
+                media="(max-width: 450px)"
+              />
+
               <img
                 loading="lazy"
                 class="renovation-styles__image-bg lazy-loading-img"
-                src="/img/renovation-styles/renovation-styles-bg-vip.jpg"
+                srcset="
+                  /img/renovation-styles/renovation-styles-bg-vip.jpg    1x,
+                  /img/renovation-styles/renovation-styles-bg-vip@2x.jpg 2x
+                "
                 alt="img"
               />
             </picture>
 
             <div class="renovation-styles__column">
               <div class="renovation-styles__wrapper">
-                <p
+                <h1
                   class="renovation-styles__style-type renovation-styles__style-type_orange"
                 >
                   VIP
-                </p>
+                </h1>
               </div>
             </div>
 
@@ -138,31 +226,75 @@
               </div>
             </div>
           </div>
-        </div>
+        </section>
 
-        <div class="renovation-styles__item">
+        <section class="renovation-styles__item">
           <div class="renovation-styles__content">
             <picture
               style="
-                background-image: url('img/renovation-styles/renovation-styles-bg-extra-small.jpg');
+                background-image: url('/img/renovation-styles/renovation-styles-bg-extra-mini.jpg');
               "
               class="renovation-styles__image-bg-wrapper renovation-styles__image-bg-wrapper_last lazy-loading-img-wrapper"
             >
               <source
                 type="image/webp"
-                srcset="/img/renovation-styles/renovation-styles-bg-extra.webp"
+                srcset="
+                  /img/renovation-styles/renovation-styles-bg-extra.webp    1x,
+                  /img/renovation-styles/renovation-styles-bg-extra@2x.webp 2x
+                "
+                media="(min-width: 1025px)"
               />
+
+              <source
+                type="image/webp"
+                srcset="
+                  /img/renovation-styles/renovation-styles-bg-extra-medium.webp    1x,
+                  /img/renovation-styles/renovation-styles-bg-extra-medium@2x.webp 2x
+                "
+                media="(min-width: 451px) and (max-width: 1024px)"
+              />
+
+              <source
+                type="image/webp"
+                srcset="
+                  /img/renovation-styles/renovation-styles-bg-extra-small.webp    1x,
+                  /img/renovation-styles/renovation-styles-bg-extra-small@2x.webp 2x
+                "
+                media="(max-width: 450px)"
+              />
+
+              <source
+                type="image/jpeg"
+                srcset="
+                  /img/renovation-styles/renovation-styles-bg-extra-medium.jpg    1x,
+                  /img/renovation-styles/renovation-styles-bg-extra-medium@2x.jpg 2x
+                "
+                media="(min-width: 451px) and (max-width: 1024px)"
+              />
+
+              <source
+                type="image/jpeg"
+                srcset="
+                  /img/renovation-styles/renovation-styles-bg-extra-small.jpg    1x,
+                  /img/renovation-styles/renovation-styles-bg-extra-small@2x.jpg 2x
+                "
+                media="(max-width: 450px)"
+              />
+
               <img
                 loading="lazy"
                 class="renovation-styles__image-bg lazy-loading-img"
-                src="/img/renovation-styles/renovation-styles-bg-extra.jpg"
+                srcset="
+                  /img/renovation-styles/renovation-styles-bg-extra.jpg    1x,
+                  /img/renovation-styles/renovation-styles-bg-extra@2x.jpg 2x
+                "
                 alt="img"
               />
             </picture>
 
             <div class="renovation-styles__column">
               <div class="renovation-styles__wrapper">
-                <div class="renovation-styles__style-type">extra</div>
+                <h1 class="renovation-styles__style-type">extra</h1>
               </div>
             </div>
 
@@ -201,7 +333,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </section>
       </div>
     </div>
   </section>

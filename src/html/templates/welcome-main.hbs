@@ -3,29 +3,69 @@
     <picture class='welcome-main__image-bg-wrapper'>
       <source
         type='image/webp'
-        srcset='img/welcome-main/welcome-main-bg.webp'
+        srcset='
+          /img/welcome-main/welcome-main-bg.webp    1x,
+          /img/welcome-main/welcome-main-bg.webp@2x 2x
+        '
+        media='(min-width: 1025px)'
       />
+
+      <source
+        type='image/webp'
+        srcset='
+          /img/welcome-main/welcome-main-bg-medium.webp    1x,
+          /img/welcome-main/welcome-main-bg-medium@2x.webp 2x
+        '
+        media='(min-width: 451px) and (max-width: 1024px)'
+      />
+
+      <source
+        type='image/webp'
+        srcset='
+          /img/welcome-main/welcome-main-bg-small.webp    1x,
+          /img/welcome-main/welcome-main-bg-small@2x.webp 2x
+        '
+        media='(max-width: 450px)'
+      />
+
+      <source
+        type='image/jpeg'
+        srcset='
+          /img/welcome-main/welcome-main-bg-medium.jpg     1x,
+          /img/welcome-main/welcome-main-bg-medium@2x.jpg 2x
+        '
+        media='(min-width: 451px) and (max-width: 1024px)'
+      />
+
+      <source
+        type='image/jpeg'
+        srcset='
+          /img/welcome-main/welcome-main-bg-small.jpg     1x,
+          /img/welcome-main/welcome-main-bg-small@2x.jpg 2x
+        '
+        media='(max-width: 450px)'
+      />
+
       <img
         class='welcome-main__image-bg'
-        src='img/welcome-main/welcome-main-bg.jpg'
+        srcset='
+          /img/welcome-main/welcome-main-bg.jpg    1x,
+          /img/welcome-main/welcome-main-bg@2x.jpg 2x
+        '
         alt='img'
       />
     </picture>
 
     <div class='welcome-main__container'>
       <div class='welcome-main__body'>
-        <p class='welcome-main__text'>
-          ремонт квартир под ключ
-        </p>
+        <p class='welcome-main__text'>ремонт квартир под ключ</p>
 
         <h1 class='welcome-main__title'>
-
           <span class='welcome-main__title-left'>walter</span>
 
           <span class='welcome-main__title-small'>your personal</span>
 
           <span class='welcome-main__title-left-margin'>house</span>
-
         </h1>
       </div>
     </div>
@@ -35,8 +75,9 @@
     <form class='contact-form__body'>
       <div class='contact-form__item contact-form__item_input'>
         <input class='contact-form__input' placeholder='Your name' />
-        <p type='number' class='contact-form__input-error-text'>Заполните,
-          пожалуйста, это поле.</p>
+        <p type='number' class='contact-form__input-error-text'>
+          Заполните, пожалуйста, это поле.
+        </p>
       </div>
 
       <div class='contact-form__item contact-form__item_input'>
@@ -44,15 +85,14 @@
           class='contact-form__input contact-form__input_modified'
           placeholder='Your phone number'
         />
-        <p type='number' class='contact-form__input-error-text'>Заполните,
-          пожалуйста, это поле.</p>
+        <p type='number' class='contact-form__input-error-text'>
+          Заполните, пожалуйста, это поле.
+        </p>
       </div>
 
       <div class='contact-form__item'>
         <button class='contact-form__button' type='submit'>
-          <span>
-            Discuss a Project
-          </span>
+          <span> Discuss a Project </span>
 
           <div class='contact-form__button-arrow-wrapper'>
             <svg class='contact-form__button-arrow'>
