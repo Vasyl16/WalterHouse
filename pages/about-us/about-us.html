@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{{> head isSwiper=true }}
+
+<body>
+
+  <div class="wrapper">
+    {{> header }}
+
+
+    <main>
+      <section class='about-us'>
+        <div class="about-us__wrapper">
+          <picture style="background-image: url('/img/renovation/renovation-bg-mini.jpg')"
+            class='about-us__image-bg-wrapper lazy-loading-img-wrapper'>
+            <source type='image/webp' srcset='
+                            /img/renovation/renovation-bg.webp 1x,
+                            /img/renovation/renovation-bg@2x.webp 2x
+                          ' />
+            <img loading='lazy' class='about-us__image-bg lazy-loading-img' srcset='
+                            /img/renovation/renovation-bg.jpg 1x,
+                            /img/renovation/renovation-bg@2x.jpg 2x
+                          ' alt='img' />
+          </picture>
+
+          <div class='about-us__container'>
+            <div class='about-us__body'>
+              <div class='about-us__row about-us__row_content'>
+                <div class='about-us__column about-us__column_image'>
+                  <picture class='about-us__image-wrapper'>
+                    <source type='image/webp' srcset='
+                                  /img/about-us/about-us-image.webp 1x,
+                                  /img/about-us/about-us-image@2x.webp 2x
+                                ' />
+                    <img loading='lazy' class='about-us__image' srcset='
+                                  /img/about-us/about-us-image.jpg 1x,
+                                  /img/about-us/about-us-image@2x.jpg 2x
+                                ' alt='img' />
+                  </picture>
+                </div>
+
+                <div class='about-us__column'>
+                  <div class='about-us__content'>
+                    <h1 class='about-us__title'>Место для короткого слогана
+                      здесь Место для короткого слогана здесь
+                    </h1>
+
+                    <div class='about-us__items items-about-us'>
+                      <article class='items-about-us__item'>
+                        <h1 class='items-about-us__title'>Место для
+                          подзаголовка</h1>
+
+                        <p class='items-about-us__text'><span>Значимость этих
+                            проблем настолько очевидна,</span>
+                          что новая модель организационной деятельности способствует
+                          подготовки и реализации форм развития. Не следует, однако
+                          забывать, что рамки и место обучения кадров способствует
+                          подготовки и реализации новых предложений. Повседневная
+                          практика показывает, что постоянное
+                          информационно-пропагандистское обеспечение нашей
+                          деятельности требуют определения и уточнения соответствующий
+                          условий активизации.
+                        </p>
+                      </article>
+
+                      <article class='items-about-us__item'>
+                        <h1 class='items-about-us__title'>Место для
+                          подзаголовка</h1>
+
+                        <p class='items-about-us__text'><span>Значимость этих
+                            проблем настолько очевидна,</span>
+                          что новая модель организационной деятельности способствует
+                          подготовки и реализации форм развития. Не следует, однако
+                          забывать, что рамки и место обучения кадров способствует
+                          подготовки и реализации новых предложений. Повседневная
+                          практика показывает, что постоянное
+                          информационно-пропагандистское обеспечение нашей
+                          деятельности требуют определения и уточнения соответствующий
+                          условий активизации.
+                        </p>
+                      </article>
+                      <article class='items-about-us__item'>
+                        <h1 class='items-about-us__title'>Место для
+                          подзаголовка</h1>
+
+                        <p class='items-about-us__text'><span>Значимость этих
+                            проблем настолько очевидна,</span>
+                          что новая модель организационной деятельности способствует
+                          подготовки и реализации форм развития. Не следует, однако
+                          забывать, что рамки и место обучения кадров способствует
+                          подготовки и реализации новых предложений. Повседневная
+                          практика показывает, что постоянное
+                          информационно-пропагандистское обеспечение нашей
+                          деятельности требуют определения и уточнения соответствующий
+                          условий активизации.
+                        </p>
+                      </article>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class='about-us__row'>
+                <a href="/WalterHouse/" class='about-us__link'>
+                  <span>вернуться на главную</span>
+
+                  <svg class='about-us__link-arrow'>
+                    <use xlink:href='/icons/sprite.svg#renovation-styles__style-button-arrow-gallery'></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <section class="left-panel">
+          <div class="left-panel__body">
+            <h1 class="left-panel__title">apartment renovation</h1>
+
+
+
+            <div class="left-panel__label-items label-items-left-panel">
+              <svg class='label-items-left-panel__label label-items-left-panel__label_facebook'>
+                <use xlink:href='/icons/sprite.svg#label-items-left-panel__label-facebook'></use>
+              </svg>
+
+              <svg class='label-items-left-panel__label label-items-left-panel__label_instagram'>
+                <use xlink:href='/icons/sprite.svg#label-items-left-panel__label-instagram'></use>
+              </svg>
+
+              <svg class='label-items-left-panel__label label-items-left-panel__label_telegram'>
+                <use xlink:href='/icons/sprite.svg#label-items-left-panel__label-telegram'></use>
+              </svg>
+
+              <svg class='label-items-left-panel__label label-items-left-panel__label_youtube'>
+                <use xlink:href='/icons/sprite.svg#label-items-left-panel__label-youtube'></use>
+              </svg>
+            </div>
+          </div>
+        </section>
+      </section>
+
+    </main>
+
+  </div>
+
+
+
+
+  </main>
+
+  </div>
+
+  <script type="module" src="./about-us.js"></script>
+</body>
+
+</html>

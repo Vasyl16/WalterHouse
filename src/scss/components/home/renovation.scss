@@ -139,8 +139,10 @@
     gap: 25px;
     transition: all ease 0.3s;
 
-    &:hover {
-      opacity: 0.7;
+    @media (pointer: fine) {
+      &:hover {
+        color: $secondary-hover-color;
+      }
     }
 
     @media (max-width: 1400px) {

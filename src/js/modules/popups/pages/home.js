@@ -61,6 +61,25 @@ const additionalServicesAllPopupItems = [
   }
 ];
 
+const popupRenovationItems = [
+  {
+    popupButtonClass: '.renovation__button',
+    closeButtonClass: '.about-us__button',
+    maxHeight: false,
+    maxWidth: false,
+    classArray: [
+      {
+        class: '.about-us',
+        classNameActive: 'about-us_active'
+      },
+      {
+        class: '.contact-form-renovation',
+        classNameActive: 'contact-form-renovation-hidden'
+      }
+    ]
+  }
+];
+
 const infoListServicesPopupsItems = [
   {
     popupButtonClass: '.package-size-list-services__info-icon_elite',
@@ -102,5 +121,6 @@ const infoListServicesPopupsItems = [
 
 export const allHomePopupItems = [
   ...additionalServicesAllPopupItems,
-  ...infoListServicesPopupsItems
+  ...infoListServicesPopupsItems,
+  ...popupRenovationItems
 ];

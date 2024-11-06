@@ -1,0 +1,272 @@
+.about-us {
+  position: relative;
+  flex: 1 1 auto;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    inset: 0;
+    background: $second-header-bg-color;
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+  }
+
+  &__wrapper {
+    height: 100%;
+  }
+
+  &__image-bg-wrapper {
+    @include section-img-wrapper-bg;
+
+    z-index: -1;
+  }
+
+  &__image-bg {
+    @include section-img-bg;
+
+    z-index: -1;
+  }
+
+  &__container {
+    @include section-header-gap;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    padding-top: 39px;
+    padding-bottom: 40px;
+    justify-content: space-between;
+
+    @media (max-width: $mobile) {
+      padding: 30px 0;
+    }
+  }
+
+  &__row {
+    &_content {
+      display: flex;
+      gap: 72px;
+      padding-bottom: 45px;
+      box-sizing: border-box;
+
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: $main-line;
+      }
+
+      @media (max-width: $tablet) {
+        padding-bottom: 30px;
+      }
+      @media (max-width: $mobile) {
+        padding-bottom: 20px;
+      }
+    }
+  }
+
+  &__column {
+    display: flex;
+
+    &_image {
+      flex: 0 0 26%;
+      min-width: 300px;
+
+      @media (max-width: $markup-width) {
+        display: none;
+      }
+    }
+  }
+
+  &__content {
+    padding: 30px 82px 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+    max-height: 695px;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+      width: 5px;
+      height: 4px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: $main-line-gradient;
+      border-radius: 2px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    @media (max-width: $markup-width) {
+      margin-left: 90px;
+    }
+
+    @media (max-height: 900px) {
+      max-height: 490px;
+    }
+
+    @media (max-width: $tablet) {
+      padding: 0 20px 0 0;
+      margin-left: 10px;
+    }
+
+    @media (max-width: $mobile) {
+      gap: 30px;
+    }
+  }
+
+  &__image-wrapper {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__image {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 409/700;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1.36;
+    color: $white;
+    padding-left: 63px;
+    @media (max-width: $tablet) {
+      padding: 0;
+    }
+
+    @media (max-width: $tablet) {
+      font-size: 30px;
+    }
+
+    @media (max-width: $mobile) {
+      font-size: 26px;
+    }
+  }
+
+  &__link {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.36;
+    letter-spacing: 0.45em;
+    color: $secondary-color;
+    text-transform: uppercase;
+    display: flex;
+    padding: 0 20px;
+    gap: 38px;
+    align-items: center;
+    margin-top: 42px;
+    justify-content: center;
+
+    @media (max-width: $mobile) {
+      font-size: 14px;
+    }
+  }
+
+  &__link-arrow {
+    width: 135px;
+    height: 23px;
+    object-fit: contain;
+
+    @media (max-width: $mobile) {
+      display: none;
+    }
+  }
+}
+
+.items-about-us {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  @media (max-width: $mobile) {
+    gap: 20px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+
+    @media (max-width: $mobile) {
+      gap: 19px;
+    }
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.36;
+    color: $white;
+    position: relative;
+    padding-left: 65px;
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 13px;
+      left: 0;
+      aspect-ratio: 1/1;
+      width: 8px;
+      background-color: $white;
+      border-radius: 50%;
+    }
+
+    @media (max-width: $tablet) {
+      padding-left: 30px;
+      font-size: 20px;
+
+      &:after {
+        top: 9px;
+      }
+    }
+
+    @media (max-width: $mobile) {
+      font-size: 18px;
+      padding-left: 20px;
+
+      &:after {
+        top: 10px;
+        width: 5px;
+      }
+    }
+  }
+
+  &__text {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.666;
+    text-align: left;
+    color: $white;
+    padding-left: 67px;
+
+    & span {
+      color: $secondary-color;
+    }
+
+    @media (max-width: $tablet) {
+      padding-left: 30px;
+      font-size: 16px;
+    }
+
+    @media (max-width: $mobile) {
+      font-size: 14px;
+      padding-left: 20px;
+    }
+  }
+}
