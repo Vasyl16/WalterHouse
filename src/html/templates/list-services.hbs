@@ -1,522 +1,485 @@
-<div class='swiper-main__slide swiper-slide'>
-  <section class='swiper-main__list-services list-services'>
-    <picture
-      style="
+<section class='swiper-main__list-services list-services'>
+  <picture
+    style="
         background-image: url('/img/list-services/list-services-bg-mini.jpg');
       "
-      class='list-services__image-bg-wrapper lazy-loading-img-wrapper'
-    >
-      <source
-        type='image/webp'
-        srcset='
+    class='list-services__image-bg-wrapper lazy-loading-img-wrapper'
+  >
+    <source
+      type='image/webp'
+      srcset='
           /img/list-services/list-services-bg.webp    1x,
           /img/list-services/list-services-bg@2x.webp 2x
         '
-        media='(min-width: 1025px)'
-      />
+      media='(min-width: 1025px)'
+    />
 
-      <source
-        type='image/webp'
-        srcset='
+    <source
+      type='image/webp'
+      srcset='
           /img/list-services/list-services-bg-medium.webp    1x,
           /img/list-services/list-services-bg-medium@2x.webp 2x
         '
-        media='(min-width: 451px) and (max-width: 1024px)'
-      />
+      media='(min-width: 451px) and (max-width: 1024px)'
+    />
 
-      <source
-        type='image/webp'
-        srcset='
+    <source
+      type='image/webp'
+      srcset='
           /img/list-services/list-services-bg-small.webp    1x,
           /img/list-services/list-services-bg-small@2x.webp 2x
         '
-        media='(max-width: 450px)'
-      />
+      media='(max-width: 450px)'
+    />
 
-      <source
-        type='image/jpeg'
-        srcset='
+    <source
+      type='image/jpeg'
+      srcset='
           /img/list-services/list-services-bg-medium.jpg    1x,
           /img/list-services/list-services-bg-medium@2x.jpg 2x
         '
-        media='(min-width: 451px) and (max-width: 1024px)'
-      />
+      media='(min-width: 451px) and (max-width: 1024px)'
+    />
 
-      <source
-        type='image/jpeg'
-        srcset='
+    <source
+      type='image/jpeg'
+      srcset='
           /img/list-services/list-services-bg-small.jpg    1x,
           /img/list-services/list-services-bg-small@2x.jpg 2x
         '
-        media='(max-width: 450px)'
-      />
+      media='(max-width: 450px)'
+    />
 
-      <img
-        loading='lazy'
-        class='renovation__image-bg lazy-loading-img'
-        srcset='
+    <img
+      loading='lazy'
+      class='renovation__image-bg lazy-loading-img'
+      srcset='
           /img/list-services/list-services-bg.jpg    1x,
           /img/list-services/list-services-bg@2x.jpg 2x
         '
-        alt='img'
-      />
-    </picture>
+      alt='img'
+    />
+  </picture>
 
-    <div class='list-services__container'>
-      <div class='list-services__body'>
-        <h1 class='list-services__title'>
-          <span> </span>
-          Select an area size &
+  <div class='list-services__container'>
+    <div class='list-services__body'>
+      <h1 class='list-services__title'>
+        <span> </span>
+        Select an area size &
 
-          <span> one of the service packages: </span>
-        </h1>
+        <span> one of the service packages: </span>
+      </h1>
 
-        <div class='list-services__items'>
-          <div class='list-services__item'>
-            <div class='list-services__circle-size-wrapper'>
-              <p class='list-services__circle-size-unit'>
-                m
-                <span>2</span>
-              </p>
-
-              <svg class='list-services__progress-circle-wrapper'>
-                <circle
-                  cx='50%'
-                  cy='50%'
-                  r='49%'
-                  class='list-services__progress-circle-line'
-                ></circle>
-
-                <circle
-                  cx='50%'
-                  cy='50%'
-                  r='49%'
-                  class='list-services__progress-circle'
-                ></circle>
-              </svg>
-
-              <div class='list-services__progress-point-handle'></div>
-
-              <button class='list-services__progress-point'></button>
-
-              <p class='list-services__circle-size-count'>64</p>
-            </div>
-          </div>
-
-          <div class='list-services__item'>
-            <div class='list-services__package-size package-size-list-services'>
-              <div
-                class='package-size-list-services__item package-size-list-services__item_elite'
-              >
-                <div
-                  class='package-size-list-services__info-icon package-size-list-services__info-icon_elite'
-                >
-                  i
-                </div>
-
-                <div
-                  class='package-size-list-services__package-wrapper package-size-list-services__package-wrapper_active'
-                  data-value='1000'
-                >
-                  <p
-                    class='package-size-list-services__type package-size-list-services__type_first'
-                  >
-                    Elite
-                  </p>
-
-                  <div class='package-size-list-services__lines'>
-                    <div class='package-size-list-services__first-line'></div>
-
-                    <div class='package-size-list-services__circle'></div>
-
-                    <div
-                      class='package-size-list-services__second-line package-size-list-services__second-line_elite'
-                    ></div>
-                  </div>
-                </div>
-              </div>
-
-              <div
-                class='package-size-list-services__item package-size-list-services__item_vip'
-              >
-                <div
-                  class='package-size-list-services__info-icon package-size-list-services__info-icon_vip'
-                >
-                  i
-                </div>
-
-                <div
-                  class='package-size-list-services__package-wrapper'
-                  data-value='1500'
-                >
-                  <p
-                    class='package-size-list-services__type package-size-list-services__type_center'
-                  >
-                    vip
-                  </p>
-
-                  <div class='package-size-list-services__lines'>
-                    <div class='package-size-list-services__second-line'></div>
-
-                    <div class='package-size-list-services__circle'></div>
-
-                    <div class='package-size-list-services__second-line'></div>
-                  </div>
-                </div>
-              </div>
-
-              <div
-                class='package-size-list-services__item package-size-list-services__item_extra'
-              >
-                <div
-                  class='package-size-list-services__info-icon package-size-list-services__info-icon_extra'
-                >
-                  i
-                </div>
-
-                <div
-                  class='package-size-list-services__package-wrapper'
-                  data-value='2000'
-                >
-                  <p
-                    class='package-size-list-services__type package-size-list-services__type_last'
-                  >
-                    Extra
-                  </p>
-
-                  <div class='package-size-list-services__lines'>
-                    <div
-                      class='package-size-list-services__second-line package-size-list-services__second-line_extra'
-                    ></div>
-
-                    <div class='package-size-list-services__circle'></div>
-
-                    <div
-                      class='package-size-list-services__second-line_last'
-                    ></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class='list-services__item list-services__item_last'>
-            <p class='list-services__cost'>
-              <span class='list-services__cost-count'>233 000</span>
-              <span class='list-services__cost-unit'>uah</span>
+      <div class='list-services__items'>
+        <div class='list-services__item'>
+          <div class='list-services__circle-size-wrapper'>
+            <p class='list-services__circle-size-unit'>
+              m
+              <span>2</span>
             </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <section
-    class='swiper-main__info-list-services info-list-services info-list-services_elite'
-  >
-    <div class='info-list-services__body'>
-      <div class='info-list-services__header'>
-        <h1 class='info-list-services__title'>
-          Стиль
-          <span> ELITE </span>
-        </h1>
-
-        <div class='info-list-services__text'>
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-          commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
-          et magnis dis parturient montes, nascetur ridiculus mus. Donec quam
-          felis, ultricies nec, pellentesque eu.
-        </div>
-      </div>
-
-      <svg
-        class='info-list-services__close-button-icon info-list-services__close-button-icon_elite'
-      >
-        <use
-          xlink:href='/icons/sprite.svg#additional-services-popup__close-button-icon'
-        ></use>
-      </svg>
-
-      <ul class='info-list-services__list'>
-        <li class='info-list-services__line'>
-          Демонтаж и Возведение межкомнатных перегородок
-        </li>
-
-        <li class='info-list-services__line'>
-          Выравнивание стен под маяк, финишное отделка стен под обои
-        </li>
-
-        <li class='info-list-services__line'>Выведение углов 90 градусов</li>
-
-        <li class='info-list-services__line'>
-          Электромонтажные работы (согласно проекта)
-        </li>
-
-        <li class='info-list-services__line'>
-          Монтаж слаботочной проводки (интернет, антенна)
-        </li>
-
-        <li class='info-list-services__line'>
-          Монтаж водопровода и канализации
-        </li>
-
-        <li class='info-list-services__line'>Гидроизоляция мокрых зон</li>
-
-        <li class='info-list-services__line'>
-          Заливка стяжки пола (до 10 см, пескобетон/керамзит)
-        </li>
-
-        <li class='info-list-services__line'>
-          Монтаж водопровода и канализации
-        </li>
-
-        <li class='info-list-services__line'>
-          Подготовка стен под поклейку обоев
-        </li>
-
-        <li class='info-list-services__line'>Укладка ламината на подложку</li>
-
-        <li class='info-list-services__line'>
-          Укладка плитки на пол и стены в санузле и ванной (до 5м2 по полу)
-        </li>
-
-        <li class='info-list-services__line'>Монтаж напольного плинтуса ПВХ</li>
-
-        <li class='info-list-services__line'>Потолок натяжной</li>
-
-        <li class='info-list-services__line'>Установка межкомнатных дверей</li>
-
-        <li class='info-list-services__line'>
-          Установка ванны \ душевой кабины
-        </li>
-
-        <li class='info-list-services__line'>Монтаж раковины</li>
-
-        <li class='info-list-services__line'>Монтаж лючка ревизии в стояк</li>
-
-        <li class='info-list-services__line'>Монтаж лючка ревизии в стояк</li>
-
-        <li class='info-list-services__line'>Монтаж потолка из ГКЛ</li>
-
-        <li class='info-list-services__line'>Уборка после ремонта</li>
-      </ul>
-    </div>
-  </section>
-
-  <section
-    class='swiper-main__info-list-services info-list-services info-list-services_vip'
-  >
-    <div class='info-list-services__body'>
-      <div class='info-list-services__header'>
-        <h1 class='info-list-services__title info-list-services__title_orange'>
-          Vip Стиль
-        </h1>
-
-        <div class='info-list-services__text'>
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-          commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
-          et magnis dis parturient montes, nascetur ridiculus mus. Donec quam
-          felis, ultricies nec, pellentesque eu.
-        </div>
-      </div>
-
-      <svg
-        class='info-list-services__close-button-icon info-list-services__close-button-icon_vip'
-      >
-        <use
-          xlink:href='/icons/sprite.svg#additional-services-popup__close-button-icon'
-        ></use>
-      </svg>
-
-      <ul class='info-list-services__list'>
-        <li class='info-list-services__line'>
-          Демонтаж и Возведение межкомнатных перегородок
-        </li>
-
-        <li class='info-list-services__line'>
-          Выравнивание стен под маяк, финишное отделка стен под обои
-        </li>
-
-        <li class='info-list-services__line'>Выведение углов 90 градусов</li>
-
-        <li class='info-list-services__line'>
-          Электромонтажные работы (согласно проекта)
-        </li>
-
-        <li class='info-list-services__line'>
-          Монтаж слаботочной проводки (интернет, антенна)
-        </li>
-
-        <li class='info-list-services__line'>
-          Монтаж водопровода и канализации
-        </li>
-
-        <li class='info-list-services__line'>Гидроизоляция мокрых зон</li>
-
-        <li class='info-list-services__line'>
-          Заливка стяжки пола (до 10 см, пескобетон/керамзит)
-        </li>
-
-        <li class='info-list-services__line'>
-          Монтаж водопровода и канализации
-        </li>
-
-        <li class='info-list-services__line'>
-          Подготовка стен под поклейку обоев
-        </li>
-
-        <li class='info-list-services__line'>Укладка ламината на подложку</li>
-
-        <li class='info-list-services__line'>
-          Укладка плитки на пол и стены в санузле и ванной (до 5м2 по полу)
-        </li>
-
-        <li class='info-list-services__line'>Монтаж напольного плинтуса ПВХ</li>
-
-        <li class='info-list-services__line'>Потолок натяжной</li>
-
-        <li class='info-list-services__line'>Установка межкомнатных дверей</li>
-
-        <li class='info-list-services__line'>
-          Установка ванны \ душевой кабины
-        </li>
-
-        <li class='info-list-services__line'>Монтаж раковины</li>
-
-        <li class='info-list-services__line'>Монтаж лючка ревизии в стояк</li>
-
-        <li class='info-list-services__line'>Монтаж лючка ревизии в стояк</li>
-
-        <li class='info-list-services__line'>Монтаж потолка из ГКЛ</li>
-
-        <li class='info-list-services__line'>Уборка после ремонта</li>
-      </ul>
-    </div>
-  </section>
-
-  <section
-    class='swiper-main__info-list-services info-list-services info-list-services_extra'
-  >
-    <div class='info-list-services__body'>
-      <div class='info-list-services__header'>
-        <h1 class='info-list-services__title'>
-          Стиль
-          <span> Extra </span>
-        </h1>
-
-        <div class='info-list-services__text'>
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-          commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
-          et magnis dis parturient montes, nascetur ridiculus mus. Donec quam
-          felis, ultricies nec, pellentesque eu.
-        </div>
-      </div>
-
-      <svg
-        class='info-list-services__close-button-icon info-list-services__close-button-icon_extra'
-      >
-        <use
-          xlink:href='/icons/sprite.svg#additional-services-popup__close-button-icon'
-        ></use>
-      </svg>
-
-      <ul class='info-list-services__list'>
-        <li class='info-list-services__line'>
-          Демонтаж и Возведение межкомнатных перегородок
-        </li>
-
-        <li class='info-list-services__line'>
-          Выравнивание стен под маяк, финишное отделка стен под обои
-        </li>
-
-        <li class='info-list-services__line'>Выведение углов 90 градусов</li>
-
-        <li class='info-list-services__line'>
-          Электромонтажные работы (согласно проекта)
-        </li>
-
-        <li class='info-list-services__line'>
-          Монтаж слаботочной проводки (интернет, антенна)
-        </li>
-
-        <li class='info-list-services__line'>
-          Монтаж водопровода и канализации
-        </li>
-
-        <li class='info-list-services__line'>Гидроизоляция мокрых зон</li>
-
-        <li class='info-list-services__line'>
-          Заливка стяжки пола (до 10 см, пескобетон/керамзит)
-        </li>
-
-        <li class='info-list-services__line'>
-          Монтаж водопровода и канализации
-        </li>
-
-        <li class='info-list-services__line'>
-          Подготовка стен под поклейку обоев
-        </li>
-
-        <li class='info-list-services__line'>Укладка ламината на подложку</li>
-
-        <li class='info-list-services__line'>
-          Укладка плитки на пол и стены в санузле и ванной (до 5м2 по полу)
-        </li>
-
-        <li class='info-list-services__line'>Монтаж напольного плинтуса ПВХ</li>
-
-        <li class='info-list-services__line'>Потолок натяжной</li>
-
-        <li class='info-list-services__line'>Установка межкомнатных дверей</li>
-
-        <li class='info-list-services__line'>
-          Установка ванны \ душевой кабины
-        </li>
-
-        <li class='info-list-services__line'>Монтаж раковины</li>
-
-        <li class='info-list-services__line'>Монтаж лючка ревизии в стояк</li>
-
-        <li class='info-list-services__line'>Монтаж лючка ревизии в стояк</li>
-
-        <li class='info-list-services__line'>Монтаж потолка из ГКЛ</li>
-
-        <li class='info-list-services__line'>Уборка после ремонта</li>
-      </ul>
-    </div>
-  </section>
-
-  <section class='swiper-slide-contact-form contact-form'>
-    <form class='contact-form__body'>
-      <div class='contact-form__item contact-form__item_input'>
-        <input class='contact-form__input' placeholder='Your name' />
-        <p type='number' class='contact-form__input-error-text'>
-          Заполните, пожалуйста, это поле.
-        </p>
-      </div>
-
-      <div class='contact-form__item contact-form__item_input'>
-        <input
-          class='contact-form__input contact-form__input_modified'
-          placeholder='Your phone number'
-        />
-        <p type='number' class='contact-form__input-error-text'>
-          Заполните, пожалуйста, это поле.
-        </p>
-      </div>
-
-      <div class='contact-form__item'>
-        <button class='contact-form__button' type='submit'>
-          <span> Discuss a Project </span>
-
-          <div class='contact-form__button-arrow-wrapper'>
-            <svg class='contact-form__button-arrow'>
-              <use
-                xlink:href='/icons/sprite.svg#contact-form__button-arrow'
-              ></use>
+            <svg class='list-services__progress-circle-wrapper'>
+              <circle
+                cx='50%'
+                cy='50%'
+                r='49%'
+                class='list-services__progress-circle-line'
+              ></circle>
+
+              <circle
+                cx='50%'
+                cy='50%'
+                r='49%'
+                class='list-services__progress-circle'
+              ></circle>
             </svg>
+
+            <div class='list-services__progress-point-handle'></div>
+
+            <button class='list-services__progress-point'></button>
+
+            <p class='list-services__circle-size-count'>64</p>
           </div>
-        </button>
+        </div>
+
+        <div class='list-services__item'>
+          <div class='list-services__package-size package-size-list-services'>
+            <div
+              class='package-size-list-services__item package-size-list-services__item_elite'
+            >
+              <div
+                class='package-size-list-services__info-icon package-size-list-services__info-icon_elite'
+              >
+                i
+              </div>
+
+              <div
+                class='package-size-list-services__package-wrapper package-size-list-services__package-wrapper_active'
+                data-value='1000'
+              >
+                <p
+                  class='package-size-list-services__type package-size-list-services__type_first'
+                >
+                  Elite
+                </p>
+
+                <div class='package-size-list-services__lines'>
+                  <div class='package-size-list-services__first-line'></div>
+
+                  <div class='package-size-list-services__circle'></div>
+
+                  <div
+                    class='package-size-list-services__second-line package-size-list-services__second-line_elite'
+                  ></div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class='package-size-list-services__item package-size-list-services__item_vip'
+            >
+              <div
+                class='package-size-list-services__info-icon package-size-list-services__info-icon_vip'
+              >
+                i
+              </div>
+
+              <div
+                class='package-size-list-services__package-wrapper'
+                data-value='1500'
+              >
+                <p
+                  class='package-size-list-services__type package-size-list-services__type_center'
+                >
+                  vip
+                </p>
+
+                <div class='package-size-list-services__lines'>
+                  <div class='package-size-list-services__second-line'></div>
+
+                  <div class='package-size-list-services__circle'></div>
+
+                  <div class='package-size-list-services__second-line'></div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class='package-size-list-services__item package-size-list-services__item_extra'
+            >
+              <div
+                class='package-size-list-services__info-icon package-size-list-services__info-icon_extra'
+              >
+                i
+              </div>
+
+              <div
+                class='package-size-list-services__package-wrapper'
+                data-value='2000'
+              >
+                <p
+                  class='package-size-list-services__type package-size-list-services__type_last'
+                >
+                  Extra
+                </p>
+
+                <div class='package-size-list-services__lines'>
+                  <div
+                    class='package-size-list-services__second-line package-size-list-services__second-line_extra'
+                  ></div>
+
+                  <div class='package-size-list-services__circle'></div>
+
+                  <div
+                    class='package-size-list-services__second-line_last'
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class='list-services__item list-services__item_last'>
+          <p class='list-services__cost'>
+            <span class='list-services__cost-count'>233 000</span>
+            <span class='list-services__cost-unit'>uah</span>
+          </p>
+        </div>
       </div>
-    </form>
-  </section>
-</div>
+    </div>
+  </div>
+</section>
+
+<section
+  class='swiper-main__info-list-services info-list-services info-list-services_elite'
+>
+  <div class='info-list-services__body'>
+    <div class='info-list-services__header'>
+      <h1 class='info-list-services__title'>
+        Стиль
+        <span> ELITE </span>
+      </h1>
+
+      <div class='info-list-services__text'>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+        ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis
+        dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+        ultricies nec, pellentesque eu.
+      </div>
+    </div>
+
+    <svg
+      class='info-list-services__close-button-icon info-list-services__close-button-icon_elite'
+    >
+      <use
+        xlink:href='/icons/sprite.svg#additional-services-popup__close-button-icon'
+      ></use>
+    </svg>
+
+    <ul class='info-list-services__list'>
+      <li class='info-list-services__line'>
+        Демонтаж и Возведение межкомнатных перегородок
+      </li>
+
+      <li class='info-list-services__line'>
+        Выравнивание стен под маяк, финишное отделка стен под обои
+      </li>
+
+      <li class='info-list-services__line'>Выведение углов 90 градусов</li>
+
+      <li class='info-list-services__line'>
+        Электромонтажные работы (согласно проекта)
+      </li>
+
+      <li class='info-list-services__line'>
+        Монтаж слаботочной проводки (интернет, антенна)
+      </li>
+
+      <li class='info-list-services__line'>
+        Монтаж водопровода и канализации
+      </li>
+
+      <li class='info-list-services__line'>Гидроизоляция мокрых зон</li>
+
+      <li class='info-list-services__line'>
+        Заливка стяжки пола (до 10 см, пескобетон/керамзит)
+      </li>
+
+      <li class='info-list-services__line'>
+        Монтаж водопровода и канализации
+      </li>
+
+      <li class='info-list-services__line'>
+        Подготовка стен под поклейку обоев
+      </li>
+
+      <li class='info-list-services__line'>Укладка ламината на подложку</li>
+
+      <li class='info-list-services__line'>
+        Укладка плитки на пол и стены в санузле и ванной (до 5м2 по полу)
+      </li>
+
+      <li class='info-list-services__line'>Монтаж напольного плинтуса ПВХ</li>
+
+      <li class='info-list-services__line'>Потолок натяжной</li>
+
+      <li class='info-list-services__line'>Установка межкомнатных дверей</li>
+
+      <li class='info-list-services__line'>
+        Установка ванны \ душевой кабины
+      </li>
+
+      <li class='info-list-services__line'>Монтаж раковины</li>
+
+      <li class='info-list-services__line'>Монтаж лючка ревизии в стояк</li>
+
+      <li class='info-list-services__line'>Монтаж лючка ревизии в стояк</li>
+
+      <li class='info-list-services__line'>Монтаж потолка из ГКЛ</li>
+
+      <li class='info-list-services__line'>Уборка после ремонта</li>
+    </ul>
+  </div>
+</section>
+
+<section
+  class='swiper-main__info-list-services info-list-services info-list-services_vip'
+>
+  <div class='info-list-services__body'>
+    <div class='info-list-services__header'>
+      <h1 class='info-list-services__title info-list-services__title_orange'>
+        Vip Стиль
+      </h1>
+
+      <div class='info-list-services__text'>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+        ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis
+        dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+        ultricies nec, pellentesque eu.
+      </div>
+    </div>
+
+    <svg
+      class='info-list-services__close-button-icon info-list-services__close-button-icon_vip'
+    >
+      <use
+        xlink:href='/icons/sprite.svg#additional-services-popup__close-button-icon'
+      ></use>
+    </svg>
+
+    <ul class='info-list-services__list'>
+      <li class='info-list-services__line'>
+        Демонтаж и Возведение межкомнатных перегородок
+      </li>
+
+      <li class='info-list-services__line'>
+        Выравнивание стен под маяк, финишное отделка стен под обои
+      </li>
+
+      <li class='info-list-services__line'>Выведение углов 90 градусов</li>
+
+      <li class='info-list-services__line'>
+        Электромонтажные работы (согласно проекта)
+      </li>
+
+      <li class='info-list-services__line'>
+        Монтаж слаботочной проводки (интернет, антенна)
+      </li>
+
+      <li class='info-list-services__line'>
+        Монтаж водопровода и канализации
+      </li>
+
+      <li class='info-list-services__line'>Гидроизоляция мокрых зон</li>
+
+      <li class='info-list-services__line'>
+        Заливка стяжки пола (до 10 см, пескобетон/керамзит)
+      </li>
+
+      <li class='info-list-services__line'>
+        Монтаж водопровода и канализации
+      </li>
+
+      <li class='info-list-services__line'>
+        Подготовка стен под поклейку обоев
+      </li>
+
+      <li class='info-list-services__line'>Укладка ламината на подложку</li>
+
+      <li class='info-list-services__line'>
+        Укладка плитки на пол и стены в санузле и ванной (до 5м2 по полу)
+      </li>
+
+      <li class='info-list-services__line'>Монтаж напольного плинтуса ПВХ</li>
+
+      <li class='info-list-services__line'>Потолок натяжной</li>
+
+      <li class='info-list-services__line'>Установка межкомнатных дверей</li>
+
+      <li class='info-list-services__line'>
+        Установка ванны \ душевой кабины
+      </li>
+
+      <li class='info-list-services__line'>Монтаж раковины</li>
+
+      <li class='info-list-services__line'>Монтаж лючка ревизии в стояк</li>
+
+      <li class='info-list-services__line'>Монтаж лючка ревизии в стояк</li>
+
+      <li class='info-list-services__line'>Монтаж потолка из ГКЛ</li>
+
+      <li class='info-list-services__line'>Уборка после ремонта</li>
+    </ul>
+  </div>
+</section>
+
+<section
+  class='swiper-main__info-list-services info-list-services info-list-services_extra'
+>
+  <div class='info-list-services__body'>
+    <div class='info-list-services__header'>
+      <h1 class='info-list-services__title'>
+        Стиль
+        <span> Extra </span>
+      </h1>
+
+      <div class='info-list-services__text'>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+        ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis
+        dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+        ultricies nec, pellentesque eu.
+      </div>
+    </div>
+
+    <svg
+      class='info-list-services__close-button-icon info-list-services__close-button-icon_extra'
+    >
+      <use
+        xlink:href='/icons/sprite.svg#additional-services-popup__close-button-icon'
+      ></use>
+    </svg>
+
+    <ul class='info-list-services__list'>
+      <li class='info-list-services__line'>
+        Демонтаж и Возведение межкомнатных перегородок
+      </li>
+
+      <li class='info-list-services__line'>
+        Выравнивание стен под маяк, финишное отделка стен под обои
+      </li>
+
+      <li class='info-list-services__line'>Выведение углов 90 градусов</li>
+
+      <li class='info-list-services__line'>
+        Электромонтажные работы (согласно проекта)
+      </li>
+
+      <li class='info-list-services__line'>
+        Монтаж слаботочной проводки (интернет, антенна)
+      </li>
+
+      <li class='info-list-services__line'>
+        Монтаж водопровода и канализации
+      </li>
+
+      <li class='info-list-services__line'>Гидроизоляция мокрых зон</li>
+
+      <li class='info-list-services__line'>
+        Заливка стяжки пола (до 10 см, пескобетон/керамзит)
+      </li>
+
+      <li class='info-list-services__line'>
+        Монтаж водопровода и канализации
+      </li>
+
+      <li class='info-list-services__line'>
+        Подготовка стен под поклейку обоев
+      </li>
+
+      <li class='info-list-services__line'>Укладка ламината на подложку</li>
+
+      <li class='info-list-services__line'>
+        Укладка плитки на пол и стены в санузле и ванной (до 5м2 по полу)
+      </li>
+
+      <li class='info-list-services__line'>Монтаж напольного плинтуса ПВХ</li>
+
+      <li class='info-list-services__line'>Потолок натяжной</li>
+
+      <li class='info-list-services__line'>Установка межкомнатных дверей</li>
+
+      <li class='info-list-services__line'>
+        Установка ванны \ душевой кабины
+      </li>
+
+      <li class='info-list-services__line'>Монтаж раковины</li>
+
+      <li class='info-list-services__line'>Монтаж лючка ревизии в стояк</li>
+
+      <li class='info-list-services__line'>Монтаж лючка ревизии в стояк</li>
+
+      <li class='info-list-services__line'>Монтаж потолка из ГКЛ</li>
+
+      <li class='info-list-services__line'>Уборка после ремонта</li>
+    </ul>
+  </div>
+</section>

@@ -9,7 +9,9 @@ import {
   renovationStylesPopupFun,
   changePackageHoverFun,
   initStepsWalterFun,
-  handleHeaderScroll
+  handleHeaderScroll,
+  handleHeaderOrderCallAllPopupups,
+  handleContactFormFun
 } from '/src/js/modules';
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -22,4 +24,6 @@ document.addEventListener('DOMContentLoaded', () => {
   changePackageHoverFun();
   initStepsWalterFun();
   handleHeaderScroll();
+  handleHeaderOrderCallAllPopupups();
+  handleContactFormFun();
 });

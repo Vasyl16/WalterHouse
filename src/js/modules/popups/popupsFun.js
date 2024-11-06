@@ -1,5 +1,7 @@
 import { blockScroll } from '../utils/blockScroll';
 import { hideHeader } from '../utils/hideHeader';
+import { removeClasses } from './../utils/removeClasses';
+import { addClasses } from './../utils/addClasses';
 
 const wrapper = document.querySelector('.wrapper');
 
@@ -25,30 +27,12 @@ export const togglePopupFun = popupItems => {
       return viewportWidth <= maxWidth && viewportHeight <= maxHeight;
     };
 
-    const addClasses = classArray => {
-      classArray.forEach(obj => {
-        const element = document.querySelector(obj.class);
-        if (element) {
-          element.classList.add(obj.classNameActive);
-        }
-      });
-    };
-
     const removeOtherClases = popupButton => {
       popupItems.forEach(popupItemObj => {
         if (
           popupButton !== document.querySelector(popupItemObj.popupButtonClass)
         ) {
           removeClasses(popupItemObj.classArray);
-        }
-      });
-    };
-
-    const removeClasses = classArray => {
-      classArray.forEach(obj => {
-        const element = document.querySelector(obj.class);
-        if (element) {
-          element.classList.remove(obj.classNameActive);
         }
       });
     };
@@ -91,7 +75,6 @@ export const togglePopupFun = popupItems => {
         console.error(error.message);
       }
     };
-
     if (shouldActivatePopup()) {
       addEvents();
     }

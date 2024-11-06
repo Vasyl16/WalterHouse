@@ -12,22 +12,110 @@
     <div class="main__swiper swiper swiper-main">
       <div class="swiper-main__wrapper swiper-wrapper">
 
-        {{> welcome-main }}
+        <div class="swiper-main__slide swiper-slide">
+          {{> welcome-main }}
 
-        {{> renovation }}
+          <section class='swiper-slide-contact-form contact-form'>
+            {{> contact-form }}
+          </section>
 
-        {{> renovation-styles }}
+        </div>
 
-        {{> list-services }}
+        <div class="swiper-main__slide swiper-slide swiper-slide-hide-laptop">
+          {{> renovation }}
 
-        {{> steps-walter }}
+          <section class='swiper-slide-contact-form contact-form'>
+            {{> contact-form }}
+          </section>
 
-        {{> additional-services }}
+        </div>
+
+        <div class="swiper-main__slide swiper-slide">
+          {{> renovation-styles }}
+        </div>
+
+        <div class="swiper-main__slide swiper-slide">
+          {{> list-services }}
+
+          <section class='swiper-slide-contact-form contact-form'>
+            {{> contact-form }}
+          </section>
+
+        </div>
+
+        <div class="swiper-main__slide swiper-slide">
+          {{> steps-walter }}
+
+          <section class='swiper-slide-contact-form contact-form contact-form-hidden'>
+            {{> contact-form }}
+          </section>
+
+        </div>
+
+        <div class="swiper-main__slide swiper-slide">
+          {{> additional-services }}
+
+          <section class='swiper-slide-contact-form contact-form'>
+            {{> contact-form }}
+          </section>
+        </div>
       </div>
       <div class="swiper-pagination swiper-main__pagination"></div>
     </div>
 
   </div>
+
+  <section class="header-order-call-popup">
+    <div class="header-order-call-popup__container">
+      <div class="header-order-call-popup__body">
+        <form class="header-order-call-popup__form form-order-call-popup ">
+          <div class="form-order-call-popup__item form-order-call-popup__item_name">
+            <input name="username" placeholder="Ваше имя"
+              class="form-order-call-popup__input form-order-call-popup__input_name">
+
+            <span class="form-order-call-popup__error-text form-order-call-popup__error-text_name">Заполните,
+              пожалуйста, это поле.</span>
+          </div>
+          <div class="form-order-call-popup__item  form-order-call-popup__item_phone">
+            <input name="user-tel" placeholder="Ваш телефон"
+              class="form-order-call-popup__input form-order-call-popup__input_phone">
+
+
+            <span class="form-order-call-popup__error-text form-order-call-popup__error-text_phone">Заполните,
+              пожалуйста, это поле.</span>
+          </div>
+          <div class="form-order-call-popup__item">
+            <button class="form-order-call-popup__button" type="submit">
+              <span>заказать звонок</span>
+
+              <svg class="form-order-call-popup__button-arrow">
+                <use xlink:href="/icons/sprite.svg#renovation-styles__style-button-arrow-gallery"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="header-order-call-accepted-popup">
+    <div class="header-order-call-accepted-popup__container">
+      <div class="header-order-call-accepted-popup__body">
+        <h1 class="header-order-call-accepted-popup__title">Спасибо <br>
+          за вашу заявку!</h1>
+
+        <p class="header-order-call-accepted-popup__text">Наш менеджер свяжеться с вами в ближайшее время.</p>
+
+        <button class="header-order-call-accepted-popup__button">
+          <span>вернуться на главную</span>
+
+          <svg class="header-order-call-accepted-popup__button-arrow">
+            <use xlink:href="/icons/sprite.svg#renovation-styles__style-button-arrow-gallery"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
 
   <section class="left-panel">
     <div class="left-panel__body">

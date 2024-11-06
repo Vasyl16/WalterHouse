@@ -29,16 +29,15 @@
 
   &__body {
     min-height: 380px;
-    padding: 20px 120px 27px;
-    gap: 14px;
+    padding: 39px 120px 29px;
+    gap: 3px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
 
     @media (max-width: $fullPc) {
-      padding: 30px 80px;
-      // min-height: 311px;
+      padding: 20px 80px;
     }
 
     @media (max-height: 900px) {
@@ -47,16 +46,16 @@
     }
 
     @media (max-width: $tablet) {
-      padding: 87px 40px 93px;
-      gap: 18px;
+      padding: 104px 40px 92px;
       max-width: 598px;
       margin: 0 auto;
+      gap: 7px;
       min-height: auto;
     }
 
     @media (max-width: $mobile) {
-      padding: 39px 40px 51px;
-      gap: 9px;
+      padding: 49px 40px 51px;
+      gap: 1px;
     }
   }
 
@@ -66,38 +65,45 @@
     position: relative;
     width: 100%;
 
-    &_input {
-      &::after {
-        position: absolute;
-        content: '';
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        background: $forth-line;
-        height: 1px;
+    &_error {
+      .contact-form__input {
+        border-color: $error-red;
+      }
+
+      .contact-form__input-error-text {
+        pointer-events: all;
+        opacity: 1;
       }
     }
   }
 
   &__input {
-    font-family: Open Sans;
     font-size: 18px;
     font-weight: 400;
     line-height: 1.36;
     text-align: left;
     color: $black;
     position: relative;
-    padding: 20px 0 15px;
+    padding: 3px 0 15px;
     display: block;
     width: 100%;
+    border-bottom: solid 1px $forth-line;
+    transition: all ease 0.5s;
 
-    &_modified {
-      padding-bottom: 20px;
+    &:focus {
+      border-color: $main-bg-color;
     }
 
+    &_modified {
+      padding-bottom: 16px;
+    }
+
+    @media (max-width: $tablet) {
+      padding: 3px 0 15px;
+    }
     @media (max-width: $mobile) {
       font-size: 14px;
-      padding: 11px 0;
+      padding: 0px 0 11px;
     }
 
     &::placeholder {
@@ -106,11 +112,24 @@
   }
 
   &__input-error-text {
-    display: none;
+    opacity: 0;
+    pointer-events: none;
+    font-family: Open Sans;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.36;
+    text-align: left;
+    color: $error-red;
+    padding: 8px 0 3px;
+
+    @media (max-width: $mobile) {
+      padding: 2px 0;
+      font-size: 11px;
+    }
   }
 
   &__button {
-    margin-top: 32px;
+    margin-top: 18px;
     font-family: 'Open Sans';
     font-size: 20px;
     font-weight: 600;
@@ -125,9 +144,13 @@
     cursor: pointer;
     transition: all ease 0.3s;
 
+    @media (max-width: $tablet) {
+      margin-top: 21px;
+    }
+
     @media (max-width: $mobile) {
       font-size: 14px;
-      margin-top: 12px;
+      margin-top: 0px;
     }
 
     & span {
@@ -158,20 +181,15 @@
     overflow: hidden;
 
     @media (max-width: $mobile) {
-      // right: 55px;
-      width: 100px;
+      width: 110px;
     }
   }
 
   &__button-arrow {
-    width: 121px;
+    width: 100%;
     height: 100%;
     @media (max-width: $mobile) {
-      transform: translate(-20px);
+      transform: translate(10px);
     }
   }
-
-  // &__button-arrow {
-  // width: 100%;
-  // }
 }
