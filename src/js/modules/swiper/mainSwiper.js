@@ -3,7 +3,7 @@ import Swiper from 'swiper/bundle';
 // swiper main vars
 const swiperMain = '.swiper-main';
 const swiperMainPagination = '.swiper-main__pagination';
-let swiperMainLabel;
+export let swiperMainLabel;
 
 // config swiper main
 const swiperMainLabelFun = () => {

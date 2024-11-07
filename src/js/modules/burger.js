@@ -4,14 +4,14 @@ const burger = document.querySelector('.header__burger-icon');
 const headerItems = document.querySelector('.item-burger-header');
 const headerItemsActiveClass = 'item-burger-header_active';
 
-const burgerItems = [
+export const burgerItems = [
   {
     item: headerItems,
     itemClassActive: headerItemsActiveClass
   }
 ];
 
-const toogleClasses = items => {
+export const toogleClasses = items => {
   try {
     items.forEach(itemObj => {
       itemObj.item.classList.toggle(itemObj.itemClassActive);

@@ -11,7 +11,8 @@ import {
   initStepsWalterFun,
   handleHeaderScroll,
   handleHeaderOrderCallAllPopupups,
-  handleContactFormFun
+  handleContactFormFun,
+  setupNavigation
 } from '/src/js/modules';
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -26,4 +27,5 @@ document.addEventListener('DOMContentLoaded', () => {
   handleHeaderScroll();
   handleHeaderOrderCallAllPopupups();
   handleContactFormFun();
+  setupNavigation();
 });

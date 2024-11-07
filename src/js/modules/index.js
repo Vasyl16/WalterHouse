@@ -9,6 +9,7 @@ import { initStepsWalterFun } from './stepsWalter';
 import { handleHeaderScroll } from './scrollHeader';
 import { handleHeaderOrderCallAllPopupups } from './handleHeaderOrderCallAllPopupups';
 import { handleContactFormFun } from './handleContactForm';
+import { setupNavigation } from './handleNavigation';
 
 export {
   burgerMenuFun,
@@ -21,5 +22,6 @@ export {
   initStepsWalterFun,
   handleHeaderScroll,
   handleHeaderOrderCallAllPopupups,
-  handleContactFormFun
+  handleContactFormFun,
+  setupNavigation
 };
