@@ -101,6 +101,6 @@ const infoListServicesPopupsItems = [
 ];
 
 export const allHomePopupItems = [
-  ...additionalServicesAllPopupItems
-  // ...infoListServicesPopupsItems
+  ...additionalServicesAllPopupItems,
+  ...infoListServicesPopupsItems
 ];

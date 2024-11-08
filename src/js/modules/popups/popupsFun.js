@@ -24,7 +24,6 @@ export const togglePopupFun = popupItems => {
     const shouldActivatePopup = () => {
       const viewportWidth = window.innerWidth;
       const viewportHeight = window.innerHeight;
-      console.log(viewportWidth > maxWidth);
       return viewportWidth <= maxWidth && viewportHeight <= maxHeight;
     };
 
