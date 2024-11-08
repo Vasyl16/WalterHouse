@@ -24,6 +24,7 @@ export const togglePopupFun = popupItems => {
     const shouldActivatePopup = () => {
       const viewportWidth = window.innerWidth;
       const viewportHeight = window.innerHeight;
+      console.log(viewportWidth > maxWidth);
       return viewportWidth <= maxWidth && viewportHeight <= maxHeight;
     };
 
@@ -67,13 +68,9 @@ export const togglePopupFun = popupItems => {
     };
 
     const addEvents = () => {
-      try {
-        popupButton.addEventListener('click', handleAddClases);
+      popupButton.addEventListener('click', handleAddClases);
 
-        closeButton.addEventListener('click', handleRemoveClases);
-      } catch (error) {
-        console.error(error.message);
-      }
+      closeButton.addEventListener('click', handleRemoveClases);
     };
     if (shouldActivatePopup()) {
       addEvents();
@@ -95,6 +92,7 @@ export const togglePopupFun = popupItems => {
         return;
       }
 
+      clearEvents();
       blockScroll(false);
       hideHeader(false);
       handleRemoveClases();

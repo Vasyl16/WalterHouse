@@ -90,6 +90,10 @@ const navigationViaLocPath = () => {
   const targetClass = urlObj.searchParams.get('section');
   const slideIndex = urlObj.searchParams.get('slide');
 
+  if (!targetClass || !slideIndex) {
+    return;
+  }
+
   const targetElement = document.querySelector(targetClass);
 
   if (swiperMainLabel) {
@@ -101,8 +105,6 @@ const navigationViaLocPath = () => {
     navigateManualFun(targetElement);
     return;
   }
-
-  console.error(`Target element with selector ${targetSelector} not found.`);
 };
 
 export const setupNavigation = () => {

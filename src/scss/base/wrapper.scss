@@ -11,3 +11,8 @@
 //     flex: 1 1 auto;
 //   }
 // }
+
+.wrapper-active {
+  touch-action: none;
+  overflow: hidden;
+}

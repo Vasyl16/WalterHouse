@@ -10,6 +10,7 @@ import { handleHeaderScroll } from './scrollHeader';
 import { handleHeaderOrderCallAllPopupups } from './handleHeaderOrderCallAllPopupups';
 import { handleContactFormFun } from './handleContactForm';
 import { setupNavigation } from './handleNavigation';
+import { handleRenovationstylesServicesPopup } from './renovationStylesServicesPopup';
 
 export {
   burgerMenuFun,
@@ -23,5 +24,6 @@ export {
   handleHeaderScroll,
   handleHeaderOrderCallAllPopupups,
   handleContactFormFun,
-  setupNavigation
+  setupNavigation,
+  handleRenovationstylesServicesPopup
 };

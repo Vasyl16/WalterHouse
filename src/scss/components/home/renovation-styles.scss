@@ -140,6 +140,10 @@
           left: auto;
         }
       }
+
+      .renovation-styles__style-button {
+        left: 0;
+      }
     }
 
     &::before {
@@ -424,7 +428,9 @@
     align-items: center;
     text-transform: uppercase;
     gap: 31px;
-    transition: all ease 0.3s;
+    transition: all ease 2.3s;
+    position: relative;
+    left: -200%;
 
     &_gallery {
       color: $secondary-color;
@@ -471,8 +477,10 @@
       }
     }
 
-    &:hover {
-      color: $secondary-hover-color;
+    @media (pointer: fine) {
+      &:hover {
+        color: $secondary-hover-color;
+      }
     }
 
     @media (max-width: 1400px) {
@@ -481,12 +489,228 @@
 
     @media (max-width: $tablet) {
       font-size: 20px;
+      left: -200%;
+      transition: all ease 1.3s;
     }
 
     @media (max-width: $mobile) {
       span {
         display: none;
       }
+    }
+  }
+}
+
+.price-list {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+  background: $white;
+  overflow-y: scroll;
+  animation: slide-in-opacity 0.3s ease-out forwards;
+  display: none;
+  opacity: 0;
+
+  @media (max-width: $tablet) {
+    position: fixed;
+  }
+
+  &_active {
+    display: block;
+    opacity: 1;
+  }
+
+  & &__container {
+    height: 100%;
+    max-width: 1680px;
+    position: static;
+  }
+
+  &__body {
+    display: flex;
+    gap: 148px;
+    padding: 30px 0 50px;
+
+    @media (max-width: $fullPc) {
+      gap: 50px;
+    }
+
+    @media (max-width: $tablet) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    @media (max-width: $tablet) {
+      gap: 30px;
+    }
+  }
+
+  &__column {
+    &_type {
+      min-height: 100%;
+      display: flex;
+      align-items: center;
+      padding-left: 20px;
+
+      @media (max-width: $fullPc) {
+        padding-left: 0;
+      }
+    }
+
+    &_content {
+      flex: 1 1 auto;
+      width: 100%;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    padding-top: 43px;
+    gap: 47px;
+
+    @media (max-width: $tablet) {
+      padding-top: 0;
+    }
+
+    @media (max-width: $tablet) {
+      gap: 20px;
+    }
+  }
+
+  &__row {
+    &_cost {
+      padding-bottom: 19px;
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: $forth-line;
+      }
+    }
+  }
+
+  &__cost {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.2;
+    text-align: left;
+    color: $second-black;
+    display: flex;
+    gap: 9px;
+
+    @media (max-width: $tablet) {
+      justify-content: center;
+    }
+  }
+
+  &__cost-text {
+    &_bruno {
+      font-family: Bruno Ace;
+    }
+  }
+
+  &__type {
+    font-family: Bruno Ace;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1.2;
+    text-transform: uppercase;
+    aspect-ratio: 1/1;
+    min-width: 172px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: all ease 0.8s;
+
+    &::after {
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 1px solid $sixth-line;
+      border-radius: 50%;
+      clip-path: inset(0 0 0 50%);
+
+      @media (max-width: $tablet) {
+        clip-path: inset(50% 0 0 0);
+      }
+    }
+
+    &_orange {
+      color: $secondary-color;
+    }
+  }
+
+  &__close-icon-wrapper {
+    position: absolute;
+    width: 35px;
+    aspect-ratio: 1/1;
+    right: 60px;
+    top: 60px;
+    cursor: pointer;
+
+    @media (max-width: $fullPc) {
+      top: 40px;
+      right: 40px;
+    }
+  }
+
+  &__close-icon {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.items-price-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 370px));
+  justify-content: space-between;
+  column-gap: 40px;
+  row-gap: 20px;
+
+  @media (max-width: $fullPc) {
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  }
+
+  @media (max-width: $mobile-small) {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  &__item {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.25;
+    text-align: left;
+    padding-left: 43px;
+    position: relative;
+
+    @media (max-width: $tablet) {
+      padding-left: 20px;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 6px;
+      left: 0;
+      aspect-ratio: 1/1;
+      width: 10px;
+      border-radius: 50%;
+      background: $secondary-color;
     }
   }
 }

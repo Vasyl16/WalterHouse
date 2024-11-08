@@ -27,6 +27,11 @@
     opacity: 0;
   }
 
+  &-hide-full {
+    display: none;
+    opacity: 0;
+  }
+
   &__body {
     height: 121px;
     padding-right: 32px;
@@ -803,7 +808,7 @@
     }
 
     @media (max-width: $mobile-small) {
-      padding-bottom:  40px; 
+      padding-bottom: 40px;
     }
   }
 }

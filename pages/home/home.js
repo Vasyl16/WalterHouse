@@ -12,7 +12,8 @@ import {
   handleHeaderScroll,
   handleHeaderOrderCallAllPopupups,
   handleContactFormFun,
-  setupNavigation
+  setupNavigation,
+  handleRenovationstylesServicesPopup
 } from '/src/js/modules';
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -28,4 +29,5 @@ document.addEventListener('DOMContentLoaded', () => {
   handleHeaderOrderCallAllPopupups();
   handleContactFormFun();
   setupNavigation();
+  handleRenovationstylesServicesPopup();
 });

@@ -3,7 +3,7 @@ const additionalServicesAllPopupItems = [
     popupButtonClass: '.additional-services__image-container_video',
     closeButtonClass: '.additional-services-popup__close-button-video',
     maxHeight: false,
-    maxWidth: 1024,
+    maxWidth: false,
     classArray: [
       {
         class: '.additional-services-popup-video',
@@ -15,7 +15,7 @@ const additionalServicesAllPopupItems = [
     popupButtonClass: '.additional-services__image-container_broadcast',
     closeButtonClass: '.additional-services-popup__close-button-broadcast',
     maxHeight: false,
-    maxWidth: 1024,
+    maxWidth: false,
     classArray: [
       {
         class: '.additional-services-popup-broadcast',
@@ -27,7 +27,7 @@ const additionalServicesAllPopupItems = [
     popupButtonClass: '.additional-services__image-container_furniture',
     closeButtonClass: '.additional-services-popup__close-button-furniture',
     maxHeight: false,
-    maxWidth: 1024,
+    maxWidth: false,
     classArray: [
       {
         class: '.additional-services-popup-furniture',
@@ -39,7 +39,7 @@ const additionalServicesAllPopupItems = [
     popupButtonClass: '.additional-services__image-container_household',
     closeButtonClass: '.additional-services-popup__close-button-household',
     maxHeight: false,
-    maxWidth: 1024,
+    maxWidth: false,
     classArray: [
       {
         class: '.additional-services-popup-household',
@@ -51,7 +51,7 @@ const additionalServicesAllPopupItems = [
     popupButtonClass: '.additional-services__image-container_ultra',
     closeButtonClass: '.additional-services-popup__close-button-ultra',
     maxHeight: false,
-    maxWidth: 1024,
+    maxWidth: false,
     classArray: [
       {
         class: '.additional-services-popup-ultra',
@@ -101,6 +101,6 @@ const infoListServicesPopupsItems = [
 ];
 
 export const allHomePopupItems = [
-  ...additionalServicesAllPopupItems,
-  ...infoListServicesPopupsItems
+  ...additionalServicesAllPopupItems
+  // ...infoListServicesPopupsItems
 ];

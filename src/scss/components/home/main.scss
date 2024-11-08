@@ -36,6 +36,11 @@
     flex-direction: column;
     gap: 30px;
 
+    &-hide {
+      display: none;
+      opacity: 0;
+    }
+
     @media (max-width: $fullPc) {
       right: 80px;
     }
