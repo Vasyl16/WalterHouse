@@ -1,6 +1,6 @@
 <svg width="0" height="0" fill="none" style="visibility: hidden; position: absolute;" aria-hidden="true">
-    <symbol id="list-services__progress-circle-wrapper" >
-        <circle cx='50%' cy='50%' r='49%' class='list-services__progress-circle-line'></circle>
-        <circle cx='50%' cy='50%' r='49%' class='list-services__progress-circle'></circle>
+    <symbol id="Group-26" width="136" height="23" viewBox="0 0 136 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <line x1="-4.37114e-08" y1="11.5" x2="115" y2="11.5" stroke="white" stroke-opacity="0.5"/>
+        <path d="M119 1L135 11.5L119 22" stroke="white" stroke-opacity="0.5"/>
     </symbol>
 </svg>
