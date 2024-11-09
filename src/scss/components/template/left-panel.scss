@@ -12,7 +12,7 @@
     opacity: 0;
   }
 
-  @media (max-width: $fullPc) {
+  @media (max-width: $markup-width) {
     left: 40px;
     z-index: 8;
   }
