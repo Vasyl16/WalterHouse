@@ -22,7 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
-
+*.env
 # ignore another icons
 
 /public/icons/*
